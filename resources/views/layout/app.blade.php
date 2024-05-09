@@ -42,7 +42,7 @@
             font-style: normal;
         }
     </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resource/js/flowbite.js'])
 </head>
 
 <body>
