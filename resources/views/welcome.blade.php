@@ -5,7 +5,7 @@
 @endsection
 
 @section('contenido')
-   <p class="work-sans-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum, quisquam vero minima debitis nulla. Autem, adipisci eveniet dicta sunt repellat nihil corrupti magni nemo quibusdam, pariatur, eius maxime saepe?</p>
+   <p class="work-sans-normal text-xl">pasfashjfashfkjahsjfe?</p>
 @endsection
 
 @push('script')
