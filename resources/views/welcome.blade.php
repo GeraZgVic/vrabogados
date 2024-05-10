@@ -9,7 +9,7 @@
         <div>
             <img
                 class="rounded-md" 
-                src="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg" alt="Vrabogados">
+                src="https://img.freepik.com/foto-gratis/vista-escalas-3d-justicia-dia-abogado_23-2151023417.jpg?w=1060&t=st=1715279060~exp=1715279660~hmac=d3d2923c0a15eaf5f22c7ca377b729566161ebc89428e1d444324d059b224106" alt="Vrabogados">
         </div>
         <div class="mt-4 space-y-6">
              <h2 class="text-3xl font-semibold">Lorem lorem lorem lor</h2>
