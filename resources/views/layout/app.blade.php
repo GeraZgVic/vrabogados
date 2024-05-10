@@ -51,7 +51,7 @@
         <a href="{{ route('home.index') }}">
             <img class=md:h-14 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
         </a>
-        <div class="flex gap-x-6">
+        <div class="flex flex-col gap-x-6">
             <a href="mailto:vrabogados@siccoms.com" class="flex gap-x-1 text-gray-600 hover:text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -60,7 +60,6 @@
                 </svg>
                 vrabogados@siccoms.com
             </a>
-
             <a href="#" class="flex gap-x-1 text-gray-600 hover:text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -75,13 +74,11 @@
     <x-header />
 
     {{-- Contenido principal --}}
-    <main class="container m-auto px-4 mt-4">
+    <main class="container m-auto px-8 mt-4">
         @yield('contenido')
     </main>
 
-    <footer>
-
-    </footer>
+    <x-footer />
     @stack('script')
 </body>
 
