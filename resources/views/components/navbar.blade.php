@@ -46,13 +46,13 @@
     <div class="hidden w-full lg:flex lg:items-center lg:justify-between">
         <div class="flex text-lg text-gray-100 work-sans-link">
             <div class="mr-3">
-                <a href="#" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
+                <a href="{{route('home.index')}}" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
                     Inicio
                 </a>
             </div>
 
             <div class="mr-3">
-                <a href="#" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
+                <a href="{{route('area.index')}}" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
                     Áreas de práctica
                 </a>
             </div>
