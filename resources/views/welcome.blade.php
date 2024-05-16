@@ -5,6 +5,8 @@
 @endsection
 
 @section('contenido')
+<x-sliderclientes />
+
     <div class="container m-auto px-8 mt-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-8">
             <div>

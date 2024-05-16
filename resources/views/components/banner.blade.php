@@ -1,6 +1,6 @@
 <div class="flex items-center justify-between gap-x-8 md:gap-x-4  px-2 py-1">
     <a href="{{ route('home.index') }}">
-        <img class=md:h-14 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
+        <img class="md:h-14 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
     </a>
     <div class="flex flex-col gap-x-6">
         <a href="mailto:vrabogados@siccoms.com" class="flex gap-x-1 text-gray-600 hover:text-gray-900">

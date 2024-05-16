@@ -44,56 +44,46 @@
 
     <!-- Show Menu lg -->
     <div class="hidden w-full lg:flex lg:items-center lg:justify-between">
-        <div class="flex text-lg text-gray-100 work-sans-link">
-            <div class="mr-3">
-                <a href="{{route('home.index')}}" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
-                    Inicio
-                </a>
-            </div>
 
-            <div class="mr-3">
-                <a href="{{route('area.index')}}" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
-                    Áreas de práctica
-                </a>
+        <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base">
+            <x-link-navbar :text="'Inicio'" :route="'home.index'"/>
+            <x-link-navbar :text="'Áreas de práctica'" :route="'area.index'"/>
+            <x-link-navbar :text="'Blog'" :route="'area.index'"/>
+            <x-link-navbar :text="'Nosotros'" :route="'about.index'"/>
+    
+            <div class="mr-3 tracking-[.15em] text-base">
+                <x-link-navbar :text="'Contácto'" :route="'area.index'"/>
+
+                <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
+                    :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
+                    <!-- Dropdown Toggle Button -->
+                    <button @mouseover="open = true" class="flex items-center">
+                        <span class="work-sans-link">Despachos</span>
+                        <span :class="open = !open ? '' : '-rotate-180'"
+                            class="transition-transform duration-500 transform">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90"
+                        class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl min-w-max">
+                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Ciudad de
+                            México</a>
+                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Guadalajara,
+                            Jalisco</a>
+                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Villahermosa,
+                            Tabasco</a>
+                    </div>
+                    <!-- End Dropdown Menu -->
+                </div>
             </div>
-            <div class="mr-3">
-                <a href="#" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
-                    Nosotros
-                </a>
-            </div>
-            <div class="mr-3">
-                <a href="#" class="inline-block no-underline hover:text-gray-400 px-2 py-1 rounded-md">
-                    Contacto
-                </a>
-            </div>
-        </div>
-        <!-- Dropdown 1 -->
-        <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
-            :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
-            <!-- Dropdown Toggle Button -->
-            <button @mouseover="open = true" class="flex items-center p-2 rounded-md">
-                <span class="mr-4 work-sans-link">Despachos</span>
-                <span :class="open = !open ? '' : '-rotate-180'" class="transition-transform duration-500 transform">
-                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                </span>
-            </button>
-            <!-- End Dropdown Toggle Button -->
-            <!-- Dropdown Menu -->
-            <div x-show="open" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 transform scale-90"
-                x-transition:enter-end="opacity-100 transform scale-100"
-                x-transition:leave="transition ease-in duration-300"
-                x-transition:leave-start="opacity-100 transform scale-100"
-                x-transition:leave-end="opacity-0 transform scale-90"
-                class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl min-w-max">
-                <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Ciudad de México</a>
-                <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Guadalajara, Jalisco</a>
-                <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Villahermosa,
-                    Tabasco</a>
-            </div>
-            <!-- End Dropdown Menu -->
         </div>
     </div>
 

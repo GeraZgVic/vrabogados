@@ -16,13 +16,6 @@
             font-style: normal;
         }
 
-        .work-sans-extrabold {
-            font-family: "Work Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-        }
-
         .work-sans-link {
             font-family: "Work Sans", sans-serif;
             font-optical-sizing: auto;
@@ -49,7 +42,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="selection:bg-blue-800 selection:text-white">
+<body class="selection:bg-black selection:text-white">
     @if (Request::is('/'))
         <x-header />
     @else
@@ -63,6 +56,7 @@
 
     <x-footer />
     @stack('script')
+    @stack('styles')
 </body>
 
 </html>
