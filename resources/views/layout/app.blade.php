@@ -15,6 +15,12 @@
             font-weight: 700;
             font-style: normal;
         }
+        .work-sans-extrabold {
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
 
         .work-sans-link {
             font-family: "Work Sans", sans-serif;

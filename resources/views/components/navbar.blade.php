@@ -1,5 +1,5 @@
 <nav x-data="accordion(6)"
-    class="sticky top-0 z-40 w-full px-4 py-5 tracking-wide bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950  shadow-md bg-opacity-90 md:py-3 md:px-6 lg:px-14">
+    class="sticky top-0 z-40 w-full px-1 py-3 tracking-wide bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950  shadow-md bg-opacity-90">
     <!-- Toggle button -->
     <div @click="handleClick()" x-data="{ open: false }" class="block text-white cursor-pointer lg:hidden">
         <button @click="open = ! open" class="w-6 h-6 text-lg">
@@ -28,6 +28,7 @@
     <div x-ref="tab" :style="handleToggle()"
         class="relative w-full overflow-hidden transition-all duration-700 lg:hidden max-h-0">
         <div class="flex flex-col items-center my-3 space-y-2 text-lg hover:font-b text-gray-100">
+            
             <a href="#"
                 class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Inicio</span></a>
             <a href="#" class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Áreas de
@@ -44,8 +45,13 @@
 
     <!-- Show Menu lg -->
     <div class="hidden w-full lg:flex lg:items-center lg:justify-between">
-
-        <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base">
+        <div>
+            <a href="{{ route('home.index') }}">
+                <img class="md:h-14 w-full" src="{{ asset('img/logo_blanco.png') }}" alt="Logo de Vrabogados">
+            </a>
+        </div>
+        <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base items-center ">
+            
             <x-link-navbar :text="'Inicio'" :route="'home.index'"/>
             <x-link-navbar :text="'Áreas de práctica'" :route="'area.index'"/>
             <x-link-navbar :text="'Blog'" :route="'area.index'"/>
