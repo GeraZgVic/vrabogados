@@ -21,6 +21,8 @@ Areas de práctica
                     src="https://media.istockphoto.com/id/956243400/es/foto/cierre-empresario-abogado-trabajando-o-leyendo-el-libro-de-derecho-en-trabajo-de-oficina-para.jpg?s=1024x1024&w=is&k=20&c=0qwlfbmo-KSMAm9agaZwRTab2NDfBRHqk_7UJVi60oU="
                     alt="Vrabogados">
             </div>
+            <livewire:accordion :texto="'Holaaaa'" />
+
             <div class="mt-4 space-y-6">
                 <h2
                     class="text-3xl font-semibold bg-gradient-to-r  from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text ">
@@ -30,7 +32,7 @@ Areas de práctica
         </div>
         <div class="grid md:grid-cols-3 gap-10 my-16">
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal group-hover:text-white">
                     Derecho civil
@@ -41,7 +43,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-dashed rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho penal
@@ -52,7 +54,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-dotted rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho laboral
@@ -63,7 +65,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho
@@ -74,7 +76,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho mercantil
@@ -85,7 +87,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho
