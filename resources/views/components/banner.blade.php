@@ -1,6 +1,6 @@
-<div class="flex justify-between gap-x-8 md:gap-x-4 px-2 py-2">
-    <div class="flex gap-x-8 md:gap-x-4">
-        <a href="#" class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice">
+<div class="flex justify-between gap-x-4 px-2 py-2">
+    <div class="flex flex-col md:flex-row ">
+        <a href="#" class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice text-xs md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-outgoing" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1e40af" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -13,7 +13,7 @@
             +2722486069
         </a>
         <a href="mailto:vrabogados@siccoms.com"
-            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice">
+            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice text-xs md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1e40af" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -25,14 +25,15 @@
             </svg>
             vrabogados@siccoms.com
         </a>
+        
     </div>
-    <div class="flex gap-x-8">
-        <a href="#" class="flex items-center justify-center bg-gray-200 rounded-lg px-3">
-            <span class="text-gray-800 font-semibold mr-2 work-sans-link">ES</span>
+    <div class="flex gap-x-8 flex-col sm:flex-row">
+        <a href="#" class="flex items-center justify-center px-3">
+            <span class="text-gray-800 font-semibold mr-2 work-sans-link text-xs md:text-base">ES</span>
             <img class="w-8 h-8" src="{{asset('img/mx.png')}}" alt="Logo de México">
         </a>
-        <a href="#" class="flex items-center justify-center bg-gray-200 rounded-lg px-3">
-            <span class="text-gray-800 font-semibold mr-2 work-sans-link">EN</span>
+        <a href="#" class="flex items-center justify-center px-3">
+            <span class="text-gray-800 font-semibold mr-2 work-sans-link text-xs md:text-base">EN</span>
             <img class="w-8 h-8" src="{{asset('img/eeuu.png')}}" alt="Logo de EEUU">
         </a>
     </div>

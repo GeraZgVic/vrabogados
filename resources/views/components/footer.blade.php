@@ -1,5 +1,5 @@
-<div>
-    <div class="grid sm:grid-cols-2 px-8 -mb-10">
+<div class="h-full">
+    <div class=" grid sm:grid-cols-2 px-8 -mb-10">
         <div class="bg-indigo-500 text-white p-7 ">
             <h3 class="text-2xl">Need Legal Services?</h3>
             <p class="text-lg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -15,13 +15,13 @@
                 there live the blind texts.</p>
         </div>
     </div>
-    <div class="bg-slate-900 px-8 py-8 h-[68vh] flex flex-col justify-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6">
-            {{-- LOGO --}}
-            <div class="flex flex-col items-center">
-                <a href="{{ route('home.index') }}">
-                    <img class="md:h-20 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
-                </a>
+    <div class="bg-slate-900 px-8 py-8 flex flex-col justify-center">
+        <div class="grid md:grid-cols-1 lg:grid-cols-4 md:gap-x-6 mt-10">
+            {{-- LOGO - PRIMER COLUMNA --}}
+            <div class="flex flex-col items-center mb-10 md:mb-0">
+                    <a href="{{ route('home.index') }}">
+                        <img class="h-20 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
+                    </a>
                 <h2 class="text-gray-300 work-sans-normal text-center my-1">¡Descubre como podemos ayudarte!</h2>
                 <div class="flex justify-center gap-x-4 mt-4 text-gray-400">
                     <a href="#" class="hover:text-white"><!-- X -->
@@ -57,6 +57,7 @@
                     </div>
                 </div>
             </div>
+            {{-- SEGUNDA COLUMNA --}}
             <div>
                 <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Navegaci&oacute;n</h2>
                 <ul class="mt-4 capitalize text-base space-y-1 text-gray-300">
@@ -69,8 +70,9 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Informacion de contacto</h2>
+            {{-- TERCERA COLUMNA --}}
+            <div class="mt-4 md:mt-0">
+                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Información de contacto</h2>
                 <p class="mt-4 capitalize text-gray-500">198 West 21th Street,Suite 721 New York NY 10016</p>
                 <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
                     <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">+ 1235 2355 98</a>
@@ -79,6 +81,7 @@
                     </li>
                 </ul>
             </div>
+            {{-- CUARTA COLUMNA --}}
             <div>
                 <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Horario de apertura</h2>
                 <p class="mt-4 text-gray-300">Mon - Thu: 9:00 - 21 00 <br> Fri 8:00 - 21 00 <br> Sat 9:30 - 15: 00</p>
