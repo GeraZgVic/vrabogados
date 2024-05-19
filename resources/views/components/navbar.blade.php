@@ -52,19 +52,19 @@
         </div>
         <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base items-center ">
             
-            <x-link-navbar :text="'Inicio'" :route="'home.index'"/>
-            <x-link-navbar :text="'Áreas de práctica'" :route="'area.index'"/>
-            <x-link-navbar :text="'Blog'" :route="'area.index'"/>
-            <x-link-navbar :text="'Nosotros'" :route="'about.index'"/>
+            <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'"/>
+            <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'"/>
+            <x-link-navbar :text="'Blog'" :route="'blog.index'"/>
+            <x-link-navbar :text="__('site/navbar.link-nosotros')" :route="'nosotros.index'"/>
     
             <div class="mr-3 tracking-[.15em] text-base">
-                <x-link-navbar :text="'Contácto'" :route="'area.index'"/>
+                {{-- <x-link-navbar :text="__('site/navbar.link-contacto')" :route="'contacto.index'"/> --}}
 
                 <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
                     :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
                     <!-- Dropdown Toggle Button -->
                     <button @mouseover="open = true" class="flex items-center">
-                        <span class="work-sans-link">Despachos</span>
+                        <span class="work-sans-link">{{__('site/navbar.link-despacho')}}</span>
                         <span :class="open = !open ? '' : '-rotate-180'"
                             class="transition-transform duration-500 transform">
                             <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -80,11 +80,11 @@
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-90"
                         class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl min-w-max">
-                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Ciudad de
+                        <a href="{{route('mexico.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Ciudad de
                             México</a>
-                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Guadalajara,
+                        <a href="{{route('guadalajara.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Guadalajara,
                             Jalisco</a>
-                        <a href="#" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Villahermosa,
+                        <a href="{{route('vhsa.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Villahermosa,
                             Tabasco</a>
                     </div>
                     <!-- End Dropdown Menu -->

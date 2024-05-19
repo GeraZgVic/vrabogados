@@ -15,7 +15,7 @@
                     alt="Vrabogados">
             </div>
             <div class="mt-4 space-y-6">
-                <h2 class="text-3xl font-semibold">Lorem lorem lorem lor</h2>
+                <h2 class="text-3xl font-semibold">{{__('site/inicio.welcome')}}</h2>
                 <p>Lejos, muy lejos, detrás de las montañas de palabras, lejos de los países Vokalia y Consonantia, viven
                     los textos ciegos. Lejos de los países Vokalia y Consonantia, viven los textos ciegos.</p>
                 <div class="mt-6">

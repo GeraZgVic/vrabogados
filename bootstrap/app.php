@@ -11,7 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        // Importar usando web - Para que se aplique a todas las rutas
+        $middleware->web(\App\Http\Middleware\Language::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
