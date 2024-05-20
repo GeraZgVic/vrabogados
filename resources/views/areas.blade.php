@@ -8,11 +8,9 @@ Areas de práctica
     <div class="my-4">
         <h2
             class="text-3xl font-semibold bg-gradient-to-r  from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text ">
-            NUESTROS SERVICIOS</h2>
+            {{__('site/areas.areas-servicios')}}</h2>
         <div class="mt-4 space-y-6">
-            <p class="text-2xl text-gray-500"">Contamos con un profundo conocimiento de las necesidades de nuestros
-                clientes gracias a una sólida experiencia, formación continua y al trato personalizado, todo ello en
-                beneficio de la tranquilidad y seguridad de nuestros clientes.</p>
+            <p class="text-2xl text-gray-500"">{{__('site/areas.areas-servicio-descripcion')}}</p>
         </div>
         <div>
             <div class=" grid grid-cols-1 md:grid-cols-2 gap-10 my-8">
@@ -22,13 +20,6 @@ Areas de práctica
                     alt="Vrabogados">
             </div>
             <livewire:accordion :texto="'Holaaaa'" />
-
-            <div class="mt-4 space-y-6">
-                <h2
-                    class="text-3xl font-semibold bg-gradient-to-r  from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text ">
-                    AREAS DE EJERCICIO</h2>
-                <p>Litigio en materia administrativa.</p>
-            </div>
         </div>
         <div class="grid md:grid-cols-3 gap-10 my-16">
             <div
@@ -43,7 +34,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border-dashed rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho penal
@@ -54,7 +45,7 @@ Areas de práctica
 
             </div>
             <div
-                class="text-center border-dotted rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                     Derecho laboral

@@ -22,7 +22,7 @@
                     <a href="{{ route('home.index') }}">
                         <img class="h-20 w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
                     </a>
-                <h2 class="text-gray-300 work-sans-normal text-center my-1">¡Descubre como podemos ayudarte!</h2>
+                <h2 class="text-gray-300 work-sans-normal text-center my-1">{{__('site/footer.footer-eslogan')}}</h2>
                 <div class="flex justify-center gap-x-4 mt-4 text-gray-400">
                     <a href="#" class="hover:text-white"><!-- X -->
                         <span class="[&>svg]:h-6 [&>svg]:w-6">
@@ -59,23 +59,23 @@
             </div>
             {{-- SEGUNDA COLUMNA --}}
             <div>
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Navegaci&oacute;n</h2>
+                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">{{__('site/footer.footer-navegacion')}}</h2>
                 <ul class="mt-4 capitalize text-base space-y-1 text-gray-300">
-                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">Inicio</a></li>
-                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">Áreas de práctica</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{__('site/navbar.link-inicio')}}</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{__('site/navbar.link-area')}}</a></li>
                     <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">Blog</a></li>
-                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">Nosotros</a>
+                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{__('site/navbar.link-nosotros')}}</a>
                     </li>
-                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">Contácto</a>
+                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{__('site/navbar.link-despacho')}}</a>
                     </li>
                 </ul>
             </div>
             {{-- TERCERA COLUMNA --}}
             <div class="mt-4 md:mt-0">
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Información de contacto</h2>
+                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">{{__('site/footer.footer-informacion-contacto')}}</h2>
                 <p class="mt-4 capitalize text-gray-500">198 West 21th Street,Suite 721 New York NY 10016</p>
                 <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
-                    <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">+ 1235 2355 98</a>
+                    <li><a href="#" class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">+ 1235 2355 98</a>
                     </li>
                     <li><a href="#" class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">info@yoursite.com</a>
                     </li>
@@ -83,7 +83,7 @@
             </div>
             {{-- CUARTA COLUMNA --}}
             <div>
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">Horario de apertura</h2>
+                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">{{__('site/footer.footer-horario')}}</h2>
                 <p class="mt-4 text-gray-300">Mon - Thu: 9:00 - 21 00 <br> Fri 8:00 - 21 00 <br> Sat 9:30 - 15: 00</p>
             </div>
         </div>
