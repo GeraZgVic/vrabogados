@@ -24,68 +24,55 @@ Areas de práctica
         <div class="grid md:grid-cols-3 gap-10 my-16">
             <div
                 class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal group-hover:text-white">
-                    Derecho civil
+                <h2 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal group-hover:text-white">
+                {{__('site/areas.areas-derecho-civil')}}
                 </h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
-
+                <p class="text-gray-500 group-hover:text-white"> {{__('site/areas.areas-derecho-descripcion')}}</p>
             </div>
             <div
                 class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    Derecho penal
+                    {{__('site/areas.areas-derecho-penal')}}
                 </h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
+                <p class="text-gray-500 group-hover:text-white">{{__('site/areas.areas-derecho-descripcion')}}</p>
 
             </div>
             <div
                 class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    Derecho laboral
+                {{__('site/areas.areas-derecho-laboral')}}
                 </h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
+                <p class="text-gray-500 group-hover:text-white">{{__('site/areas.areas-derecho-descripcion')}}</p>
 
             </div>
             <div
                 class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    Derecho
-                    administrativo</h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
-
-            </div>
-            <div
-                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    Derecho mercantil
+                {{__('site/areas.areas-derecho-administrativo')}}
                 </h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
+                <p class="text-gray-500 group-hover:text-white">{{__('site/areas.areas-derecho-descripcion')}}</p>
 
             </div>
             <div
                 class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
                 <h2
                     class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    Derecho
-                    tributario</h2>
-                <p class="text-gray-500 group-hover:text-white">Even the all-powerful Pointing has no control about
-                    the
-                    blind texts it is an almost unorthographic life</p>
+                    {{__('site/areas.areas-derecho-mercantil')}}
+                </h2>
+                <p class="text-gray-500 group-hover:text-white">{{__('site/areas.areas-derecho-descripcion')}}</p>
+
+            </div>
+            <div
+                class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+                <h2
+                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
+                    {{__('site/areas.areas-derecho-tributario')}}
+                    
+                </h2>
+                <p class="text-gray-500 group-hover:text-white">{{__('site/areas.areas-derecho-descripcion')}}</p>
 
             </div>
         </div>
