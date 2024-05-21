@@ -1,5 +1,5 @@
 @extends('layout.auth')
 
 @section('contenido')
-   <p>Hola</p>
+   <p>Contenido</p>
 @endsection

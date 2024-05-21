@@ -9,8 +9,9 @@
 
     <div class="container m-auto px-8 mt-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-8">
-            <div>
+            <div class="seccion">
                 <img class="rounded-md"
+                    loading="lazy"
                     src="https://img.freepik.com/foto-gratis/vista-escalas-3d-justicia-dia-abogado_23-2151023417.jpg?w=1060&t=st=1715279060~exp=1715279660~hmac=d3d2923c0a15eaf5f22c7ca377b729566161ebc89428e1d444324d059b224106"
                     alt="Vrabogados">
             </div>

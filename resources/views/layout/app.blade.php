@@ -15,6 +15,7 @@
             font-weight: 700;
             font-style: normal;
         }
+
         .work-sans-extrabold {
             font-family: "Work Sans", sans-serif;
             font-optical-sizing: auto;
@@ -63,6 +64,43 @@
     <x-footer />
     @stack('script')
     @stack('styles')
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            iniciarApp();
+        });
+
+        function iniciarApp() {
+            aplicarAnimaciones();
+        }
+
+        function aplicarAnimaciones() {
+            let secciones = document.querySelectorAll(".seccion");
+
+            function mostrarAnimaciones() {
+                let scroll = window.scrollY;
+                let windowHeight = window.innerHeight;
+        
+                secciones.forEach((seccion) => {
+                    let offsetTop = seccion.offsetTop;
+                    let seccionHeight = seccion.offsetHeight;
+
+                    if (scroll + windowHeight >= offsetTop && scroll <= offsetTop + seccionHeight) {
+                        seccion.classList.add("animate-fade", "animate-once", "animate-duration-[600ms]",
+                            "animate-delay-200", "animate-ease-in", "animate-normal");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", function() {
+                mostrarAnimaciones();
+            });
+
+            // Llama a mostrarAnimaciones() para aplicar animaciones cuando la página se carga inicialmente
+            mostrarAnimaciones();
+        }
+    </script>
+
 </body>
 
 </html>
