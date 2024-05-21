@@ -22,4 +22,6 @@ Route::get('/despachos/vhsa-tab', [DespachoController::class, 'vhsa'])->name('vh
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
