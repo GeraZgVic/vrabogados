@@ -8,7 +8,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DespachoController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\NosotrosController;
-
+use App\Http\Controllers\LoginController;
 Route::get('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang');
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
@@ -19,5 +19,7 @@ Route::get('/despachos/cdmx', [DespachoController::class, 'cdmx'])->name('mexico
 Route::get('/despachos/guadalajara-jal', [DespachoController::class, 'guadalajara'])->name('guadalajara.index');
 Route::get('/despachos/vhsa-tab', [DespachoController::class, 'vhsa'])->name('vhsa.index');
 
-// Dashboard
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'store']);
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
