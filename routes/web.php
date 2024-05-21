@@ -6,6 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DespachoController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\NosotrosController;
@@ -20,4 +21,5 @@ Route::get('/despachos/cdmx', [DespachoController::class, 'cdmx'])->name('mexico
 Route::get('/despachos/guadalajara-jal', [DespachoController::class, 'guadalajara'])->name('guadalajara.index');
 Route::get('/despachos/vhsa-tab', [DespachoController::class, 'vhsa'])->name('vhsa.index');
 
-
+// Dashboard
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
