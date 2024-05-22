@@ -41,7 +41,7 @@
                          class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
                          Ver Posts
                      </a>
-                     <a href="#" role="menuitem"
+                     <a href="{{route('post.create')}}" role="menuitem"
                          class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
                          Crear Post
                      </a>

@@ -1,5 +1,5 @@
 <div class="flex justify-between gap-x-4 px-2 py-2">
-    <div class="flex flex-col md:flex-row ">
+    <div class="flex flex-col md:flex-row gap-2">
         <a href="#"
             class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice text-xs md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-outgoing" width="24"
@@ -28,7 +28,7 @@
         </a>
 
     </div>
-    <div class="flex gap-x-8 flex-col sm:flex-row">
+    <div class="flex justify-center items-center">
         @foreach (Config::get('languages') as $lang => $language)
             @if ($lang != App::getLocale())
                 <a href="{{ route('lang', $lang) }}" class="flex items-center justify-center px-3">

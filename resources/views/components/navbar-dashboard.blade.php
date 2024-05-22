@@ -14,10 +14,12 @@
         </button>
 
         <!-- Brand -->
-        <a href="#"
-            class="inline-block text-2xl font-bold tracking-wider capitalize text-primary-dark dark:text-light">
-            Vrabogados | {{ auth()->user()->name }}
-        </a>
+        <div class="text-center">
+            <a href="{{ route('dashboard') }}"
+                class="inline-block text-xl font-bold s capitalize text-primary-dark dark:text-light">
+                ¡Bienvenido {{ auth()->user()->name }}!
+            </a>
+        </div>
 
         <!-- Mobile sub menu button -->
         <button @click="isMobileSubMenuOpen = !isMobileSubMenuOpen"
@@ -38,8 +40,11 @@
             <button aria-hidden="true" class="relative focus:outline-none" x-cloak @click="toggleTheme">
                 <div class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-lighter"></div>
                 <div class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-150 transform scale-110 rounded-full shadow-sm"
-                    :class="{ 'translate-x-0 -translate-y-px  bg-white text-primary-dark': !
-                        isDark, 'translate-x-6 text-primary-100 bg-primary-darker': isDark }">
+                    :class="{
+                        'translate-x-0 -translate-y-px  bg-white text-primary-dark': !
+                            isDark,
+                        'translate-x-6 text-primary-100 bg-primary-darker': isDark
+                    }">
                     <svg x-show="!isDark" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -53,7 +58,7 @@
                 </div>
             </button>
 
-            <!-- Notification button -->
+            {{-- <!-- Notification button -->
             <button @click="openNotificationsPanel"
                 class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
                 <span class="sr-only">Open Notification panel</span>
@@ -62,9 +67,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                 </svg>
-            </button>
+            </button> --}}
 
-            <!-- Search button -->
+            {{-- <!-- Search button -->
             <button @click="openSearchPanel"
                 class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
                 <span class="sr-only">Open search panel</span>
@@ -73,7 +78,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
-            </button>
+            </button> --}}
 
             <!-- Settings button -->
             <button @click="openSettingsPanel"
@@ -132,8 +137,11 @@
                     <div class="w-12 h-6 transition rounded-full outline-none bg-primary-100 dark:bg-primary-lighter">
                     </div>
                     <div class="absolute top-0 left-0 inline-flex items-center justify-center w-6 h-6 transition-all duration-200 transform scale-110 rounded-full shadow-sm"
-                        :class="{ 'translate-x-0 -translate-y-px  bg-white text-primary-dark': !
-                            isDark, 'translate-x-6 text-primary-100 bg-primary-darker': isDark }">
+                        :class="{
+                            'translate-x-0 -translate-y-px  bg-white text-primary-dark': !
+                                isDark,
+                            'translate-x-6 text-primary-100 bg-primary-darker': isDark
+                        }">
                         <svg x-show="!isDark" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -190,7 +198,7 @@
                     :aria-expanded="open ? 'true' : 'false'"
                     class="block transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100">
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="../build/images/avatar.jpg" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" src="{{ asset('img/hombre.png') }}" alt="Usuario Icono" />
                 </button>
 
                 <!-- User dropdown menu -->
@@ -224,11 +232,8 @@
         <nav aria-label="Main" class="px-2 py-4 space-y-2">
             <!-- Dashboards links -->
             <div x-data="{ isActive: false, open: false }">
-                <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                <a href="#" @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button" aria-haspopup="true"
-                    :aria-expanded="(open || isActive) ? 'true' : 'false'">
+                <a href="{{ route('dashboard') }}"
+                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary">
                     <span aria-hidden="true">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -236,241 +241,44 @@
                                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                     </span>
-                    <span class="ml-2 text-sm"> Dashboards </span>
-                    <span class="ml-auto" aria-hidden="true">
-                        <!-- active class 'rotate-180' -->
-                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
+                    <span class="ml-2 text-sm">Dashboard</span>
                 </a>
-                <div role="menu" x-show="open" class="mt-2 space-y-2 px-7" aria-label="Dashboards">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a href="../index.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Default
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Project Mangement (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        E-Commerce (soon)
-                    </a>
-                </div>
-            </div>
 
-            <!-- Components links -->
-            <div x-data="{ isActive: false, open: false }">
-                <!-- active classes 'bg-primary-100 dark:bg-primary' -->
-                <a href="#" @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button"
-                    aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
-                    <span aria-hidden="true">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                <div x-data="{ isActive: false, open: false }">
+                    <a href="#" @click="$event.preventDefault(); open = !open"
+                        class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
+                        :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button"
+                        aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
                         </svg>
-                    </span>
-                    <span class="ml-2 text-sm"> Components </span>
-                    <span aria-hidden="true" class="ml-auto">
-                        <!-- active class 'rotate-180' -->
-                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                </a>
-                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Components">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Alerts (soon)
+                        <span class="ml-2 text-sm">Blog</span>
+                        <span class="ml-auto" aria-hidden="true">
+                            <!-- active class 'rotate-180' -->
+                            <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
                     </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Buttons (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Cards (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Dropdowns (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Forms (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Lists (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Modals (soon)
-                    </a>
+                    <div role="menu" x-show="open" class="mt-2 space-y-2 px-7" aria-label="Dashboards">
+                        <!-- active & hover classes 'text-gray-700 dark:text-light' -->
+                        <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                        <a href="#" role="menuitem"
+                            class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
+                            Ver Posts
+                        </a>
+                        <a href="{{ route('post.create') }}" role="menuitem"
+                            class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
+                            Crear Post
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Pages links -->
-            <div x-data="{ isActive: true, open: true }">
-                <!-- active classes 'bg-primary-100 dark:bg-primary' -->
-                <a href="#" @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button"
-                    aria-haspopup="true" :aria-expanded="(open || isActive) ? 'true' : 'false'">
-                    <span aria-hidden="true">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                    </span>
-                    <span class="ml-2 text-sm"> Pages </span>
-                    <span aria-hidden="true" class="ml-auto">
-                        <!-- active class 'rotate-180' -->
-                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                </a>
-                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" arial-label="Pages">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a href="../pages/blank.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                        Blank
-                    </a>
-                    <a href="../pages/404.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        404
-                    </a>
-                    <a href="../pages/500.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        500
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Profile (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Pricing (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Kanban (soon)
-                    </a>
-                    <a href="#" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Feed (soon)
-                    </a>
-                </div>
-            </div>
-
-            <!-- Authentication links -->
-            <div x-data="{ isActive: false, open: false }">
-                <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                <a href="#" @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button" aria-haspopup="true"
-                    :aria-expanded="(open || isActive) ? 'true' : 'false'">
-                    <span aria-hidden="true">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                    </span>
-                    <span class="ml-2 text-sm"> Authentication </span>
-                    <span aria-hidden="true" class="ml-auto">
-                        <!-- active class 'rotate-180' -->
-                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                </a>
-                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" aria-label="Authentication">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a href="../auth/register.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Register
-                    </a>
-                    <a href="../auth/login.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Login
-                    </a>
-                    <a href="../auth/forgot-password.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Forgot Password
-                    </a>
-                    <a href="../auth/reset-password.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
-                        Reset Password
-                    </a>
-                </div>
-            </div>
-
-            <!-- Layouts links -->
-            <div x-data="{ isActive: false, open: false }">
-                <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
-                <a href="#" @click="$event.preventDefault(); open = !open"
-                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
-                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button" aria-haspopup="true"
-                    :aria-expanded="(open || isActive) ? 'true' : 'false'">
-                    <span aria-hidden="true">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                        </svg>
-                    </span>
-                    <span class="ml-2 text-sm"> Layouts </span>
-                    <span aria-hidden="true" class="ml-auto">
-                        <!-- active class 'rotate-180' -->
-                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                </a>
-                <div x-show="open" class="mt-2 space-y-2 px-7" role="menu" aria-label="Layouts">
-                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
-                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
-                    <a href="../layouts/two-columns-sidebar.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Two Columns Sidebar
-                    </a>
-                    <a href="../layouts/mini-plus-one-columns-sidebar.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Mini + One Columns Sidebar
-                    </a>
-                    <a href="../layouts/mini-column-sidebar.html" role="menuitem"
-                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:text-gray-400 dark:hover:text-light hover:text-gray-700">
-                        Mini Column Sidebar
-                    </a>
-                </div>
             </div>
         </nav>
     </div>

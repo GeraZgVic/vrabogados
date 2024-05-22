@@ -57,8 +57,8 @@
     <div
         class="h-[85vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
         <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
-            <h2 class="text-5xl">Far far away, behind the word <br> mountains</h2>
-            <p class="text-2xl text-gray-400">Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind
+            <h2 class="md:text-5xl text-3xl">Far far away, behind the word <br> mountains</h2>
+            <p class="text-lg md:text-2xl text-gray-400">Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia, there live the blind
                 texts.</p>
             <div>
                 <a href="#"

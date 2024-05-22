@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Dashboard</title>
+    <title>Dashboard | @yield('titulo')</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
         rel="stylesheet" />
     <style>
@@ -744,7 +744,8 @@
             color: var(--color-primary-lighter);
         }
     </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/dropzone.js'])
 </head>
 
 <body>
@@ -1092,6 +1093,7 @@
             }
         }
     </script>
+    @stack('script')
 </body>
 
 </html>
