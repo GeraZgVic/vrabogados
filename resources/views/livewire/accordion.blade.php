@@ -6,7 +6,8 @@
       <span>
         <h3
           class="text-lg font-semibold bg-gradient-to-r  from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text ">
-          {{__('site/areas.areas-practicas')}}</h3>
+          {{__('site/areas.areas-practicas')}}
+        </h3>
       </span>
       <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
         fill="none" viewBox="0 0 10 6">
@@ -16,76 +17,19 @@
   </h2>
   <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
     <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-      <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components
-        built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-        <div class="container mx-auto">
-  <table class="min-w-full border-collapse border border-gray-300">
-    <thead class="bg-blue-200">
-      <tr>
-        <th class="border border-blue-300 py-2 px-4">Servicio</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia administrativa.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia de amparo.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia civil del fuero común.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia civil federal.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia familiar y arrendamiento inmobiliario.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia fiscal.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia mercantil.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Asesoramiento en cada una de las materias antes mencionadas.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia laboral a través de nuestras firmas asociadas.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia penal a través de nuestras firmas asociadas.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia agraria a través de nuestras firmas asociadas.</td>
-      </tr>
-      <tr>
-        <td class="border border-blue-300 py-2 px-4">Litigio en materia corporativa a través de nuestras firmas asociadas.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-    </div>
-  </div>
-  <h2 id="accordion-collapse-heading-2">
-    <button type="button"
-      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-      data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
-      aria-controls="accordion-collapse-body-2">
-      <span>Is there a Figma file available?</span>
-      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-        fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
-    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-      <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma
-        software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
-          class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes
-        from Tailwind CSS and components from Flowbite.</p>
+      <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+        <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Litigio en materia administrativa.</a>
+        </li>
+        <li><a href="https://tailwindui.com/" rel="nofollow"
+            class="text-blue-600 dark:text-blue-500 hover:underline">Litigio en materia de amparo.</a>
+        </li>
+        <li><a href="https://tailwindui.com/" rel="nofollow"
+            class="text-blue-600 dark:text-blue-500 hover:underline">Litigio en materia civil del fuero común.</a>
+        </li>
+        <li><a href="https://tailwindui.com/" rel="nofollow"
+            class="text-blue-600 dark:text-blue-500 hover:underline">Litigio en materia civil federal.</a>
+        </li>
+      </ul>
     </div>
   </div>
   <h2 id="accordion-collapse-heading-3">
