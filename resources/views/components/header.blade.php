@@ -1,5 +1,5 @@
 <div>
-    <x-banner />
+    {{-- <x-banner /> --}}
     <x-navbar />
     <x-slider />
 </div>

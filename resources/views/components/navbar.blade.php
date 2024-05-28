@@ -1,5 +1,5 @@
 <nav x-data="accordion(6)"
-    class="sticky top-0 z-40 w-full px-1 py-3 tracking-wide bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950  shadow-md bg-opacity-90">
+    class="sticky top-0 z-40 w-full px-1 py-2 tracking-wide bg-gradient-to-r bg-black  shadow-md bg-opacity-90">
     <!-- Toggle button -->
     <div @click="handleClick()" x-data="{ open: false }" class="block text-white cursor-pointer lg:hidden">
         <button @click="open = ! open" class="w-6 h-6 text-lg">
@@ -28,7 +28,7 @@
     <div x-ref="tab" :style="handleToggle()"
         class="relative w-full overflow-hidden transition-all duration-700 lg:hidden max-h-0">
         <div class="flex flex-col items-center my-3 space-y-2 text-lg hover:font-b text-gray-100">
-            
+
             <a href="#"
                 class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Inicio</span></a>
             <a href="#" class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Áreas de
@@ -51,20 +51,18 @@
             </a>
         </div>
         <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base items-center ">
-            
-            <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'"/>
-            <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'"/>
-            <x-link-navbar :text="'Blog'" :route="'blog.index'"/>
-            <x-link-navbar :text="__('site/navbar.link-nosotros')" :route="'nosotros.index'"/>
-    
-            <div class="mr-3 tracking-[.15em] text-base">
-                {{-- <x-link-navbar :text="__('site/navbar.link-contacto')" :route="'contacto.index'"/> --}}
 
+            <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'" />
+            <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'" />
+            <x-link-navbar :text="'Blog'" :route="'blog.index'" />
+            <x-link-navbar :text="__('site/navbar.link-nosotros')" :route="'nosotros.index'" />
+
+            <div class="mr-3 tracking-[.15em] text-base">
                 <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
                     :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
                     <!-- Dropdown Toggle Button -->
                     <button @mouseover="open = true" class="flex items-center">
-                        <span class="work-sans-link">{{__('site/navbar.link-despacho')}}</span>
+                        <span class="work-sans-link text-sm">{{ __('site/navbar.link-despacho') }}</span>
                         <span :class="open = !open ? '' : '-rotate-180'"
                             class="transition-transform duration-500 transform">
                             <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -79,13 +77,49 @@
                         x-transition:leave="transition ease-in duration-300"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-90"
-                        class="absolute right-0 py-1 text-gray-500 bg-white rounded-lg shadow-xl min-w-max">
-                        <a href="{{route('mexico.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Ciudad de
+                        class="absolute right-0 py-1 text-gray-200 bg-black rounded-lg shadow-xl min-w-max">
+                        <a href="{{ route('mexico.index') }}"
+                            class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100 text-sm">Ciudad de
                             México</a>
-                        <a href="{{route('guadalajara.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Guadalajara,
+                        <a href="{{ route('guadalajara.index') }}"
+                            class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100 text-sm">Guadalajara,
                             Jalisco</a>
-                        <a href="{{route('vhsa.index')}}" class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100">Villahermosa,
+                        <a href="{{ route('vhsa.index') }}"
+                            class="block px-4 py-1 hover:text-gray-900 hover:bg-gray-100 text-sm">Villahermosa,
                             Tabasco</a>
+                    </div>
+                    <!-- End Dropdown Menu -->
+                </div>
+            </div>
+
+            <div class="mr-3 tracking-[.15em] text-base">
+                <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
+                    :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
+                    <!-- Dropdown Toggle Button -->
+                    <button @mouseover="open = true" class="flex items-center">
+                        <span class="work-sans-link text-sm">{{ __('site/navbar.link-idioma') }}</span>
+                        <span :class="open = !open ? '' : '-rotate-180'"
+                            class="transition-transform duration-500 transform">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90"
+                        class="absolute right-0 py-1 text-gray-200 bg-black rounded-lg shadow-xl min-w-max">
+                        @foreach (Config::get('languages') as $lang => $language)
+                            @if ($lang != App::getLocale())
+                                <a href="{{ route('lang', $lang) }}" class="block px-4 py-1 text-sm hover:text-gray-900 hover:bg-gray-100">
+                                    {{ strtoupper($language) }}
+                                </a>
+                            @endif
+                        @endforeach
                     </div>
                     <!-- End Dropdown Menu -->
                 </div>

@@ -37,12 +37,11 @@ Areas de práctica
             </div>
         </div>
         <div class="grid md:grid-cols-3 gap-10 my-16">
-            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg dark:bg-neutral-700"
-                style="background-image: url('https://media.istockphoto.com/id/1351571961/es/foto/mirando-directamente-hacia-el-horizonte-del-distrito-financiero-en-el-centro-de-londres.jpg?s=1024x1024&w=is&k=20&c=-DbOFC0tJbGvoLKvx7MHlvQ-vAup20ZGOUg_O5i5eI0=');">
-                <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
+            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg dark:bg-neutral-700" style="background-image: url('img/img-3.webp');">
+                <h5 class="mb-2 text-xl font-medium leading-tight text-white ">
                     Card title
                 </h5>
-                <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
+                <p class="mb-4 text-base text-white">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                 </p>
@@ -52,12 +51,12 @@ Areas de práctica
                     Button
                 </button>
             </div>
-            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg dark:bg-neutral-700"
-                style="background-image: url('https://media.istockphoto.com/id/1351571961/es/foto/mirando-directamente-hacia-el-horizonte-del-distrito-financiero-en-el-centro-de-londres.jpg?s=1024x1024&w=is&k=20&c=-DbOFC0tJbGvoLKvx7MHlvQ-vAup20ZGOUg_O5i5eI0=');">
-                <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
+            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg"
+                style="background-image: url('img/img-3.webp');">
+                <h5 class="mb-2 text-xl font-medium leading-tight  text-white ">
                     Card title
                 </h5>
-                <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
+                <p class="mb-4 text-base text-white ">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                 </p>
@@ -67,12 +66,12 @@ Areas de práctica
                     Button
                 </button>
             </div>
-            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg dark:bg-neutral-700"
-                style="background-image: url('https://media.istockphoto.com/id/1351571961/es/foto/mirando-directamente-hacia-el-horizonte-del-distrito-financiero-en-el-centro-de-londres.jpg?s=1024x1024&w=is&k=20&c=-DbOFC0tJbGvoLKvx7MHlvQ-vAup20ZGOUg_O5i5eI0=');">
-                <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
+            <div class="block max-w-sm rounded-lg bg-white bg-cover p-6 shadow-lg"
+                style="background-image: url('img/img-3.webp');">
+                <h5 class="mb-2 text-xl font-medium leading-tight text-white ">
                     Card title
                 </h5>
-                <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
+                <p class="mb-4 text-base text-white ">
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                 </p>

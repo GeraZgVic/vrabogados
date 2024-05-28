@@ -5,5 +5,6 @@ return [
     'link-area' => 'Áreas de Práctica',
     'link-nosotros' => 'Nosotros',
     'link-contacto' => 'Contacto',
-    'link-despacho' => 'Despachos'
+    'link-despacho' => 'Despachos',
+    'link-idioma' => 'Idioma'
 ];

@@ -35,7 +35,7 @@ Inicio
     </div>
     <div class="grid md:grid-cols-3 gap-10 my-16">
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal group-hover:text-white">
                 {{__('site/areas.areas-derecho-civil')}}
@@ -43,7 +43,7 @@ Inicio
             <p class="text-gray-500 group-hover:text-white"> {{__('site/areas.areas-derecho-descripcion')}}</p>
         </div>
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                 {{__('site/areas.areas-derecho-penal')}}
@@ -52,7 +52,7 @@ Inicio
 
         </div>
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                 {{__('site/areas.areas-derecho-laboral')}}
@@ -61,7 +61,7 @@ Inicio
 
         </div>
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                 {{__('site/areas.areas-derecho-administrativo')}}
@@ -70,7 +70,7 @@ Inicio
 
         </div>
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                 {{__('site/areas.areas-derecho-mercantil')}}
@@ -79,7 +79,7 @@ Inicio
 
         </div>
         <div
-            class="text-center border-double rounded-md border-4 border-sky-500 py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
+            class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
             <h2
                 class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
                 {{__('site/areas.areas-derecho-tributario')}}

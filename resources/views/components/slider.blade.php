@@ -1,37 +1,37 @@
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
+<div id="default-carousel" class="relative w-full" data-carousel="slide" data-carousel-interval="5000">
     <!-- Carousel wrapper -->
     <div class="relative  overflow-hidden h-[70vh] md:h-[80vh]">
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
             <img src="{{ asset('img/img-1.jpg') }}"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-60 p-4 text-center">
                 <div class="flex flex-col items-center justify-center h-full m-auto px-8">
                     <h1
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-extrabold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
+                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
                         Viveros Romero Abogados<span
-                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h1>
+                            class="underline underline-offset-3 decoration-8 decoration-gray-400 "> S.C.</span></h1>
                     <p
                         class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
                         long-term value and drive economic growth.</p>
                     <a href="#"
-                        class="capitalize mt-8 px-6 py-4 bg-blue-500 transition duration-300 ease-in-out hover:bg-blue-600 text-white hover:ring-2 ring-blue-500/80 rounded-full">más información</a>
+                        class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-full">más información</a>
                 </div>
             </div>
         </div>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('img/img-1.jpg') }}"
+        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="{{ asset('img/img-2.webp') }}"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
-            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-60 p-4 text-center">
+            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-30 p-4 text-center">
                 <div class="flex flex-col items-center justify-center h-full m-auto px-8">
-                    <h1
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-extrabold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
+                    <h2
+                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
                         Viveros Romero Abogados<span
-                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h1>
+                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h2>
                     <p
                         class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
@@ -41,16 +41,16 @@
                 </div>
             </div>
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('img/img-1.jpg') }}"
+        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="{{ asset('img/img-3.webp') }}"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
-            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-60 p-4 text-center">
+            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-30 p-4 text-center">
                 <div class="flex flex-col items-center justify-center h-full m-auto px-8">
-                    <h1
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-extrabold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
+                    <h2
+                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
                         Viveros Romero Abogados<span
-                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h1>
+                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h2>
                     <p
                         class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Here at Flowbite we focus on markets where technology, innovation, and capital can unlock

@@ -1,7 +1,7 @@
-<div class="flex justify-between gap-x-4 px-2 py-2">
+<div class="flex justify-between gap-x-4 px-2 py-0.5">
     <div class="flex flex-col md:flex-row gap-2">
         <a href="#"
-            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice text-xs md:text-base">
+            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal text-xs md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-outgoing" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1e40af" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -14,7 +14,7 @@
             +2722486069
         </a>
         <a href="mailto:vrabogados@siccoms.com"
-            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal animate-bounce animate-thrice text-xs md:text-base">
+            class="flex items-center justify-center gap-x-1 text-blue-900 hover:text-blue-950 work-sans-normal text-xs md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1e40af" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -33,16 +33,10 @@
             @if ($lang != App::getLocale())
                 <a href="{{ route('lang', $lang) }}" class="flex items-center justify-center px-3">
                     <span
-                        class="text-gray-800 font-semibold mr-2 work-sans-link text-xs md:text-base">{{ strtoupper($lang) }}</span>
-                    @if ($lang == 'es')
-                        <img class="w-8 h-8" src="{{ asset('img/mx.png') }}" alt="Logo de México">
-                    @elseif($lang == 'en')
-                        <img class="w-8 h-8" src="{{ asset('img/eeuu.png') }}" alt="Logo de EEUU">
-                    @endif
+                        class="text-gray-800 font-semibold mr-2 work-sans-link text-xs md:text-base">{{ strtoupper($language) }}</span>
                 </a>
             @endif
         @endforeach
     </div>
-
 
 </div>

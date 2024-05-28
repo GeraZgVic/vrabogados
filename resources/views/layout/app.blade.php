@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- Tipografía --}}
-    <title>@yield('titulo')</title>
+    <title>Viveros Romero | @yield('titulo')</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -53,7 +53,7 @@
     @if (Request::is('/'))
         <x-header />
     @else
-        <x-banner />
+        {{-- <x-banner /> --}}
         <x-navbar />
     @endif
     {{-- Contenido principal --}}
