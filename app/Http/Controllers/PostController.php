@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
-    public function index() 
+    public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->get();
+        $posts = Post::orderBy('created_at', 'desc')->paginate(2);
 
         return view('posts.ver-posts', [
             'posts' => $posts
@@ -55,7 +55,7 @@ class PostController extends Controller
             // Generar un nombre único para la imagen
             $nombreImagen = Str::uuid() . "." . $imagen->extension();
 
-              // Crear una instancia de Intervention Image
+            // Crear una instancia de Intervention Image
             $imagenServidor = Image::make($imagen);
 
             // Redimensionar o manipular la imagen según sea necesario
@@ -75,16 +75,19 @@ class PostController extends Controller
 
             // Retornar la respuesta en formato JSON
             return response()->json(['image' => $nombreImagen], 200);
-            
         } catch (\Exception $e) {
-           // Manejar cualquier excepción y retornar una respuesta de error
-           return response()->json(['error' => 'Error al subir la imagen', 'details' => $e->getMessage()], 500);
+            // Manejar cualquier excepción y retornar una respuesta de error
+            return response()->json(['error' => 'Error al subir la imagen', 'details' => $e->getMessage()], 500);
         }
-
     }
 
-    public function show(Post $post)
+    public function show($id)
     {
+        $post =  Post::find($id);
+
+        return view('posts.show', [
+            'post' => $post
+        ]);
     }
 
     public function edit(Post $post)

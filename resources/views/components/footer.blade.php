@@ -1,21 +1,16 @@
 <div class="h-full">
     <div class=" grid sm:grid-cols-2 px-8 -mb-10">
         <div class="bg-indigo-500 text-white p-7 ">
-            <h3 class="text-2xl">Need Legal Services?</h3>
-            <p class="text-lg">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                there
-                live the
-                blind texts.</p>
+            <h3 class="text-2xl">¿Necesita servicios legales?</h3>
+            <p class="text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae dicta maiores exercitationem commodi, debitis cupiditate molestias quas atque</p>
         </div>
         <div class="bg-indigo-700 text-white p-7">
-            <h3 class="text-2xl">Call now (+1) 123-456-7890</h3>
-            <p class="text-lg">Email us at <span class="text-sky-500">info@yourwebsite.com</p></span>
-            <p class="mt-3 text-lg">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia,
-                there live the blind texts.</p>
+            <h3 class="text-2xl">Llama ahora (+1) 123-456-7890</h3>
+            <p class="text-lg">Email us at <span class="text-sky-500">correo@correo.com</p></span>
+            <p class="mt-3 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati aut illo exercitationem, maiores quae rerum et quo</p>
         </div>
     </div>
-    <div class="bg-slate-900 px-8 py-8 flex flex-col justify-center">
+    <div class="bg-black  shadow-md bg-opacity-90 px-8 py-8 flex flex-col justify-center">
         <div class="grid md:grid-cols-1 lg:grid-cols-4 md:gap-x-6 mt-10">
             {{-- LOGO - PRIMER COLUMNA --}}
             <div class="flex flex-col items-center mb-10 md:mb-0">

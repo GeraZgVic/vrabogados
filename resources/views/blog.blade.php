@@ -32,7 +32,7 @@
                                         <div class="flex items-center mt-4">
                                             <img class="w-10 h-10 object-cover rounded-full" src="{{ asset('uploads/' . $post->image) }}" alt="Imagen de {{ $post->title }}">
                                             <div class="ml-4">
-                                                <p class="text-gray-700 text-sm font-semibold">Jese Leos</p>
+                                                <p class="text-gray-700 text-sm font-semibold">Viveros Abogados</p>
                                                 <p class="text-gray-500 text-xs">{{ $post->created_at->format('M d, Y') }} · {{ $post->created_at->diffForHumans() }}</p>
                                             </div>
                                         </div>
@@ -50,15 +50,15 @@
                             <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
                             </svg>
-                            Tutorial
+                            Articulo
                         </span>
                         <span class="text-sm">14 days ago</span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">How to quickly deploy a static website</a></h2>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">"La Importancia de Consultar con un Abogado Comercial" </a></h2>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
-                            <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
-                            <span class="font-medium">Jese Leos</span>
+                            <img class="w-7 h-7 rounded-full" src="{{asset('img/img-2.webp')}}" alt="Viveros Abogados avatar" />
+                            <span class="font-medium">Viveros Abogados</span>
                         </div>
                         <a href="#" class="inline-flex items-center font-medium text-primary-600 hover:underline">
                             Leer más
@@ -74,15 +74,15 @@
                             <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
                             </svg>
-                            Tutorial
+                            Articulo
                         </span>
                         <span class="text-sm">14 days ago</span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">How to quickly deploy a static website</a></h2>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">Cómo un Abogado de Inmigración Puede Cambiar tu Vida</a></h2>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
-                            <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
-                            <span class="font-medium">Jese Leos</span>
+                            <img class="w-7 h-7 rounded-full" src="{{asset('img/img-2.webp')}}" alt="Viveros Abogados avatar" />
+                            <span class="font-medium">Viveros Abogados</span>
                         </div>
                         <a href="#" class="inline-flex items-center font-medium text-primary-600 hover:underline">
                             Leer más
