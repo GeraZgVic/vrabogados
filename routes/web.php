@@ -42,4 +42,7 @@ Route::get('/dashboard/ver-post', [PostController::class, 'index'])->middleware(
 Route::get('/dashboard/crear-post', [PostController::class, 'create'])->middleware('auth')->name('post.create');
 Route::post('/dashboard/crear-post', [PostController::class, 'store'])->middleware('auth')->name('post.store');
 Route::get('/dashboard/post/{id}', [PostController::class, 'show'])->middleware('auth')->name('post.show');
-Route::get('/dashboard/post/{id}/edit', [PostController::class, 'edit'])->middleware('auth')->name('post.edit');
+Route::get('/dashboard/post/{post}/edit', [PostController::class, 'edit'])->middleware('auth')->name('post.edit');  
+Route::put('/dashboard/post/{post}', [PostController::class, 'update'])->middleware('auth')->name('post.update');
+Route::delete('/dashboard/delete-post/{post}', [PostController::class, 'destroy'])->middleware('auth')->name('post.destroy');
+

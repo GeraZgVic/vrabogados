@@ -12,7 +12,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(2);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(4);
 
         return view('posts.ver-posts', [
             'posts' => $posts
@@ -92,14 +92,59 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
+        return view('posts.editar-post', [
+            'post' => $post
+        ]);
     }
 
 
     public function update(Request $request, Post $post)
     {
+        // Validar campos
+        $datos = $request->validate([
+            'title' => 'required|string',
+            'content' => 'required|string',
+            'new_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Ejemplo de reglas de validación para la imagen
+        ]);
+        
+        // Actualizar DB
+        $post->update([
+            'title' => $datos['title'],
+            'content' => $datos['content'],
+        ]);
+
+        // Verificar si se ha cargado una nueva imagen
+        if ($request->hasFile('new_image')) {
+            // Obtener el archivo de la solicitud(imagen)
+            $imagen = $request->file('new_image');
+
+            // Generar un nombre único para la imagen
+            $nombreImagen = Str::uuid() . "." . $imagen->extension();
+            // Crear una instancia de Intervention Image
+            $imagenServidor = Image::make($imagen);
+
+            // Redimensionar o manipular la imagen según sea necesario
+            $imagenServidor->fit(1000, 1000);
+
+            // Definir la ruta de almacenamiento
+            $destinationPath = public_path('uploads');
+            // Guardar la imagen en el servidor
+            $imagenPath = $destinationPath . '/' . $nombreImagen;
+            $imagenServidor->save($imagenPath);
+
+            // Asignar nuevo nombre
+            $post->image =  $nombreImagen;
+            
+            // Actualizar en DB
+            $post->save();
+        }
+
+        // Retornar la vista index
+        return redirect()->route('post.index')->with('alerta', 'Actualizado Correctamente');
     }
 
     public function destroy(Post $post)
     {
+        $post->delete();
     }
 }
