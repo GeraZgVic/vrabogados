@@ -110,7 +110,7 @@
                     x-transition:leave-start="translate-y-0 opacity-100"
                     x-transition:leave-end="translate-y-1/2 opacity-0" @click.away="open = false"
                     @keydown.escape="open = false"
-                    class="absolute right-0 w-48 py-1 bg-white rounded-md shadow-lg top-12 ring-1 ring-black ring-opacity-5 dark:bg-dark focus:outline-none"
+                    class="absolute right-0 w-48 py-1 bg-white rounded-md shadow-lg top-12 z-10 ring-1 ring-black ring-opacity-5 dark:bg-dark focus:outline-none"
                     tabindex="-1" role="menu" aria-orientation="vertical" aria-label="User menu">
                     <form action="{{ route('logout') }}" method="POST" class="w-full">
                         @csrf
@@ -129,7 +129,7 @@
             x-transition:leave="transition duration-300 ease-in-out transform sm:duration-500"
             x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="-translate-y-full opacity-0"
             x-show="isMobileSubMenuOpen" @click.away="isMobileSubMenuOpen = false"
-            class="absolute flex items-center p-4 bg-white rounded-md shadow-lg dark:bg-darker top-16 inset-x-4 md:hidden"
+            class="absolute flex items-center p-4 bg-white rounded-md shadow-lg dark:bg-darker top-16 inset-x-4 md:hidden z-10"
             aria-label="Secondary">
             <div class="space-x-2">
                 <!-- Toggle dark theme button -->
