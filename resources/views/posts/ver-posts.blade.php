@@ -4,7 +4,7 @@
 @endsection
 
 @section('contenido')
-    <section class="my-4 rounded-md bg-slate-50 dark:bg-gray-900/50 py-4">
+    <section class="my-4 rounded-md py-4">
         <div class="mx-auto lg:px-12">
             <!-- Start coding here -->
             <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">

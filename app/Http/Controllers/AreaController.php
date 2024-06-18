@@ -9,4 +9,10 @@ class AreaController extends Controller
     public function index() {
         return view('areas');
     }
+
+    public function civil() {
+
+        return view('servicios.civil');
+    }
+
 }
