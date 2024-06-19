@@ -9,11 +9,11 @@
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-60 p-4 text-center">
                 <div class="flex flex-col items-center justify-center h-full m-auto px-8">
                     <h1
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
+                        class="z-10 mb-4 leading-none tracking-tight text-white animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out titulos italic">
                         Viveros Romero Abogados<span
                             class="underline underline-offset-3 decoration-8 decoration-gray-400 "> S.C.</span></h1>
                     <p
-                        class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
+                        class="parrafo-cuerpo text-gray-300 animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
                         long-term value and drive economic growth.</p>
                     <a href="#"

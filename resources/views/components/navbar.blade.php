@@ -50,7 +50,7 @@
                 <img class="md:h-14 w-full" src="{{ asset('img/logo_blanco.png') }}" alt="Logo de Vrabogados">
             </a>
         </div>
-        <div class="flex text-gray-100 work-sans-link tracking-[.15em] text-base items-center ">
+        <div class="flex text-gray-100  font-work-sans uppercase tracking-[.15em] text-base items-center ">
 
             <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'" />
             <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'" />
@@ -62,7 +62,7 @@
                     :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
                     <!-- Dropdown Toggle Button -->
                     <button @mouseover="open = true" class="flex items-center">
-                        <span class="work-sans-link text-sm">{{ __('site/navbar.link-despacho') }}</span>
+                        <span class=" font-work-sans uppercase text-sm">{{ __('site/navbar.link-despacho') }}</span>
                         <span :class="open = !open ? '' : '-rotate-180'"
                             class="transition-transform duration-500 transform">
                             <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -97,7 +97,7 @@
                     :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
                     <!-- Dropdown Toggle Button -->
                     <button @mouseover="open = true" class="flex items-center">
-                        <span class="work-sans-link text-sm">{{ __('site/navbar.link-idioma') }}</span>
+                        <span class=" font-work-sans uppercase text-sm">{{ __('site/navbar.link-idioma') }}</span>
                         <span :class="open = !open ? '' : '-rotate-180'"
                             class="transition-transform duration-500 transform">
                             <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
