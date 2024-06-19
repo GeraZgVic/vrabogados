@@ -7,11 +7,11 @@ Areas de práctica
 <div class="flex h-screen items-center justify-center">
     <div class="font-inter antialiased relative h-full w-full bg-cover bg-center bg-fixed"
         style="background-image: url('https://media.istockphoto.com/id/1590137991/es/foto/asesor%C3%ADa-legal-presenta-al-cliente-un-contrato-firmado-con-martillo-y-derecho-legal-concepto.jpg?s=1024x1024&w=is&k=20&c=h8AUZUejDCgJjjniV4y2ejWgK2gVuERe6BB0KG9LheM=');">
-        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-65 backdrop-blur-sm">
             <div class="p-6 text-white">
-                <h1 class="pb-4 text-3xl md:text-4xl lg:text-6xl mb-2 md:m-0 text-white text-center animate-fade-up">
+                <h1 class="pb-4 t mb-2 md:m-0 text-white text-center animate-fade-up titulos">
                     Servicios Legales</h1>
-                <p class="mb-8 text-lg italic font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-32 animate-bottom">
+                <p class="mb-8 text-gray-300 sm:px-16 lg:px-32 animate-bottom parrafo-cuerpo">
                     ¿Necesitas resolver un problema legal? En Vivero Romero, ofrecemos soluciones expertas
                     en todas las áreas del derecho. Nuestro equipo de abogados especializados está listo para ayudarte.
                 </p>
@@ -34,7 +34,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO CIVIL</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -55,7 +55,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO PENAL</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -76,7 +76,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO LABORAL</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -97,7 +97,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO ADMINISTRATIVO</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -118,7 +118,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO MERCANTIL</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho mercantil</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -139,7 +139,7 @@ Areas de práctica
             </div>
             <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">DERECHO TRIBUTARIO</h1>
+                <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho tributario</h1>
                 <p
                     class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
@@ -149,41 +149,41 @@ Areas de práctica
             </div>
         </div>
     </div>
-</div>
+</div> 
 
-<div class="relative flex flex-col justify-center overflow-hidden bg-red-950 py-6 sm:py-12">
-    <div class="w-full ">
-        <div class="group grid w-full grid-cols-2">
-            <div class="pl-16 relative flex items-end flex-col ">
-                <p class="font-bold text-sm flex mt-2 mb-8 items-center gap-2" href="">
-                    <span class="text-white">Informate</span>
+<div class="bg-red-950 py-6 sm:py-12 mb-8">
+    <div class="w-full container mx-auto px-4">
+        <div class="group grid w-full lg:grid-cols-2">
+            <div class="flex flex-col items-center lg:items-end">
+                <p class="font-bold text-sm flex mt-2 mb-8 items-center gap-2 order-2 lg:order-1" href="">
+                    <span class="text-white text-center text-2xl">Informate</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#fff" class="w-6 h-6">
+                        stroke="#fff" class="w-6 h-6 hidden lg:block">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                 </p>
-                <div class="rounded-xl overflow-hidden">
+                <div class="rounded-xl overflow-hidden order-1 lg:order-2">
                     <img src="https://img.freepik.com/fotos-premium/grupo-punos-mapa-mundo-detras-union-contra-cancer_1136993-81.jpg?w=740"
                         alt="">
                 </div>
             </div>
             <div>
-                <div class="pl-12">
-                    <h2 class="text-white text-2xl">Experticia en Gestión de Crisis</h2>
-                    <p class="peer mb-6 text-white">
+                <div class="pl-12 space-y-6">
+                    <h2 class="text-gray-100 subtitulos">Experticia en Gestión de Crisis</h2>
+                    <p class="text-gray-200">
                         Simply Air Conditioning London are fixed system heating and air conditioning installation
                         specialists. Because we’ve tested all heating and air conditioning unit manufacturers before
                         using them there are no hidden surprises for our customers. We only supply air conditioning
                         units from the leading manufacturers so any system we fit will be of the highest quality. We
                         also thoroughly test every type of unit before supplying..
                     </p>
-                    <p class="mb-6 text-white">
+                    <p class="text-gray-200">
                         We also provide tailored Air Conditioning installation packages. The Air Conditioning systems we
                         install are all inverter driven therefor are energy efficient, stylish & silent both providing
                         cooling and heating. At Zero Degree AC Limited we only use the best brands.
                     </p>
-                    <h3 class="mb-4 font-semibold text-xl text-white">Conditioning installation packages</h3>
-                    <ul role="list" class="marker:text-white list-disc pl-5 space-y-3 text-white">
+                    <h3 class="font-semibold text-xl text-gray-100">Conditioning installation packages</h3>
+                    <ul role="list" class="marker:text-amber-400 list-disc pl-5 space-y-3 text-white">
                         <li>5 cups chopped Porcini mushrooms</li>
                         <li>1/2 cup of olive oil</li>
                         <li>3lb of celery</li>
