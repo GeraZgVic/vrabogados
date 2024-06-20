@@ -2,9 +2,8 @@
     class=" order-1 lg:order-2  lg:w-1/3 mt-4 md:mt-0 space-y-2 rounded-md h-1/2 md:h-full max-h-[120vh] overflow-y-auto border p-1">
     <div class="sticky top-0 bg-white">
         <h2
-            class="mb-4 text-lg font-bold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl px-2 py-1 text-center work-sans-link">
-            Artículos que todo mexicano debe
-            saber</h2>
+            class="mb-4 leading-none tracking-tight text-gray-900  px-2 py-2 text-center text-xl md:text-2xl lg:text-3xl font-semibold font-dmserif">
+            Artículos más buscados</h2>
         {{-- Search --}}
         <div class="max-w-md mx-auto">
             <label for="buscador" class="mb-2 text-sm font-medium text-gray-900 sr-only">Buscar</label>
@@ -47,7 +46,7 @@
                     <span class="font-medium">Viveros Abogados</span>
                 </div>
                 <a target="_blank" href="{{$article->url}}" class="inline-flex items-center font-medium text-primary-600 hover:underline">
-                    Leer más
+                    Ver articulo
                     <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"

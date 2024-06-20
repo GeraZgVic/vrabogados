@@ -11,9 +11,9 @@
             <span
                 class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">Article</span>
             <h1
-                class="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 leading-none tracking-tight text-gray-900">
+                class="mb-4 leading-none tracking-tight text-gray-900 titulos">
                 {{ $post->title }}</h1>
-            <p class="mt-2 text-lg">{{ $post->content }}</p>
+            <p class="mt-2 text-lg parrafo-cuerpo">{{ $post->content }}</p>
         </div>
         <div class="flex items-center mt-4">
             <img class="w-10 h-10 object-cover rounded-full" src="{{ asset('uploads/' . $post->image) }}"

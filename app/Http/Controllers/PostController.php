@@ -81,9 +81,12 @@ class PostController extends Controller
         }
     }
 
-    public function show($id)
+    public function show($id, $title)
     {
-        $post =  Post::find($id);
+        // Busca el post por el ID y el título exacto en la base de datos
+        $post = Post::where('id', $id)
+            ->whereRaw('LOWER(title) = ?', [strtolower($title)])
+            ->firstOrFail();
 
         return view('posts.show', [
             'post' => $post
@@ -106,7 +109,7 @@ class PostController extends Controller
             'content' => 'required|string',
             'new_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Ejemplo de reglas de validación para la imagen
         ]);
-        
+
         // Actualizar DB
         $post->update([
             'title' => $datos['title'],
@@ -134,7 +137,7 @@ class PostController extends Controller
 
             // Asignar nuevo nombre
             $post->image =  $nombreImagen;
-            
+
             // Actualizar en DB
             $post->save();
         }

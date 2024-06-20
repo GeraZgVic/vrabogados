@@ -5,8 +5,8 @@
 @section('contenido')
     <div class="container mx-auto px-4 lg:px-10 my-4">
         <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-            <h1 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 work-sans-extrabold">Our Blog</h1>
-            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400 work-sans-normal">We use an agile approach to test assumptions
+            <h1 class="mb-4 tracking-tight text-gray-900 titulos">Our Blog</h1>
+            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400 parrafo-cuerpo">We use an agile approach to test assumptions
                 and connect with the needs of your audience early and often.</p>
         </div>
         <div class="bg-white space-y-12">
@@ -23,9 +23,9 @@
                                     <div class="p-6">
                                         <span
                                             class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">Article</span>
-                                        <h2 class="mt-2 text-xl font-semibold">{{ $post->title }}</h2>
-                                        <p class="mt-2 text-gray-600 line-clamp-3">{{ $post->content }}</p>
-                                        <a href="{{route('post.show', $post->id)}}"
+                                        <h2 class="mt-2 text-xl font-semibold font-work-sans">{{ $post->title }}</h2>
+                                        <p class="mt-2 text-gray-600 line-clamp-3 font-work-sans">{{ $post->content }}</p>
+                                        <a href="{{ route('post.show', ['id' => $post->id, 'title' => $post->title]) }}"
                                             class="inline-flex items-center font-medium text-primary-600 hover:underline">
                                             Leer más
                                             <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"

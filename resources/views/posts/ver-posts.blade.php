@@ -97,7 +97,7 @@
                                     <td class="px-4 py-3">{{ $post->title }}</td>
                                     <td class="px-4 py-3">{{ $post->created_at->format('M d, Y') }}</td>
                                     <td class="px-4 py-3 flex items-center justify-center gap-x-1">
-                                        <a href="{{ route('post.show', $post->id) }}">
+                                        <a href="{{ route('post.show', [$post->id, $post->title]) }}">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 class="icon icon-tabler icon-tabler-eye-plus" width="25" height="25"
                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
@@ -151,7 +151,6 @@
 @endsection
 
 @push('script')
-@push('script')
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     function confirmDelete(id) {
@@ -162,6 +161,7 @@
             showCancelButton: true,
             confirmButtonColor: '#d33',
             cancelButtonColor: '#3085d6',
+            cancelButtonText: 'Cancelar',
             confirmButtonText: 'Sí, eliminarlo'
         }).then((result) => {
             if (result.isConfirmed) {
@@ -181,6 +181,5 @@
         });
     }
 </script>
-@endpush
 @endpush
 
