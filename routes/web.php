@@ -46,11 +46,14 @@ Route::get('/dashboard/ver-post', [PostController::class, 'index'])->middleware(
 Route::get('/dashboard/crear-post', [PostController::class, 'create'])->middleware('auth')->name('post.create');
 Route::post('/dashboard/crear-post', [PostController::class, 'store'])->middleware('auth')->name('post.store');
 
-Route::get('/dashboard/ver-articulos', [ArticleController::class, 'index'])->name('articulos.index');
-Route::get('/dashboard/agregar-articulos', [ArticleController::class, 'create'])->name('articulos.create');
-Route::post('/dashboard/agregar-articulos', [ArticleController::class, 'store'])->name('articulos.store');
+Route::get('/dashboard/ver-articulos', [ArticleController::class, 'index'])->middleware('auth')->name('articulos.index');
+Route::get('/dashboard/agregar-articulos', [ArticleController::class, 'create'])->middleware('auth')->name('articulos.create');
+Route::post('/dashboard/agregar-articulos', [ArticleController::class, 'store'])->middleware('auth')->name('articulos.store');
+Route::get('/dashboard/articulo/{article}/edit', [ArticleController::class, 'edit'])->middleware('auth')->name('articulos.edit');
+Route::put('/dashboard/articulo/{article}', [ArticleController::class, 'update'])->middleware('auth')->name('articulos.update');
+Route::delete('/dashboard/delete-articulo/{article}', [ArticleController::class, 'destroy'])->middleware('auth')->name('articulos.destroy');
 
-Route::get('/dashboard/post/{id}', [PostController::class, 'show'])->name('post.show');
+Route::get('/post/{id}/{title}', [PostController::class, 'show'])->name('post.show');
 Route::get('/dashboard/post/{post}/edit', [PostController::class, 'edit'])->middleware('auth')->name('post.edit');  
 Route::put('/dashboard/post/{post}', [PostController::class, 'update'])->middleware('auth')->name('post.update');
 Route::delete('/dashboard/delete-post/{post}', [PostController::class, 'destroy'])->middleware('auth')->name('post.destroy');
