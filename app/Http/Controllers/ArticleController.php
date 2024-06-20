@@ -35,4 +35,33 @@ class ArticleController extends Controller
 
         return redirect()->route('articulos.index');
     }
+
+    public function edit(Article $article)
+    {
+        return view('articulos.editar-article', [
+            'article' => $article
+        ]);
+    }
+
+    public function update(Request $request, Article $article) 
+    {
+        // Validar campos
+        $datos = $request->validate([
+            'title' => 'required|max:70',
+            'url' => 'required'
+        ]);
+
+        // Actualizar campos
+        $article->update([
+            'title' => $datos['title'],
+            'url' => $datos['url']
+        ]);
+
+        // Redirigir a vista index
+        return redirect()->route('articulos.index')->with('alerta', 'Actualizado Correctamente');
+    }
+
+    public function destroy(Article $article) {
+        $article->delete();
+    }
 }
