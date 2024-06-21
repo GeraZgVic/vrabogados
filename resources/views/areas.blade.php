@@ -23,7 +23,7 @@ Areas de práctica
 <div class="flex min-h-screen items-center justify-center bg-neutral-800">
     <div class="mt-5 mb-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/vista-superior-elementos-orientacion-profesional-jueces_23-2149443471.jpg?t=st=1718736535~exp=1718740135~hmac=831e13b79f44b14ecf5695531ba24b34330f34de79dba9e6b57a63f6d459f206&w=360"
@@ -43,7 +43,7 @@ Areas de práctica
             </div>
         </div>
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/corte-martillo-libros-juicio-concepto-ley_144627-30453.jpg?t=st=1718736475~exp=1718740075~hmac=83fc57a1463d3eccbea37d72769cf20ec580e6313dd9c6aaec5293650587ef01&w=360"
@@ -63,7 +63,7 @@ Areas de práctica
             </div>
         </div>
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/concepto-collage-opresion-dictadura_23-2149711439.jpg?w=360&t=st=1718736424~exp=1718737024~hmac=de7d44fea01cdd0859b7db12dbf60a70d63993f4c5745d45a9bc4feb203b8e7d"
@@ -83,7 +83,7 @@ Areas de práctica
             </div>
         </div>
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/abogado-maduro-serio-que-lee-libro-ley-tribunal_23-2147898517.jpg?t=st=1718738180~exp=1718741780~hmac=475595a60a34fecca1c0243be4147213a5cf02d0323dbb674917e9173d252f80&w=360"
@@ -103,7 +103,7 @@ Areas de práctica
             </div>
         </div>
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/detalles-columna-marmol-gris-edificio_1359-886.jpg?t=st=1718738255~exp=1718741855~hmac=c4d5abb36e226f87e5768f173a6a0ab0d0c1c338f23c20aad562498332c15821&w=740"
@@ -123,7 +123,7 @@ Areas de práctica
             </div>
         </div>
         <div
-            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src="https://img.freepik.com/foto-gratis/bodegon-monedas-dolar-escala_23-2150794349.jpg?t=st=1718738335~exp=1718741935~hmac=602f3bca70c7387f9029f7fe42396830cd49144b0312871b32faf1f54ae1540e&w=360"
