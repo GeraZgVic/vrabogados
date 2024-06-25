@@ -1,5 +1,5 @@
 <nav x-data="accordion(6)"
-    class="sticky top-0 z-40 w-full px-1 py-2 tracking-wide bg-gradient-to-r bg-black  shadow-md bg-opacity-90">
+    class="sticky top-0 z-40 w-full px-1 py-2 tracking-wide bg-gradient-to-r bg-black  shadow-md bg-opacity-95">
     <!-- Toggle button -->
     <div @click="handleClick()" x-data="{ open: false }" class="block text-white cursor-pointer lg:hidden">
         <button @click="open = ! open" class="w-6 h-6 text-lg">
@@ -47,7 +47,7 @@
     <div class="hidden w-full lg:flex lg:items-center lg:justify-between">
         <div>
             <a href="{{ route('home.index') }}">
-                <img class="md:h-14 w-full" src="{{ asset('img/logo_blanco.png') }}" alt="Logo de Vrabogados">
+                <img class="md:h-[4rem] w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
             </a>
         </div>
         <div class="flex text-gray-100  font-work-sans uppercase tracking-[.15em] text-base items-center ">

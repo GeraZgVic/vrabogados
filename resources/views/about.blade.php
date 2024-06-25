@@ -11,7 +11,7 @@
             <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
                 <div>
                     <h1 class="font-dmserif pb-4 t mb-2 md:m-0 text-black animate-fade-up titulos">Nosotros <span
-                            class="titulos text-indigo-600">VR</span></h1>
+                            class="titulos text-blue-600">VR</span></h1>
                     <p class="parrafo-cuerpo">En nuestra firma legal, nos dedicamos a ofrecer
                         representación legal sólida y efectiva, respaldada por años de experiencia y un compromiso
                         inquebrantable con nuestros clientes para alcanzar los mejores resultados en cada situación legal
