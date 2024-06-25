@@ -10,7 +10,8 @@ export default {
       fontFamily: {
         'dmserif': ['DM Serif', 'serif'],
         'com': ['Comfortaa', 'cursive'],
-        'work-sans' : ['Work Sans', 'sans-serif']
+        'work-sans' : ['Work Sans', 'sans-serif'],
+        'raleway' : ['Raleway', 'sans-serif']
       }
     },
   },
