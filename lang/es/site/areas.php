@@ -1,12 +1,12 @@
 <?php
 return [
-    'areas-servicios' => 'NUESTROS SERVICIOS',
-    'areas-derecho-civil' => 'DERECHO CIVIL',
-    'areas-derecho-penal' => 'DERECHO PENAL',
-    'areas-derecho-laboral' => 'DERECHO LABORAL',
-    'areas-derecho-administrativo' => 'DERECHO ADMINISTRATIVO',
-    'areas-derecho-mercantil' => 'DERECHO MERCANTIL',
-    'areas-derecho-tributario' => 'DERECHO TRIBUTARIO',
+    'areas-servicios' => 'Nuestros Servicios',
+    'areas-derecho-civil' => 'Derecho Civil',
+    'areas-derecho-penal' => 'Derecho Penal',
+    'areas-derecho-laboral' => 'Derecho Laboral',
+    'areas-derecho-administrativo' => 'Derecho Administrativo',
+    'areas-derecho-mercantil' => 'Derecho Mercantil',
+    'areas-derecho-tributario' => 'Derecho Tributario',
     'areas-derecho-descripcion' => 'Incluso el todopoderoso Punto no tiene control sobre los textos ciegos; es una vida casi ortográfica.',
 
     
