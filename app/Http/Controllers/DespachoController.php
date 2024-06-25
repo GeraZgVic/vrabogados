@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 class DespachoController extends Controller
 {
     public function cdmx() {
-        return  'Despachos';
+        return view('despachos.cdmx');
     }
     public function guadalajara() {
-        return  'Despachos';
+        return view('despachos.guadalajara');
     }
 
     public function vhsa() {
-        return 'Desapchos';
+        return view('despachos.vhsa');
     }
 }
