@@ -5,88 +5,129 @@
 @endsection
 
 @section('contenido')
-    <div class="container m-auto px-8 mt-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-8">
-            <div class="seccion">
-                <img class="rounded-md" loading="lazy" src="{{ asset('img/img-2.webp') }}" alt="Vrabogados">
+    <div class="md:mx-auto px-0 md:px-8 mt-4">
+        <div class="container mx-auto my-8">
+            <div class="bg-gray-700 text-white p-8 md:rounded-t-lg">
+                <h2 class="text-4xl font-bold">Donde hay sociedad, hay derecho.
+                </h2>
+                {{-- Marco Tulio Cicerón --}}
+                <p class="mt-2 text-xl">- Cicerón</p>
             </div>
-            <div class="mt-4 space-y-6">
-                <h2 class="text-3xl font-semibold">{{ __('site/inicio.welcome') }}</h2>
-                <p>Lejos, muy lejos, detrás de las montañas de palabras, lejos de los países Vokalia y Consonantia, viven
-                    los textos ciegos. Lejos de los países Vokalia y Consonantia, viven los textos ciegos.</p>
-                <div class="mt-6">
-                    <a href="#"
-                        class="px-6 py-2 bg-blue-500 transition duration-300 ease-in-out hover:bg-blue-600 hover:ring-2 ring-blue-500/80 text-white rounded-full">Leer
-                        más</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="col-span-1 mt-6 container mx-auto px-4 flex flex-col">
+                    <div class="lg:order-1 order-2 space-y-3">
+                        <p class="text-gray-700 parrafo-cuerpo">
+                            Contamos con socios, asociados y asesores con una amplia experiencia y profesionalismo que
+                            combinan sus servicios de litigio profesional en diversos sectores como el empresarial,
+                            petrolero, partidos políticos, y banca bursátil. Además, muchos de nuestros abogados
+                            imparten cátedra en diversas universidades y escuelas de derecho más prestigiosas del país.
+                        </p>
+                        <p class="text-gray-700 parrafo-cuerpo">
+                            En Viveros Romero Abogados S.C. buscamos ser sus doctores legales de cabecera a través de
+                            convenios comerciales con dependencias de gobierno y organizaciones de iniciativa privada,
+                            ofreciendo beneficios para sus colaboradores y socios.
+                        </p>
+                        <p class="text-gray-700 parrafo-cuerpo">
+                            Obtener resultados favorables para nuestros clientes es una marca indeleble que nos
+                            caracteriza como profesionales y de gran prestigio. Enviamos un cordial saludo esperando
+                            poder estrechar relaciones con su representada y compartir éxitos y beneficios con, y para
+                            sus socios.
+                        </p>
+                    </div>
+                    <img class="rounded-lg shadow-md lg:order-2 order-1 my-4 lg:my-10" loading="lazy"
+                        src="{{ asset('img/img-1.jpg') }}" alt="Vrabogados">
+                </div>
+                <div class="col-span-1 bg-gray-500 p-4 shadow-md md:rounded-b-md">
+                    <img class="rounded-lg shadow-md lg:-mt-16" loading="lazy" src="{{ asset('img/img-2.webp') }}"
+                        alt="Vrabogados">
+                    <div class="mt-6 container mx-auto px-4">
+                        <h2 class="text-2xl capitalize font-semibold mb-4 text-white">Qué esperar</h2>
+                        <p class="text-gray-100 mb-4 parrafo-cuerpo">
+                            Viveros Romero Abogados S.C. es una firma con más de 70 años de experiencia compartida en el
+                            área contenciosa de diversas ramas del derecho. Contamos con una amplia experiencia en:
+                        </p>
+                        <ul class="max-w-md space-y-1 text-gray-100 list-inside">
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho de Amparo
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Civil
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Administrativo
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Mercantil
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Fiscal
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Penal
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Constitucional
+                            </li>
+                            <li class="flex items-center parrafo-cuerpo">
+                                <svg class="w-3.5 h-3.5 me-2 text-green-400 flex-shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                Derecho Laboral
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        {{-- CARDS --}}
-        <div class="container m-auto px-8 mt-4 flex flex-col justify-center text-center">
-            <h2
-                class="text-3xl font-semibold bg-gradient-to-r  from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text ">
+
+
+        {{-- Cards --}}
+        <div class="container m-auto px-8 mt-0 my-10 flex flex-col justify-center text-center">
+            <h2 class="subtitulos">
                 {{ __('site/areas.areas-servicios') }}
             </h2>
         </div>
-        {{-- <div class="grid md:grid-cols-3 gap-10 my-16">
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-civil') }}
-                </h2>
-                <p class="text-gray-500 group-hover:text-white"> {{ __('site/areas.areas-derecho-descripcion') }}</p>
-            </div>
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-penal') }}
-                </h2>
-                <p class="text-gray-500 group-hover:text-white">{{ __('site/areas.areas-derecho-descripcion') }}</p>
-
-            </div>
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-laboral') }}
-                </h2>
-                <p class="text-gray-500 group-hover:text-white">{{ __('site/areas.areas-derecho-descripcion') }}</p>
-
-            </div>
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-administrativo') }}
-                </h2>
-                <p class="text-gray-500 group-hover:text-white">{{ __('site/areas.areas-derecho-descripcion') }}</p>
-
-            </div>
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-mercantil') }}
-                </h2>
-                <p class="text-gray-500 group-hover:text-white">{{ __('site/areas.areas-derecho-descripcion') }}</p>
-
-            </div>
-            <div
-                class="text-center  rounded-md  py-12 px-8 space-y-2 transition ease-in-out duration-500 hover:bg-indigo-600 group">
-                <h2
-                    class="uppercase text-2xl bg-gradient-to-r from-blue-950 via-blue-800 to-blue-950 inline-block text-transparent bg-clip-text work-sans-normal  group-hover:text-white">
-                    {{ __('site/areas.areas-derecho-tributario') }}
-
-                </h2>
-                <p class="text-gray-500 group-hover:text-white">{{ __('site/areas.areas-derecho-descripcion') }}</p>
-
-            </div>
-        </div> --}}
-        <div class="flex min-h-screen items-center justify-center">
-            <div class="mt-5 mb-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div class="flex items-center justify-center mb-10">
+            <div class="mb-8 grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                 <div
                     class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
                     <div class="h-96 w-72">
@@ -104,7 +145,8 @@
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
                         <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver Más</button>
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</button>
                     </div>
                 </div>
                 <div
@@ -124,7 +166,8 @@
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
                         <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver Más</button>
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</button>
                     </div>
                 </div>
                 <div
@@ -144,30 +187,65 @@
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
                         <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver Más</button>
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</button>
+                    </div>
+                </div>
+                <div
+                    class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-96 w-72">
+                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                            src="https://img.freepik.com/foto-gratis/abogado-maduro-serio-que-lee-libro-ley-tribunal_23-2147898517.jpg?t=st=1718738180~exp=1718741780~hmac=475595a60a34fecca1c0243be4147213a5cf02d0323dbb674917e9173d252f80&w=360"
+                            alt="" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h1>
+                        <p
+                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                        <button
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</button>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="flex justify-end mb-3 px-3">
+            <a href="{{ route('area.index') }}"
+                class="w-full md:w-auto px-5 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-500/80 rounded-full">Ver
+                más</a>
         </div>
     </div>
 
 
     <div
-        class="h-[85vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
+        class="h-[90vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
         <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
-            <h2 class="md:text-5xl text-3xl">Far far away, behind the word <br> mountains</h2>
-            <p class="text-lg md:text-2xl text-gray-400">Far far away, behind the word mountains, far from the <br>
+            <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold font-raleway">Far far away, behind the word <br>
+                mountains</h2>
+            <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300 ">Far far away, behind the
+                word mountains, far from the <br>
                 countries Vokalia and Consonantia, there live the blind
                 texts.</p>
             <div>
                 <a href="#"
-                    class="uppercase px-6 py-4 bg-blue-500 transition duration-300 ease-in-out hover:bg-blue-600 text-white hover:ring-2 ring-blue-500/80 rounded-full">consultar</a>
+                    class="uppercase px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-500/80 rounded-full">consultar</a>
             </div>
         </div>
     </div>
-
-
-    <section>
+    <section class="container m-auto px-4 md:px-8">
+        <h2 class="text-center subtitulos">Nuestros Articulos</h2>
+        <div class="inline-flex items-center justify-center w-full">
+            <hr class="w-[90%] h-1 my-8 bg-gray-200 border-0 rounded">
+            <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2">
+                <h3 class="font-bold text-xl font-dmserif">VR</h3>
+            </div>
+        </div>
         <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
             <div class="flex flex-col w-full" x-data="{
                 skip: 1,
@@ -224,7 +302,7 @@
                     <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
                     <div class="inline-flex items-center space-x-2 lg:px-2">
                         <button
-                            class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400"
+                            class="flex items-center text-white bg-gray-500 rounded-full hover:bg-gray-600 size-8 focus:bg-gray-400"
                             :class="{ 'opacity-50 ': atBeginning }" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0"
                             x-on:click="prev" tabindex="0">
                             <span aria-hidden="true" class="mx-auto">
@@ -237,7 +315,7 @@
                             </span><span class="sr-only">Skip to previous slide page</span>
                         </button>
                         <button
-                            class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400"
+                            class="flex items-center text-white bg-gray-500 rounded-full hover:bg-gray-600 size-8 focus:bg-gray-400"
                             :class="{ 'opacity-50 ': atEnd }" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0"
                             x-on:click="next" tabindex="0">
                             <span aria-hidden="true" class="mx-auto">
@@ -252,213 +330,26 @@
                     </div>
                     <ul class="flex w-full gap-3 mt-4 overflow-x-scroll text-center scrollbar-hide snap-mandatory snap-x rounded-2xl"
                         role="listbox" aria-labelledby="carousel-content-label" tabindex="0" x-ref="slider">
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1496487611274-f4cd790205d2?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Michael Andreuzza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Windstatic.com
-                                        </div>
+                        @forelse ($posts as $post)
+                            <li class="max-w-sm shadow-lg rounded-lg overflow-hidden p-2 border shrink-0 snap-start bg-gray-50"
+                                role="option" x-bind="disableNextAndPreviousButtons">
+                                <div>
+                                <a href="{{route('post.show', ['id' => $post->id,'title' => $post->title])}}">
+                                    <img class="h-72 w-full object-cover" src="{{ asset('uploads/' . $post->image) }}"
+                                        alt="Imagen de {{ $post->title }}">
+                                    </a>
+
+                                    <div class="border-t-8 border-blue-500 w-1/3 my-2 mx-auto"></div>
+                                    <div class="p-4">
+                                        <h2 class="text-gray-700 text-xl font-bold mb-2">{{ $post->title }}</h2>
+                                        <h3 class="text-gray-500 text-sm mb-4">{{ $post->created_at->format('M d, Y') }} ·
+                                            {{ $post->created_at->diffForHumans() }}</h3>
                                     </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Being in the financial industry, we were always looking for
-                                        ways to enhance our transactions' security and efficiency.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1423592707957-3b212afa6733?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Gege Piazza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Pizza Piazza
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Implementing Semplice's blockchain technology has been a
-                                        game-changer for our supply chain management.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1423592707957-3b212afa6733?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Jenson Button</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Founder of Benji and Tom
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        We were initially hesitant about integrating blockchain
-                                        technology into our existing systems.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1423592707957-3b212afa6733?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Michael Andreuzza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Windstatic.com
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Being in the financial industry, we were always looking for
-                                        ways to enhance our transactions' security and efficiency.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Gege Piazza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Pizza Piazza
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Implementing Semplice's blockchain technology has been a
-                                        game-changer for our supply chain management.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Jenson Button</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Founder of Benji and Tom
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        We were initially hesitant about integrating blockchain
-                                        technology into our existing systems.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Michael Andreuzza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Windstatic.com
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Being in the financial industry, we were always looking for
-                                        ways to enhance our transactions' security and efficiency.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Gege Piazza</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Creator of Pizza Piazza
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        Implementing Semplice's blockchain technology has been a
-                                        game-changer for our supply chain management.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
-                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option"
-                            x-bind="disableNextAndPreviousButtons">
-                            <figure
-                                class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                <figcaption class="relative flex flex-col justify-between">
-                                    <img alt="#_"
-                                        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                        class="object-cover mx-auto rounded-full size-14 grayscale">
-                                    <div class="mt-4">
-                                        <div class="font-medium text-gray-900">Jenson Button</div>
-                                        <div class="mt-1 text-sm text-gray-500">
-                                            Founder of Benji and Tom
-                                        </div>
-                                    </div>
-                                </figcaption>
-                                <blockquote class="mt-4">
-                                    <p class="text-base font-medium text-gray-500">
-                                        We were initially hesitant about integrating blockchain
-                                        technology into our existing systems.
-                                    </p>
-                                </blockquote>
-                            </figure>
-                        </li>
+                                </div>
+                            </li>
+                        @empty
+                            <p class="text-center text-sm text-gray-400">No se encuentra ningún artículo</p>
+                        @endforelse
                     </ul>
                 </div>
             </div>
