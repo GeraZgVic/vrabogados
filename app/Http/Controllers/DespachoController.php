@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class DespachoController extends Controller
 {
+    public function index() {
+        return view('contacto');
+    }
+    
     public function cdmx() {
         return view('despachos.cdmx');
     }
