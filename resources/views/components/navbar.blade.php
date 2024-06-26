@@ -56,8 +56,9 @@
             <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'" />
             <x-link-navbar :text="'Blog'" :route="'blog.index'" />
             <x-link-navbar :text="__('site/navbar.link-nosotros')" :route="'nosotros.index'" />
+            <x-link-navbar :text="__('site/navbar.link-contacto')" :route="'contacto.index'" />
 
-            <div class="mr-3 tracking-[.15em] text-base">
+            {{-- <div class="mr-3 tracking-[.15em] text-base">
                 <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
                     :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
                     <!-- Dropdown Toggle Button -->
@@ -90,7 +91,7 @@
                     </div>
                     <!-- End Dropdown Menu -->
                 </div>
-            </div>
+            </div> --}}
 
             <div class="mr-3 tracking-[.15em] text-base">
                 <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"

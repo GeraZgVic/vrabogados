@@ -17,22 +17,9 @@
                 <div class="col-span-1 mt-6 container mx-auto px-4 flex flex-col">
                     <div class="lg:order-1 order-2 space-y-3">
                         <p class="text-gray-700 parrafo-cuerpo">
-                            Contamos con socios, asociados y asesores con una amplia experiencia y profesionalismo que
-                            combinan sus servicios de litigio profesional en diversos sectores como el empresarial,
-                            petrolero, partidos políticos, y banca bursátil. Además, muchos de nuestros abogados
-                            imparten cátedra en diversas universidades y escuelas de derecho más prestigiosas del país.
+                            Viveros Romero Abogados S.C. se destaca por su equipo de socios, asociados y asesores con amplia experiencia en sectores como empresarial, petrolero, partidos políticos, y banca bursátil. Muchos de sus abogados también son profesores en prestigiosas universidades y escuelas de derecho del país. La firma busca ser "doctores legales de cabecera" a través de convenios comerciales con entidades gubernamentales y privadas, ofreciendo beneficios a colaboradores y socios. Su compromiso con obtener resultados favorables caracteriza su prestigio profesional.
                         </p>
-                        <p class="text-gray-700 parrafo-cuerpo">
-                            En Viveros Romero Abogados S.C. buscamos ser sus doctores legales de cabecera a través de
-                            convenios comerciales con dependencias de gobierno y organizaciones de iniciativa privada,
-                            ofreciendo beneficios para sus colaboradores y socios.
-                        </p>
-                        <p class="text-gray-700 parrafo-cuerpo">
-                            Obtener resultados favorables para nuestros clientes es una marca indeleble que nos
-                            caracteriza como profesionales y de gran prestigio. Enviamos un cordial saludo esperando
-                            poder estrechar relaciones con su representada y compartir éxitos y beneficios con, y para
-                            sus socios.
-                        </p>
+                       
                     </div>
                     <img class="rounded-lg shadow-md lg:order-2 order-1 my-4 lg:my-10" loading="lazy"
                         src="{{ asset('img/img-1.jpg') }}" alt="Vrabogados">
@@ -121,7 +108,7 @@
 
 
         {{-- Cards --}}
-        <div class="container m-auto px-8 mt-0 my-10 flex flex-col justify-center text-center">
+        <div id="services" class="container m-auto px-8 mt-0 my-10 flex flex-col justify-center text-center">
             <h2 class="subtitulos">
                 {{ __('site/areas.areas-servicios') }}
             </h2>
@@ -224,22 +211,18 @@
 
 
     <div
-        class="h-[90vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
-        <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold font-raleway">Far far away, behind the word <br>
-                mountains</h2>
-            <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300 ">Far far away, behind the
-                word mountains, far from the <br>
-                countries Vokalia and Consonantia, there live the blind
-                texts.</p>
-            <div>
-                <a href="#"
-                    class="uppercase px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-500/80 rounded-full">consultar</a>
-            </div>
+    class="h-[90vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
+    <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
+        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold font-raleway">Asesoría Legal de Confianza</h2>
+        <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300">Expertos en litigio y consultoría en los sectores empresarial, petrolero, partidos políticos, y banca bursátil.</p>
+        <div class="space-x-4">
+            <a href="#services" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Nuestros Servicios</a>
+            <a href="{{route('contacto.index')}}" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Contacto</a>
         </div>
     </div>
+</div>
     <section class="container m-auto px-4 md:px-8">
-        <h2 class="text-center subtitulos">Nuestros Articulos</h2>
+        <h2 class="text-center subtitulos">Nuestras Publicaciones</h2>
         <div class="inline-flex items-center justify-center w-full">
             <hr class="w-[90%] h-1 my-8 bg-gray-200 border-0 rounded">
             <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2">

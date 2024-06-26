@@ -79,6 +79,7 @@
                     </a>
                 </div>
             </div>
+            
          </nav>
 
          <!-- Sidebar footer -->

@@ -1,6 +1,6 @@
 @extends('layout.auth')
 @section('titulo')
-    Inicio
+    Dashboard
 @endsection
 
 {{-- Colores dinámicos: 
@@ -41,8 +41,7 @@
                 articlesCount = articles;
             }
         }, intervalArticles);
-    }" class="container mx-auto p-6">
-
+    }" class="container mx-auto px-6 pt-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <a href="{{ route('post.index') }}"
                 class="flex flex-col items-center justify-center w-full h-52 bg-indigo-500 dark:bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-600 dark:hover:bg-indigo-700 transition-colors duration-300 ease-in-out transform hover:scale-105">
@@ -58,6 +57,65 @@
                 </p>
             </a>
         </div>
-
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 container mx-auto p-6">
+        <a target="_blank"
+            href="https://www.cjf.gob.mx/micrositios/dggj/paginas/serviciosTramites.htm?pageName=servicios%2Fexpedientes.htm"
+            class="bg-primary rounded-md shadow-lg hover:bg-primary-dark transition-colors duration-300 ease-in-out transform hover:scale-105 p-4">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Dirección General de Gestión Judicial
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://www.serviciosenlinea.pjf.gob.mx/juicioenlinea"
+            class="p-4 bg-pink-500 dark:bg-pink-600 rounded-md shadow-lg hover:bg-pink-600 dark:hover:bg-pink-700 transition-colors duration-300 ease-in-out transform hover:scale-105">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Portal de Servicios en Línea
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://consultasjfca.stps.gob.mx:209/"
+            class="p-4 bg-pink-500 dark:bg-pink-600 rounded-md shadow-lg hover:bg-pink-600 dark:hover:bg-pink-700 transition-colors duration-300 ease-in-out transform hover:scale-105">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Informe del Estado Procesal de los Expedientes
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://eje.tsj-tabasco.gob.mx/login/"
+            class="p-4 bg-indigo-500 dark:bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-600 dark:hover:bg-indigo-700 transition-colors duration-300 ease-in-out transform hover:scale-105">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Poder Judicial del Estado de Tabasco
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://stjjalisco.gob.mx/consultas-en-linea/"
+            class="col-span-1 p-4 bg-indigo-500 dark:bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-600 dark:hover:bg-indigo-700 transition-colors duration-300 ease-in-out transform hover:scale-105">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Supremo Tribunal de Justicia Jalisco
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://sicor.poderjudicialdf.gob.mx/BusquedaExpediente.php"
+            class="col-span-1 md:col-span-2 p-4 bg-pink-500 dark:bg-pink-600 rounded-md shadow-lg hover:bg-pink-600 dark:hover:bg-pink-700 transition-colors duration-300 ease-in-out transform hover:scale-105 ">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Poder Judicial De La Ciudad de México <br> Consulta en Línea
+                </p>
+            </div>
+        </a>
+        <a target="_blank" href="https://sicor.poderjudicialdf.gob.mx/BusquedaExpediente.php"
+            class="col-span-1 bg-primary rounded-md shadow-lg hover:bg-primary-dark transition-colors duration-300 ease-in-out transform hover:scale-105 p-4">
+            <div class="flex items-center justify-center">
+                <p class="parrafo-cuerpo text-center text-gray-100 font-semibold">
+                    Sistema Integral para la Consulta de Resoluciones
+                </p>
+            </div>
+        </a>
+    </div>
+    
 @endsection
