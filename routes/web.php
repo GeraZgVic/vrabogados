@@ -25,6 +25,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/areas-practica', [AreaController::class, 'index'])->name('area.index');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/nosotros', [NosotrosController::class, 'index'])->name('nosotros.index');
+
+Route::get('/contacto', [DespachoController::class, 'index'])->name('contacto.index');
 Route::get('/despachos/cdmx', [DespachoController::class, 'cdmx'])->name('mexico.index');
 Route::get('/despachos/guadalajara-jal', [DespachoController::class, 'guadalajara'])->name('guadalajara.index');
 Route::get('/despachos/vhsa-tab', [DespachoController::class, 'vhsa'])->name('vhsa.index');
