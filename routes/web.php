@@ -33,6 +33,11 @@ Route::get('/despachos/vhsa-tab', [DespachoController::class, 'vhsa'])->name('vh
 
 // RUTAS DE SERVICIOS DESTACADOS
 Route::get('areas-practica/derecho-civil', [AreaController::class, 'civil'])->name('area.civil');
+Route::get('areas-practica/derecho-penal', [AreaController::class, 'penal'])->name('area.penal');
+Route::get('areas-practica/derecho-laboral', [AreaController::class, 'laboral'])->name('area.laboral');
+Route::get('areas-practica/derecho-administrativo', [AreaController::class, 'administrativo'])->name('area.administrativo');
+Route::get('areas-practica/derecho-mercantil', [AreaController::class, 'mercantil'])->name('area.mercantil');
+Route::get('areas-practica/derecho-tributaria', [AreaController::class, 'tributaria'])->name('area.tributaria');
 
 // Autenticación para usuario
 Route::get('/login', [LoginController::class, 'index'])->name('login');
