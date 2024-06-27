@@ -9,36 +9,45 @@
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
                 <div class="flex flex-col items-center justify-center h-full m-auto px-8">
                     <h1
-                        class="z-10 mb-4 leading-none tracking-tight text-white animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out titulos">
+                        class="z-10 mb-4 leading-none tracking-tight text-gray-100 animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out titulos">
                         Viveros Romero Abogados S.C.</span></h1>
                     <p
                         class="parrafo-cuerpo text-gray-300 animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Desde 1944, Viveros Romero Abogados S.C. ofrece experiencia en litigios a nivel nacional.</p>
-                    <a href="{{route('nosotros.index')}}"
-                        class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-full">más información</a>
+                    <a href="{{ route('contacto.index') }}"
+                        class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
                 </div>
             </div>
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="{{ asset('img/img-2.webp') }}"
+            <img src="https://cdn.pixabay.com/photo/2023/08/14/15/42/milkyway-8190232_1280.jpg"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
-            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-30 p-4 text-center">
-                <div class="flex flex-col items-center justify-center h-full m-auto px-8">
-                    <h2
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
-                        Viveros Romero Abogados<span
-                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h2>
-                    <p
-                        class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
-                        Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
-                        long-term value and drive economic growth.</p>
-                    <a href="{{route('nosotros.index')}}"
-                        class="uppercase mt-8 px-6 py-4 bg-blue-500 transition duration-300 ease-in-out hover:bg-blue-600 text-white hover:ring-2 ring-blue-500/80 rounded-full">consultar</a>
+            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
+                <div class="grid md:grid-cols-2 gap-x-4 h-full place-items-center -mt-10">
+                    <div class="flex flex-col items-center md:items-start container mx-auto px-10 mt-20 space-y-6">
+                        <h2 class="titulos text-gray-100">Áreas de Práctica</h2>
+                        <p
+                            class="text-gray-300 text-base sm:text-lg md:text-2xl font-raleway leading-relaxed text-center md:text-start">
+                            Especializados en derecho civil, penal, laboral, fiscal y más. <br>Tu caso es nuestra
+                            prioridad.
+                        </p>
+                        <div>
+                            <a href="{{ route('area.index') }}"
+                                class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">{{ __('site/navbar.link-area') }}</a>
+                            <a href="{{ route('area.index') }}"
+                                class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">Nuestras
+                                Publicaciones</a>
+                        </div>
+                    </div>
+                    <img class="rounded-md hidden md:inline-block" src="{{ asset('img/svg-lawyer2.svg') }}"
+                        alt="Abogado">
                 </div>
+
             </div>
         </div>
+        {{-- Item 3 --}}
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
             <img src="{{ asset('img/img-3.webp') }}"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
