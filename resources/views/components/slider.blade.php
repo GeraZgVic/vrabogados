@@ -27,7 +27,7 @@
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
                 <div class="grid md:grid-cols-2 gap-x-4 h-full place-items-center -mt-10">
                     <div class="flex flex-col items-center md:items-start container mx-auto px-10 mt-20 space-y-6">
-                        <h2 class="titulos text-gray-100">Áreas de Práctica</h2>
+                        <h2 class="titulos text-gray-100 md:text-start">Áreas de Práctica</h2>
                         <p
                             class="text-gray-300 text-base sm:text-lg md:text-2xl font-raleway leading-relaxed text-center md:text-start">
                             Especializados en derecho civil, penal, laboral, fiscal y más. <br>Tu caso es nuestra
@@ -36,9 +36,6 @@
                         <div>
                             <a href="{{ route('area.index') }}"
                                 class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">{{ __('site/navbar.link-area') }}</a>
-                            <a href="{{ route('area.index') }}"
-                                class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">Nuestras
-                                Publicaciones</a>
                         </div>
                     </div>
                     <img class="rounded-md hidden md:inline-block" src="{{ asset('img/svg-lawyer2.svg') }}"
