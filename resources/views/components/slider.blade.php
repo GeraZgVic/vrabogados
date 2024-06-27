@@ -12,7 +12,7 @@
                         class="z-10 mb-4 leading-none tracking-tight text-gray-100 animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out titulos">
                         Viveros Romero Abogados S.C.</span></h1>
                     <p
-                        class="parrafo-cuerpo text-gray-300 animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
+                        class="text-gray-300 text-base sm:text-lg md:text-2xl font-raleway leading-relaxed animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
                         Desde 1944, Viveros Romero Abogados S.C. ofrece experiencia en litigios a nivel nacional.</p>
                     <a href="{{ route('contacto.index') }}"
                         class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
