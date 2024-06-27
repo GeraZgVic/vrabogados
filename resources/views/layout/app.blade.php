@@ -25,6 +25,27 @@
     </main>
 
     <x-footer />
+
+
+    <div x-data="{ 
+        showScrollButton: false, 
+        handleTop: 
+            function() { 
+                window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        } }" x-init="window.addEventListener('scroll', function() {
+        showScrollButton = window.scrollY > window.innerHeight / 0.60;
+    })">
+        <button x-show="showScrollButton" @click="handleTop"
+            class="fixed bottom-4 right-5 bg-gray-700 p-2 rounded-full shadow-lg text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 animate-fade-left"
+            type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+            </svg>
+        </button>
+    </div>
+
     @stack('script')
     @stack('styles')
 
