@@ -50,7 +50,7 @@
                 <img class="md:h-[4rem] w-full" src="{{ asset('img/logo.png') }}" alt="Logo de Vrabogados">
             </a>
         </div>
-        <div class="flex text-gray-100  font-work-sans uppercase tracking-[.15em] text-base items-center ">
+        <div class="flex text-gray-100  font-raleway uppercase tracking-[.15em] text-base items-center ">
 
             <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'" />
             <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'" />
