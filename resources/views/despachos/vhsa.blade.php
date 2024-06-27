@@ -6,14 +6,12 @@
 <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
     <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video class="min-w-full min-h-full absolute object-cover"
-            src="https://videos.pond5.com/hand-lady-scrolling-social-media-footage-245681414_main_xxl.mp4"
+            src="{{asset('mp4/vhsa.mp4')}}"
             type="video/mp4" autoplay muted loop></video>
     </div>
-    <div class="video-content space-y-2 z-10">
-        <h1 class="font-light text-6xl">Contactanos en Villahermosa</h1>
-        <h3 class="font-light text-3xl">¡El despacho de abogados Viveros Romero está aquí para ayudarte! Con más de
-            20 años de experiencia, nuestro equipo de expertos en derecho civil, penal y laboral está comprometido a
-            proteger tus derechos y resolver tus problemas legales de manera eficaz.</h3>
+    <div class="video-content z-10 container max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
+        <h1 class="titulos">Contáctanos en Villahermosa</h1>
+        <h3 class="parrafo-cuerpo">Viveros Romero, tu despacho de abogados de confianza en Villahermosa, Tabasco. Con más de 20 años de experiencia en derecho civil, penal y laboral, estamos aquí para proteger tus derechos y resolver tus problemas legales eficazmente.</h3>
     </div>
 </section>
 
@@ -78,7 +76,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.7);
         z-index: 1;
     }
 </style>
