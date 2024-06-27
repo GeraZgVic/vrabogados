@@ -1,15 +1,20 @@
 <footer class="h-full">
     <div class="grid sm:grid-cols-2 px-8 -mb-10">
         <div class="bg-gray-800 text-white p-7 rounded-l">
-            <h3 class="text-2xl">¿Necesita servicios legales?</h3>
-            <p class="text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae dicta
-                maiores exercitationem commodi, debitis cupiditate molestias quas atque</p>
+            <h3 class="text-2xl font-raleway font-semibold mb-3">¿Necesita servicios legales?</h3>
+            <p class="parrafo-cuerpo">Viveros Romero Abogados S.C. ofrece más de 80 años de experiencia en derecho civil,
+                penal,
+                laboral y otras ramas del derecho. Nuestro equipo está comprometido a proteger tus derechos y resolver
+                tus problemas legales de manera efectiva.</p>
         </div>
         <div class="bg-gray-700 text-white p-7 rounded-r">
-            <h3 class="text-2xl">Llama ahora (+1) 123-456-7890</h3>
-            <p class="text-lg">Email us at <span class="text-sky-500">correo@correo.com</p></span>
-            <p class="mt-3 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati aut illo
-                exercitationem, maiores quae rerum et quo</p>
+            <h3 class="text-2xl font-semibold mb-3">Consulta Gratis</h3>
+            <p class=" mb-2">¿Tienes dudas legales? Ofrecemos una consulta inicial gratuita. Llama al <a
+                    href="tel:+525555757887" class="text-sky-500 text-base sm:text-base md:text-lg leading-relaxed">(+52) 9932680884</a></p>
+            <p class="parrafo-cuerpo mb-2">O envíanos un correo a <a class="text-sky-500 font-semibold"
+                    href="mailto:rleon@vrabogados.com.mx">rleon@vrabogados.com.mx</a> para agendar tu cita.</p>
+            <p class="parrafo-cuerpo leading-relaxed">Nuestro equipo de expertos está listo para ayudarte a entender tus
+                opciones legales y encontrar la mejor solución para ti.</p>
         </div>
     </div>
     <div class="bg-black  shadow-md bg-opacity-90 px-8 py-8 flex flex-col justify-center">
@@ -55,10 +60,10 @@
                 </div>
             </div>
             {{-- SEGUNDA COLUMNA --}}
-            <div>
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">
+            <div class="text-center md:text-left">
+                <h2 class="uppercase text-gray-300 font-raleway tracking-[.20em]">
                     {{ __('site/footer.footer-navegacion') }}</h2>
-                <ul class="mt-4 capitalize text-base space-y-1 text-gray-300">
+                <ul class="mt-4 capitalize text-base text-gray-300 space-y-2">
                     <li><a href="#"
                             class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{ __('site/navbar.link-inicio') }}</a>
                     </li>
@@ -70,30 +75,105 @@
                             class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{ __('site/navbar.link-nosotros') }}</a>
                     </li>
                     <li><a href="#"
-                            class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{ __('site/navbar.link-despacho') }}</a>
+                            class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">{{ __('site/navbar.link-contacto') }}</a>
                     </li>
+                    <div class="mr-3 tracking-[.15em] text-base">
+                        <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
+                            :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
+                            <!-- Dropdown Toggle Button -->
+                            <button @mouseover="open = true" class="flex items-center">
+                                <span class="font-raleway text-sm">{{ __('site/navbar.link-idioma') }}</span>
+                                <span :class="open = !open ? '' : '-rotate-180'"
+                                    class="transition-transform duration-500 transform">
+                                    <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <!-- Dropdown Menu -->
+                            <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0 transform scale-90"
+                                x-transition:enter-end="opacity-100 transform scale-100"
+                                x-transition:leave="transition ease-in duration-300"
+                                x-transition:leave-start="opacity-100 transform scale-100"
+                                x-transition:leave-end="opacity-0 transform scale-90"
+                                class="absolute right-0 py-1 text-gray-200 min-w-max text-sm">
+                                @foreach (Config::get('languages') as $lang => $language)
+                                    @if ($lang != App::getLocale())
+                                        <a href="{{ route('lang', $lang) }}"
+                                            class="hover:border-b-2 border-b-gray-300/60 work-sans-normal px-2">
+                                            {{ $language }}
+                                        </a>
+                                    @endif
+                                @endforeach
+                            </div>
+                            <!-- End Dropdown Menu -->
+                        </div>
+                    </div>
                 </ul>
             </div>
             {{-- TERCERA COLUMNA --}}
-            <div class="mt-4 md:mt-0">
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">
+            <div class="md:col-span-2 mt-4 md:mt-0 text-center md:text-left">
+                <h2 class="uppercase text-gray-300 font-raleway tracking-[.20em] text-center">
                     {{ __('site/footer.footer-informacion-contacto') }}</h2>
-                <p class="mt-4 capitalize text-gray-500">198 West 21th Street,Suite 721 New York NY 10016</p>
-                <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
-                    <li><a href="#" class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">+ 1235 2355
-                            98</a>
-                    </li>
-                    <li><a href="#"
-                            class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">info@yoursite.com</a>
-                    </li>
-                </ul>
+                <div class="grid md:grid-cols-2 gap-x-3">
+                    <div>
+                        <address class="mt-4 capitalize text-gray-500">
+                            Santa Margarita #518 Col Insurgentes San Borja<br>
+                            Del. Benito Juárez C.P. 03100 Cd de Mexico
+                        </address>
+                        <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
+                            <li><a href="tel:+525555753855"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(55) 5575-3855</a>
+                            </li>
+                            <li><a href="tel:+525555759223"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(55) 5575-9223</a>
+                            </li>
+                            <li><a href="tel:+525555757887"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(55) 5575-7887</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <address class="mt-4 capitalize text-gray-500">
+                            Av. del Sol #202 Fracc.Galaxia Tabasco 2000<br>
+                            C.P 86035 Villahermosa, Tabasco
+                        </address>
+                        <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
+                            <li><a href="tel:+529932680884"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(993) 268-0884</a>
+                            </li>
+                            <li><a href="tel:+529931708212"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(993) 170-8212</a>
+                            </li>
+                        </ul>
+                        <ul class="mt-2 text-base space-y-1 text-gray-300">
+                            <li><a href="mailto:rleon@vrabogados.com.mx"
+                                    class="hover:border-b-2 border-b-gray-300/60 work-sans-normal">rleon@vrabogados.com.mx</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <address class="mt-4 capitalize text-gray-500">
+                            Colonia Providencia, Turin 2796 int #101<br>
+                            C.P 44600 Guadalajara, Jalisco
+                        </address>
+                        <ul class="mt-2 capitalize text-base space-y-1 text-gray-300">
+                            <li><a href="tel:+523321525632"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(332) 152-5632</a>
+                            </li>
+                            <li><a href="tel:+523321525633"
+                                    class="hover:border-b-2 border-b-blue-300/60 work-sans-normal">(332) 152-5633</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
-            {{-- CUARTA COLUMNA --}}
-            <div>
-                <h2 class="uppercase text-gray-300 work-sans-link tracking-[.20em]">
-                    {{ __('site/footer.footer-horario') }}</h2>
-                <p class="mt-4 text-gray-300">Mon - Thu: 9:00 - 21 00 <br> Fri 8:00 - 21 00 <br> Sat 9:30 - 15: 00</p>
-            </div>
+
         </div>
         <div class="text-gray-500 my-8 text-center">
             Copyright &copy; {{ date('Y') }} Todos los derechos reservados | Este sitio fue hecho por <a
