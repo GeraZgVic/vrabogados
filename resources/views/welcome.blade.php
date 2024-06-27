@@ -204,7 +204,7 @@
 
         <div class="flex justify-end mb-3 px-3">
             <a href="{{ route('area.index') }}"
-                class="w-full md:w-auto px-5 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-500/80 rounded-full">Ver
+                class="w-full text-center md:w-auto px-5 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-500/80 rounded-full">Ver
                 más</a>
         </div>
     </div>
@@ -217,7 +217,7 @@
         <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300">Expertos en litigio y consultoría en los sectores empresarial, petrolero, partidos políticos, y banca bursátil.</p>
         <div class="space-x-4">
             <a href="#services" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Nuestros Servicios</a>
-            <a href="{{route('contacto.index')}}" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Contacto</a>
+            <a href="{{route('nosotros.index')}}" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Sobre nosotros</a>
         </div>
     </div>
 </div>
