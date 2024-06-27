@@ -7,5 +7,6 @@ return [
     'link-contacto' => 'Contact',
     'link-despacho' => 'Law Firms',
     'link-contacto' => 'Contact',
+    'link-contactanos' => 'Contact Us Now',
     'link-idioma' => 'Lang'
 ];
