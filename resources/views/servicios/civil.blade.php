@@ -4,18 +4,15 @@
 
 @section('contenido')
 
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
 <div>
 
     <section class="w-full">
         <div
-            class="w-full h-[520px] bg-[url('https://img.freepik.com/foto-gratis/mujer-negocios-joven-que-usa-telefono-cafe_1303-30538.jpg?t=st=1719523868~exp=1719527468~hmac=f014d9117bf6cdd843bdb6c44adade80b987471a97ce629fb5b853e946b818fc&w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
-            <!-- Photo by '@insolitus' on Unsplash -->
+            class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/foto-gratis/mujer-negocios-joven-que-usa-telefono-cafe_1303-30538.jpg?t=st=1719596034~exp=1719599634~hmac=bcf26e31a832b464e5a03e557ac192c045e8e73b559feefa029aaee170b29da7&w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
-                <h1 class="titulos text-gray-300 ">
+                <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
                     Derecho Civil</h1>
-                <p class="parrafo-cuerpo text-white">Los códigos civiles disponen que las personas físicas
+                <p class="parrafo-cuerpo text-white animate-fade-up animate-once animate-duration-[2500ms] animate-ease-in">Los códigos civiles disponen que las personas físicas
                     adquieren su capacidad jurídica con el nacimiento y la pierden con su muerte, la ley dispone
                     además que desde el momento en que un individuo es concebido, entra bajo la protección de la ley
                     y se tiene por nacido para efectos legales.</p>
@@ -29,12 +26,12 @@
     </section>
 
 
-    <section class="bg-white">
+    <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="items-center md:flex md:space-x-6">
-                <div class="md:w-1/2">
-                    <h3 class="subtitulos text-gray-800">Las Personas</h3>
-                    <p class="parrafo-cuerpo text-gray-600">Los códigos civiles disponen que las personas físicas
+                <div class="md:w-1/2 animate-fade-right animate-once animate-duration-[2500ms] animate-ease-in">
+                    <h2 class="subtitulos text-gray-800">Las Personas</h2>
+                    <p class="parrafo-cuerpo text-gray-800">Los códigos civiles disponen que las personas físicas
                         adquieren su capacidad jurídica con el nacimiento y la pierden con su muerte, la ley dispone
                         además que desde el momento en que un individuo es concebido, entra bajo la protección de la ley
                         y se tiene por nacido para efectos legales.</p>
@@ -47,8 +44,8 @@
                 <div class="mt-8 md:mt-0 md:w-1/2">
                     <div class="flex items-center justify-center">
                         <div class="max-w-md">
-                            <img class="object-cover object-center w-full rounded-md shadow" style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/vista-frontal-sonrientes-colegas-trabajo_23-2149622842.jpg?t=st=1719521097~exp=1719524697~hmac=113947fd1a5c2bc8127c731d46548371f09ffc831254a587bbc6ad5787936b4e&w=740">
+                            <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in" style="height: 500px;"
+                                src="https://img.freepik.com/foto-gratis/vista-frontal-sonrientes-colegas-trabajo_23-2149622842.jpg">
                         </div>
                     </div>
                 </div>
@@ -56,20 +53,20 @@
         </div>
     </section>
 
-    <section class="bg-white">
+    <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="items-center md:flex md:space-x-6">
                 <div class="md:w-1/2">
                     <div class="flex items-center justify-center">
                         <div class="max-w-md">
-                            <img class="object-cover object-center w-full rounded-md shadow" style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/mujer-talla-media-que-trabaja-como-agente-bienes-raices_23-2151064940.jpg?t=st=1719521135~exp=1719524735~hmac=9cf7bcb3c3b360f816bcacf5b7ff44c20b4a9877c96fa68373ca907f22f9d063&w=740">
+                            <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in" style="height: 500px;"
+                                src="https://img.freepik.com/foto-gratis/mujer-talla-media-que-trabaja-como-agente-bienes-raices_23-2151064940.jpg">
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
-                    <h3 class="subtitulos text-gray-800">Los Bienes</h3>
+                    <h2 class="subtitulos text-gray-800">Los Bienes</h2>
                     <p class="parrafo-cuerpo text-gray-600">El Derecho Civil se ocupa de la protección y respeto de los
                         bienes muebles y de los bienes inmuebles. La ley regula la forma cómo estos bienes se adquieren,
                         su uso, goce, disfrute, la forma de transmitirlos y los conflictos derivados de ellos.</p>
@@ -80,11 +77,12 @@
         </div>
     </section>
 
-    <section class="bg-white">
+    <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800">Contratos Civiles
+            <h2 class="subtitulos text-gray-800">Contratos Civiles
             </h2>
-            <p class="max-w-lg mt-4 text-gray-600">Los contratos son una especie de convenio. Un contrato es un acuerdo
+            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Los contratos son una especie de convenio. Un contrato
+                es un acuerdo
                 de voluntades entre dos o más personas para producir o transferir obligaciones y derechos.</p>
             <div class="grid gap-8 mt-10 md:mt-20 md:grid-cols-2">
                 <div class="flex space-x-4">
@@ -96,8 +94,9 @@
                     </svg>
 
                     <div>
-                        <h4 class="text-xl font-medium text-gray-800">Formación del Contrato</h4>
-                        <p class="max-w-lg mt-4 text-gray-600">Para que un contrato se forme, la ley emplea dos
+                        <h4 class="text-xl subtitulos font-medium text-gray-800">Formación del Contrato</h4>
+                        <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Para que un contrato se forme, la ley
+                            emplea dos
                             términos: la oferta y la aceptación.
 
                             En la oferta una persona propone a otra la celebración de un contrato, fijándole o no un
@@ -117,8 +116,9 @@
                     </svg>
 
                     <div>
-                        <h4 class="text-xl font-medium text-gray-800">El Objeto en los Contratos</h4>
-                        <p class="max-w-lg mt-4 text-gray-600">El objeto en los contratos son: la cosa que el obligado
+                        <h2 class="text-xl subtitulos font-medium text-gray-800">El Objeto en los Contratos</h2>
+                        <p class="parrafo-cuerpo max-w-lg mt-4 text-gray-600">El objeto en los contratos son: la cosa
+                            que el obligado
                             debe dar, o el hecho que el obligado debe hacer o no hacer. Por ejemplo, puede ser objeto de
                             un contrato de arrendamiento un bien inmueble; y en un contrato de prestación de servicios
                             de contabilidad el objeto serán los servicios que preste el contador como el cálculo de
@@ -135,10 +135,10 @@
                 <div class="flex flex-col items-center py-10 text-center lg:py-20">
                     <div class="w-full px-4 lg:w-1/2 lg:px-0">
                         <div class="mb-8">
-                            <h2 class="text-3xl lg:text-4xl font-bold mb-3">
+                            <h2 class="subtitulos mb-3">
                                 ¿Encontraste la solución?
                             </h2>
-                            <p class="text-lg lg:text-xl opacity-80">
+                            <p class="parrafo-cuerpo opacity-80">
                                 Para recibir más información
                             </p>
                         </div>
@@ -156,28 +156,34 @@
     <section class="bg-white">
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="md:flex md:justify-between">
-                <h2 class="text-3xl font-semibold text-gray-800">Ramas del derecho civil</h2>
+                <h2 class="subtitulos text-gray-800">Ramas del derecho civil</h2>
             </div>
 
             <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
-                <div class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-105">
-                    <h2 class="text-xl font-medium text-gray-800">El derecho de las personas.</h2>
-                    <p class="max-w-md mt-4 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing Ac aliquam
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">El derecho de las personas.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
                         ac
                         volutpat, viverra magna risus aliquam massa.</p>
                 </div>
 
-                <div class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-105">
-                    <h2 class="text-xl font-medium text-gray-800">El derecho de obligaciones y contratos.</h2>
-                    <p class="max-w-md mt-4 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing Ac aliquam
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">El derecho de obligaciones y contratos.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
                         ac
                         volutpat,
                         viverra magna risus aliquam massa.</p>
                 </div>
 
-                <div class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-105">
-                    <h2 class="text-xl font-medium text-gray-800">Los derechos reales.</h2>
-                    <p class="max-w-md mt-4 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing Ac aliquam
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">Los derechos reales.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
                         ac
                         volutpat,
                         viverra magna risus aliquam massa.</p>
@@ -186,16 +192,15 @@
         </div>
     </section>
 
-    <section class="bg-white">
+    <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Historia del derecho civil</h2>
-            <p class="max-w-lg mx-auto mt-4 text-gray-600">Como todo el derecho privado, el derecho civil es una de las
+            <h2 class="subtitulos text-gray-800">Historia del derecho civil</h2>
+            <p class="parrafo-cuerpo mt-4 text-gray-600">Como todo el derecho privado, el derecho civil es una de las
                 ramas más importantes de la ciencia jurídica en lo que a la vida cotidiana se refiere.</p>
 
             <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
                 src="https://img.freepik.com/foto-gratis/entorno-derecho-fotorrealista_23-2151202463.jpg?t=st=1719522899~exp=1719526499~hmac=717b7752f741870140dc5f9a9e8dbe95a69a0ca3f9e555b52429bc105d16dfe4&w=1060">
         </div>
     </section>
-
 </div>
 @endsection

@@ -68,7 +68,7 @@ Areas de práctica
             class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
                 <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                    src="https://img.freepik.com/foto-gratis/concepto-collage-opresion-dictadura_23-2149711439.jpg?w=360&t=st=1718736424~exp=1718737024~hmac=de7d44fea01cdd0859b7db12dbf60a70d63993f4c5745d45a9bc4feb203b8e7d"
+                    src="https://img.freepik.com/foto-gratis/jefe-trabajo_1098-14125.jpg?t=st=1719601376~exp=1719604976~hmac=3d88585f722eb048740eb1f9ea0038fcb52a076af0c5d47e41f14b03ba1c314b&w=740"
                     alt="" />
             </div>
             <div

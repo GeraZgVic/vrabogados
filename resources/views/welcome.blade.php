@@ -127,13 +127,13 @@
                     </div>
                     <div
                         class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h1>
+                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                        <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</button>
+                            <a href="{{route('area.civil')}}"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                    Más</a>
                     </div>
                 </div>
                 <div
@@ -148,20 +148,20 @@
                     </div>
                     <div
                         class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h1>
+                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                        <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</button>
+                            <a href="{{route('area.penal')}}"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                    Más</a>
                     </div>
                 </div>
                 <div
                     class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
                     <div class="h-96 w-72">
                         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://img.freepik.com/foto-gratis/concepto-collage-opresion-dictadura_23-2149711439.jpg?w=360&t=st=1718736424~exp=1718737024~hmac=de7d44fea01cdd0859b7db12dbf60a70d63993f4c5745d45a9bc4feb203b8e7d"
+                            src="https://img.freepik.com/foto-gratis/jefe-trabajo_1098-14125.jpg?t=st=1719601376~exp=1719604976~hmac=3d88585f722eb048740eb1f9ea0038fcb52a076af0c5d47e41f14b03ba1c314b&w=740"
                             alt="" />
                     </div>
                     <div
@@ -169,13 +169,13 @@
                     </div>
                     <div
                         class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h1>
+                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                        <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</button>
+                            <a href="{{route('area.laboral')}}"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                    Más</a>
                     </div>
                 </div>
                 <div
@@ -190,13 +190,13 @@
                     </div>
                     <div
                         class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h1 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h1>
+                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                        <button
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</button>
+                            <a href="{{route('area.administrativo')}}"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                    Más</a>
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-5">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                                        d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h28" />
                                 </svg>
 
                             </span><span class="sr-only">Skip to previous slide page</span>
