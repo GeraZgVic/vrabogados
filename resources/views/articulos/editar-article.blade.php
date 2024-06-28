@@ -19,7 +19,20 @@
                     <p class="my-2 text-white font-bold uppercase p-2 rounded-lg text-center bg-red-500">{{ $message }}</p>
                 @enderror
             </div>
-
+            <div class="mb-5">
+                <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Categoría</label>
+                <select name="category_id" id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option value="">-- Seleccionar --</option>
+                    @foreach ($categories as $categoria)                        
+                    <option value="{{ $categoria->id }}" {{ $article->category_id == $categoria->id ? 'selected' : '' }}>
+                        {{ $categoria->name }}
+                    </option>
+                    @endforeach
+                </select>
+                @error('category_id')
+                    <p class="my-2 text-white font-bold uppercase p-2 rounded-lg text-center bg-red-500">{{ $message }}</p>
+                @enderror
+            </div>
             <div class="mb-5">
                 <label for="url" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Titulo</label>
                 <input type="text" id="url" name="url"

@@ -11,7 +11,7 @@ Areas de práctica
             <div class="p-6 text-white">
                 <h1 class="pb-4 t mb-2 md:m-0 text-white text-center animate-fade-up titulos">
                     Servicios Legales</h1>
-                <p class="mb-8 text-gray-300 sm:px-16 lg:px-32 animate-bottom parrafo-cuerpo">
+                <p class="mb-8 text-gray-300 sm:px-16 lg:px-32 animate-bottom parrafo-cuerpo text-center">
                     ¿Necesitas resolver un problema legal? En Vivero Romero, ofrecemos soluciones expertas
                     en todas las áreas del derecho. Nuestro equipo de abogados especializados está listo para ayudarte.
                 </p>

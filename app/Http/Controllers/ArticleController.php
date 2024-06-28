@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -14,7 +15,11 @@ class ArticleController extends Controller
 
     public function create()
     {
-        return view('articulos.articulos-create');
+        $categories = Category::all();
+        
+        return view('articulos.articulos-create', [
+            'categories' => $categories
+        ]);
     }
 
     public function store(Request $request)
@@ -22,24 +27,27 @@ class ArticleController extends Controller
         // Validar campos
         $datos = $request->validate([
             'title' => 'required|max:60',
-            'url' => 'required'
+            'url' => 'required',
+            'category_id' => 'required'
         ]);
 
         // Guardar Datos
         Article::create([
             'title' => $datos['title'],
-            'url' => $datos['url']
+            'url' => $datos['url'],
+            'category_id' => $datos['category_id']
         ]);
 
         // Redireccionar
-
         return redirect()->route('articulos.index');
     }
 
     public function edit(Article $article)
     {
+        $categories = Category::all();
         return view('articulos.editar-article', [
-            'article' => $article
+            'article' => $article,
+            'categories' => $categories
         ]);
     }
 
@@ -48,13 +56,15 @@ class ArticleController extends Controller
         // Validar campos
         $datos = $request->validate([
             'title' => 'required|max:70',
-            'url' => 'required'
+            'url' => 'required',
+            'category_id' => 'required'
         ]);
 
         // Actualizar campos
         $article->update([
             'title' => $datos['title'],
-            'url' => $datos['url']
+            'url' => $datos['url'],
+            'category_id' => $datos['category_id']
         ]);
 
         // Redirigir a vista index

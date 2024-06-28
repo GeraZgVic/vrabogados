@@ -21,7 +21,7 @@
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="https://cdn.pixabay.com/photo/2023/08/14/15/42/milkyway-8190232_1280.jpg"
+            <img src="https://images.unsplash.com/photo-1517495210937-3b251857964c?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
@@ -38,7 +38,7 @@
                                 class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">{{ __('site/navbar.link-area') }}</a>
                         </div>
                     </div>
-                    <img class="rounded-md hidden md:inline-block" src="{{ asset('img/svg-lawyer2.svg') }}"
+                    <img class="rounded-md hidden md:inline-block" src="{{ asset('img/areas-hero.svg') }}"
                         alt="Abogado">
                 </div>
 
@@ -46,22 +46,27 @@
         </div>
         {{-- Item 3 --}}
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="{{ asset('img/img-3.webp') }}"
+            <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
-            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-30 p-4 text-center">
-                <div class="flex flex-col items-center justify-center h-full m-auto px-8">
-                    <h2
-                        class="z-10 mb-4 leading-none tracking-tight text-white text-2xl md:text-5xl lg:text-6xl work-sans-bold animate-fade-down animate-once animate-duration-[1200ms] animate-ease-in-out">
-                        Viveros Romero Abogados<span
-                            class="underline underline-offset-3 decoration-8 decoration-blue-400 "> S.C.</span></h2>
-                    <p
-                        class="text-lg font-normal text-gray-300 lg:text-xl animate-fade-down animate-duration-[1300ms] animate-delay-700 animate-ease-in-out">
-                        Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
-                        long-term value and drive economic growth.</p>
-                    <a href="#"
-                        class="uppercase mt-8 px-6 py-4 bg-blue-500 transition duration-300 ease-in-out hover:bg-blue-600 text-white hover:ring-2 ring-blue-500/80 rounded-full">consultar</a>
+            <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
+                <div class="grid md:grid-cols-2 gap-x-4 h-full place-items-center -mt-10">
+                    <div class="flex flex-col items-center md:items-start container mx-auto px-10 mt-20 space-y-6">
+                        <h2 class="titulos text-gray-100 md:text-start">Explora la Constitución</h2>
+                        <p
+                            class="text-gray-300 text-base sm:text-lg md:text-2xl font-raleway leading-relaxed text-center md:text-start">
+                            Encuentra y comprende los artículos más relevantes de la Constitución Política.
+                        </p>
+                        <div>
+                            <a href="{{ route('blog.index') }}"
+                                class="text-gray-100 p-3 rounded-md bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 hover:ring-2 ring-gray-300/80">
+                                Visitar Blog</a>
+                        </div>
+                    </div>
+                    <img class="rounded-full hidden md:inline-block" src="{{asset('img/blog-hero.svg')}}"
+                        alt="Abogado">
                 </div>
+
             </div>
         </div>
     </div>

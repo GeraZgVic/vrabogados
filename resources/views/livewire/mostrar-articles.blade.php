@@ -4,11 +4,21 @@
             class="mb-4 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-gray-200 md:text-xl lg:text-2xl px-2 py-1 text-center work-sans-link">
             Artículos Agregados
         </h2>
-        <div class="flex flex-col items-center lg:flex-row gap-4 justify-center">
+        <div class="flex flex-col items-center lg:flex-row gap-3 justify-center">
+            <div>
+                <select wire:model.live.debounce.150ms="category_id"
+                    class="block w-full py-4 ps-6 text-sm text-gray-900 dark:text-gray-200 border border-gray-300 dark:border-gray-500 rounded-lg 
+                        bg-gray-50 dark:bg-gray-800 focus:ring-gray-500 dark:focus:ring-gray-600 focus:border-gray-500 dark:focus:border-gray-500">
+                    <option value="">Seleccione la Categoría</option>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="w-full lg:w-2/3">
                 {{-- Search --}}
                 <label for="buscador" class="mb-2 text-sm font-medium text-gray-900 sr-only">Buscar</label>
-                <div class="relative">
+                <div class="relative px-2">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                         <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 20 20">
@@ -18,10 +28,8 @@
                     </div>
                     <input type="search" id="buscador"
                         class="block w-full p-4 ps-10 text-sm text-gray-900 dark:text-gray-200 border border-gray-300 dark:border-gray-500 rounded-lg 
-                bg-gray-50 dark:bg-gray-800 focus:ring-gray-500 dark:focus:ring-gray-600 focus:border-gray-500 dark:focus:border-gray-500"
+                        bg-gray-50 dark:bg-gray-800 focus:ring-gray-500 dark:focus:ring-gray-600 focus:border-gray-500 dark:focus:border-gray-500"
                         placeholder="Busca un articulo" wire:model.live.debounce.150ms="search" />
-
-
                 </div>
             </div>
             <div class="mt-4 lg:mt-0 w-full md:w-auto">
@@ -38,47 +46,57 @@
         </div>
 
         @forelse ($articles as $article)
-        <article class="p-6 flex flex-col lg:flex-row md:justify-between shadow rounded-sm" wire:key="{{ $article->id }}">
-            <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
-                <div class="flex justify-between items-center mb-5 text-gray-500">
-                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
-                        </svg>
-                        Artículo
-                    </span>
+            <article class="p-6 flex flex-col lg:flex-row md:justify-between shadow rounded-sm"
+                wire:key="{{ $article->id }}">
+                <div class="w-full lg:w-1/2 mb-4 lg:mb-0">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="mr-1 w-3 h-3">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                            </svg>
+
+                            {{ $article->category->name }}
+                        </span>
+                    </div>
+                    <span class="text-sm">{{ $article->created_at->diffForHumans() }}</span>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 capitalize">
+                        <a target="_blank" href="{{ $article->url }}">{{ $article->title }}</a>
+                    </h2>
+                    <div class="w-full lg:w-auto lg:inline-flex">
+                        <a target="_blank" href="{{ $article->url }}"
+                            class="flex items-center hover:bg-slate-300 lg:hover:bg-transparent justify-center border-2 lg:border-none border-gray-400 rounded-md px-1 lg:px-0 py-2 lg:py-0 font-medium text-primary-600 lg:hover:underline">
+                            Ver artículo
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <span class="text-sm">{{ $article->created_at->diffForHumans() }}</span>
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200">
-                    <a target="_blank" href="{{ $article->url }}">{{ $article->title }}</a>
-                </h2>
-                <div class="w-full lg:w-auto lg:inline-flex">
-                    <a target="_blank" href="{{ $article->url }}" 
-                        class="flex items-center hover:bg-slate-300 lg:hover:bg-transparent justify-center border-2 lg:border-none border-gray-400 rounded-md px-1 lg:px-0 py-2 lg:py-0 font-medium text-primary-600 lg:hover:underline">
-                        Ver artículo
-                        <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                        </svg>
+                <div class="w-full lg:w-auto flex flex-col lg:flex-row items-start lg:items-center gap-4 mt-3 lg:mt-0">
+                    <button onclick="confirmDelete({{ $article->id }})" type="button"
+                        class="w-full lg:w-auto relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-500 to-pink-400 group-hover:from-red-500 group-hover:to-pink-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-800">
+                        <span
+                            class="w-full text-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
+                            Eliminar
+                        </span>
+                    </button>
+                    <a href="{{ route('articulos.edit', $article->id) }}"
+                        class="w-full lg:w-auto relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-cyan-400 group-hover:from-blue-500 group-hover:to-cyan-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800">
+                        <span
+                            class="w-full text-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
+                            Editar
+                        </span>
                     </a>
                 </div>
-            </div>
-            <div class="w-full lg:w-auto flex flex-col lg:flex-row items-start lg:items-center gap-4 mt-3 lg:mt-0">
-                <button 
-                    onclick="confirmDelete({{ $article->id }})" type="button"
-                    class="w-full lg:w-auto relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-500 to-pink-400 group-hover:from-red-500 group-hover:to-pink-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-800">
-                    <span class="w-full text-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
-                        Eliminar
-                    </span>
-                </button>
-                <a href="{{route('articulos.edit', $article->id)}}" class="w-full lg:w-auto relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-cyan-400 group-hover:from-blue-500 group-hover:to-cyan-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800">
-                    <span class="w-full text-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
-                        Editar
-                    </span>
-                </a>
-            </div>
-        </article>
-        
-        
+            </article>
+
+
 
         @empty
             <p class="text-sm text-center ">No se encuentra ningun articulo</p>
@@ -111,7 +129,7 @@
                 fetch('/dashboard/delete-articulo/' + id, {
                     method: 'DELETE',
                     headers: {
-                        'X-CSRF-TOKEN': '{{csrf_token() }}'
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
                     }
                 }).then(response => {
                     // Redirige a la página después de la eliminación
@@ -123,4 +141,3 @@
         });
     }
 </script>
-
