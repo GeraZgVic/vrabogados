@@ -1,97 +1,196 @@
 @extends('layout.app')
 
-@section('titulo', 'Derecho Civil')
+@section('titulo', 'Derecho Administrativo')
 
 @section('contenido')
 
-<div class="relative h-screen w-full flex items-center justify-center bg-cover bg-center text-center px-5"
-    style="background-image:url(https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500);">
-    <div class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
+<div>
 
-    <div class="z-50 flex flex-col justify-center text-white w-full h-screen">
-        <h1 class="text-5xl">We are <b>Almost</b> there!</h1>
-        <p>Stay tuned for something amazing!!!</p>
-
-        <div class="mt-10 mb-5">
-            <div class="shadow w-full bg-white mt-2 max-w-2xl mx-auto rounded-full">
-                <div class="rounded-full bg-indigo-600 text-xs leading-none text-center text-white py-1"
-                    style="width: 75%">75%</div>
+    <section class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center bg-fixed flex flex-col justify-center items-center ">
+        <div class="bg-black/65 h-full">
+            <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
+                <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
+                    Derecho Administrativo</h1>
+                <p class="parrafo-cuerpo text-white animate-fade-up animate-once animate-duration-[2500ms] animate-ease-in">El principio de legalidad en el Derecho Administrativo establece que la administración pública debe actuar conforme a la ley en todas sus acciones, respetando los derechos de los ciudadanos y operando dentro de los límites legales establecidos.</p>
+                <div class="flex justify-center mt-8">
+                    <a href="{{ route('contacto.index') }}"
+                        class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="mt-6 flex text-white mx-auto">
-            <a href="#">
-                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                    xmlns:serif="http://www.serif.com/"
-                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                    <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
-                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
-                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
-                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
-                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
-                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
-                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
-                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
-                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
-                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
-                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
-                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                  0.771,-0.67 1.054,-1.093Z"></path>
-                </svg>
-            </a>
-            <a href="/#">
-                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                    xmlns:serif="http://www.serif.com/"
-                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                    <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373
-                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
-                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
-                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
-                </svg>
-            </a>
-            <a href="/#">
-                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                    xmlns:serif="http://www.serif.com/"
-                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                    <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
-                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
-                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
-                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
-                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
-                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
-                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
-                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
-                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
-                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
-                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
-                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
-                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
-                  0.4,1.5l0,4.5l2.9,0Z"></path>
-                </svg>
-            </a>
-            <a href="#">
-                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                    xmlns:serif="http://www.serif.com/"
-                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
-                    <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
-                  -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
-                  -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
-                  0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
-                  0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
-                  -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
-                </svg>
-            </a>
+
+    <section class="bg-gray-300">
+        <div class="max-w-5xl px-6 py-16 mx-auto">
+            <div class="items-center md:flex md:space-x-6">
+                <div class="md:w-1/2 animate-fade-right animate-once animate-duration-[2500ms] animate-ease-in">
+                    <h2 class="subtitulos text-gray-800">Principios Fundamentales</h2>
+                    <p class="parrafo-cuerpo text-gray-800">Entre los principios fundamentales del Derecho Administrativo destaca el principio de legalidad, que establece que la administración pública debe actuar conforme a la ley en todas sus actuaciones, asegurando así la protección de los derechos de los administrados y la predictibilidad en la actuación estatal.</p>
+                    <h3 class="font-semibold my-1">Actuación Administrativa</h3>
+                    <p class="parrafo-cuerpo text-gray-600"> La actuación administrativa se caracteriza por ser de naturaleza ejecutiva y reglada, orientada a la gestión de los intereses públicos conforme a los procedimientos y normativas establecidas por la ley.</p>
+                </div>
+
+                <div class="mt-8 md:mt-0 md:w-1/2">
+                    <div class="flex items-center justify-center">
+                        <div class="max-w-md">
+                            <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in" style="height: 500px;"
+                                src="https://img.freepik.com/foto-gratis/vista-frontal-sonrientes-colegas-trabajo_23-2149622842.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <section>
+        <div class="max-w-5xl px-6 py-16 mx-auto">
+            <div class="items-center md:flex md:space-x-6">
+                <div class="md:w-1/2">
+                    <div class="flex items-center justify-center">
+                        <div class="max-w-md">
+                            <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in" style="height: 500px;"
+                                src="https://img.freepik.com/foto-gratis/mujer-talla-media-que-trabaja-como-agente-bienes-raices_23-2151064940.jpg">
+                        </div>
+                    </div>
+                </div>
 
-    </div>
+                <div class="mt-8 md:mt-0 md:w-1/2">
+                    <h2 class="subtitulos text-gray-800">Los Bienes</h2>
+                    <p class="parrafo-cuerpo text-gray-600">El Derecho Civil se ocupa de la protección y respeto de los
+                        bienes muebles y de los bienes inmuebles. La ley regula la forma cómo estos bienes se adquieren,
+                        su uso, goce, disfrute, la forma de transmitirlos y los conflictos derivados de ellos.</p>
+                    <p class="parrafo-cuerpo text-gray-600">En relación con los bienes están los derechos y obligaciones
+                        relativos a la propiedad y a la posesión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="max-w-5xl px-6 py-16 mx-auto">
+            <h2 class="subtitulos text-gray-800">Contratos Civiles
+            </h2>
+            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Los contratos son una especie de convenio. Un contrato
+                es un acuerdo
+                de voluntades entre dos o más personas para producir o transferir obligaciones y derechos.</p>
+            <div class="grid gap-8 mt-10 md:mt-20 md:grid-cols-2">
+                <div class="flex space-x-4">
+                    <svg class="w-6 h-6 text-gray-500" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M47.6268 23.7062C48.2466 24.4484 48.2466 25.5277 47.6268 26.2699L44.4812 30.0372C43.803 30.8493 43.4742 31.8971 43.5669 32.9512L44.0044 37.9287C44.0912 38.9165 43.4411 39.8188 42.4765 40.0491L38.0619 41.1031C36.9808 41.3612 36.0559 42.0575 35.5089 43.025L33.2053 47.099C32.6961 47.9995 31.5844 48.3631 30.6415 47.9375L26.6498 46.1358C25.6003 45.6621 24.3976 45.6636 23.3493 46.14L19.3597 47.9531C18.4161 48.3819 17.3014 48.0189 16.7912 47.1168L14.4911 43.0489C13.9441 42.0814 13.0192 41.3851 11.9381 41.127L7.52286 40.0728C6.55849 39.8426 5.90838 38.9406 5.99496 37.9529L6.43346 32.9505C6.52583 31.8968 6.19706 30.8494 5.5191 30.0375L2.37029 26.2665C1.75138 25.5253 1.75043 24.4477 2.36803 23.7054L5.52362 19.9127C6.1988 19.1012 6.52582 18.0557 6.43339 17.0041L5.99624 12.0308C5.90922 11.0408 6.56225 10.1372 7.52946 9.90904L11.9298 8.87123C13.0153 8.61522 13.9446 7.91765 14.4935 6.94684L16.7947 2.87709C17.3039 1.97664 18.4156 1.61302 19.3585 2.03858L23.3544 3.8422C24.4007 4.31444 25.5993 4.31444 26.6456 3.8422L30.6415 2.03858C31.5844 1.61301 32.6961 1.97663 33.2053 2.87709L35.5089 6.95112C36.0559 7.9186 36.9808 8.61486 38.0619 8.87297L42.4765 9.92701C43.4411 10.1573 44.0912 11.0596 44.0044 12.0474L43.5669 17.0249C43.4742 18.079 43.803 19.1268 44.4812 19.939L47.6268 23.7062ZM25 37.9326C26.8075 37.9326 28.2727 36.4674 28.2727 34.6599V34.4275C28.2727 32.6201 26.8075 31.1548 25 31.1548C23.1925 31.1548 21.7273 32.6201 21.7273 34.4275V34.6599C21.7273 36.4674 23.1925 37.9326 25 37.9326ZM25 28.377C26.8075 28.377 28.2727 26.9117 28.2727 25.1042V15.3162C28.2727 13.5087 26.8075 12.0435 25 12.0435C23.1925 12.0435 21.7273 13.5087 21.7273 15.3162V25.1042C21.7273 26.9117 23.1925 28.377 25 28.377Z"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+
+                    <div>
+                        <h4 class="text-xl subtitulos font-medium text-gray-800">Formación del Contrato</h4>
+                        <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Para que un contrato se forme, la ley
+                            emplea dos
+                            términos: la oferta y la aceptación.
+
+                            En la oferta una persona propone a otra la celebración de un contrato, fijándole o no un
+                            plazo para aceptar. La parte que hace la oferta queda ligada por su oferta hasta que expire
+                            el plazo. O bien, si no se fijó un plazo para aceptar, la parte que recibe la oferta deberá
+                            aceptar inmediatamente si ambas partes están presentes, y el autor de la oferta queda
+                            desligado si la aceptación no se da de forma inmediata. </p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4">
+                    <svg class="w-6 h-6 text-gray-500" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 25C1 11.8023 11.8023 1 25 1C38.1977 1 49 11.8023 49 25C49 38.1977 38.1977 49 25 49C11.8023 49 1 38.1977 1 25ZM33.36 35.3573C34.7228 36.1959 36.5074 35.771 37.346 34.4082C38.1913 33.0346 37.7522 31.2351 36.3692 30.4053L28.221 25.5164C27.6186 25.155 27.25 24.504 27.25 23.8014V14.375C27.25 12.7872 25.9628 11.5 24.375 11.5C22.7872 11.5 21.5 12.7872 21.5 14.375V25.8236C21.5 27.2127 22.2206 28.5023 23.4036 29.2302L33.36 35.3573Z"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+
+                    <div>
+                        <h2 class="text-xl subtitulos font-medium text-gray-800">El Objeto en los Contratos</h2>
+                        <p class="parrafo-cuerpo max-w-lg mt-4 text-gray-600">El objeto en los contratos son: la cosa
+                            que el obligado
+                            debe dar, o el hecho que el obligado debe hacer o no hacer. Por ejemplo, puede ser objeto de
+                            un contrato de arrendamiento un bien inmueble; y en un contrato de prestación de servicios
+                            de contabilidad el objeto serán los servicios que preste el contador como el cálculo de
+                            impuestos, la presentación de declaraciones del cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-12 lg:mt-24">
+        <div class="bg-black text-white -skew-y-1">
+            <div class="container mx-auto skew-y-1">
+                <div class="flex flex-col items-center py-10 text-center lg:py-20">
+                    <div class="w-full px-4 lg:w-1/2 lg:px-0">
+                        <div class="mb-8">
+                            <h2 class="subtitulos mb-3">
+                                ¿Encontraste la solución?
+                            </h2>
+                            <p class="parrafo-cuerpo opacity-80">
+                                Para recibir más información
+                            </p>
+                        </div>
+
+                        <div class="text-lg">
+                            <a href="{{ route('contacto.index') }}"
+                                class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="max-w-5xl px-6 py-16 mx-auto">
+            <div class="md:flex md:justify-between">
+                <h2 class="subtitulos text-gray-800">Ramas del derecho civil</h2>
+            </div>
+
+            <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">El derecho de las personas.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
+                        ac
+                        volutpat, viverra magna risus aliquam massa.</p>
+                </div>
+
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">El derecho de obligaciones y contratos.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
+                        ac
+                        volutpat,
+                        viverra magna risus aliquam massa.</p>
+                </div>
+
+                <div
+                    class="px-6 py-8 overflow-hidden bg-white rounded-xl shadow-md transition duration-300 hover:scale-110">
+                    <h2 class="text-xl subtitulos text-gray-800">Los derechos reales.</h2>
+                    <p class="max-w-md mt-4 parrafo-cuerpo text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing Ac aliquam
+                        ac
+                        volutpat,
+                        viverra magna risus aliquam massa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-300">
+        <div class="max-w-5xl px-6 py-16 mx-auto text-center">
+            <h2 class="subtitulos text-gray-800">Historia del derecho civil</h2>
+            <p class="parrafo-cuerpo mt-4 text-gray-600">Como todo el derecho privado, el derecho civil es una de las
+                ramas más importantes de la ciencia jurídica en lo que a la vida cotidiana se refiere.</p>
+
+            <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
+                src="https://img.freepik.com/foto-gratis/entorno-derecho-fotorrealista_23-2151202463.jpg?t=st=1719522899~exp=1719526499~hmac=717b7752f741870140dc5f9a9e8dbe95a69a0ca3f9e555b52429bc105d16dfe4&w=1060">
+        </div>
+    </section>
 </div>
-
 @endsection

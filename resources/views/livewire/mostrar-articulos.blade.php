@@ -10,7 +10,7 @@
                 <select wire:model.live.debounce.150ms="category_id"
                     class="block w-full py-3 ps-3 text-sm text-gray-900 dark:text-gray-200 border border-gray-300 dark:border-gray-500 rounded-l-md  
                         bg-gray-50 dark:bg-gray-800 focus:ring-gray-500 dark:focus:ring-gray-600 focus:border-gray-500 dark:focus:border-gray-500">
-                    <option value="">Seleccione la Categoría</option>
+                    <option value="">Categorías</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
@@ -29,7 +29,7 @@
                     <input type="search" id="buscador"
                         class="block w-full p-3 ps-10 text-sm text-gray-900 border-y border-r border-gray-300 rounded-r-md  
                 bg-gray-50 focus:ring-gray-500 focus:border-gray-500"
-                        placeholder="Busca un articulo" wire:model.live.debounce.150ms="search" />
+                        placeholder="Buscar" wire:model.live.debounce.150ms="search" />
 
                 </div>
             </div>
