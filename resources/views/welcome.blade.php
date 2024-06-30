@@ -17,9 +17,14 @@
                 <div class="col-span-1 mt-6 container mx-auto px-4 flex flex-col">
                     <div class="lg:order-1 order-2 space-y-3">
                         <p class="text-gray-700 parrafo-cuerpo">
-                            Viveros Romero Abogados S.C. se destaca por su equipo de socios, asociados y asesores con amplia experiencia en sectores como empresarial, petrolero, partidos políticos, y banca bursátil. Muchos de sus abogados también son profesores en prestigiosas universidades y escuelas de derecho del país. La firma busca ser "doctores legales de cabecera" a través de convenios comerciales con entidades gubernamentales y privadas, ofreciendo beneficios a colaboradores y socios. Su compromiso con obtener resultados favorables caracteriza su prestigio profesional.
+                            Viveros Romero Abogados S.C. se destaca por su equipo de socios, asociados y asesores con amplia
+                            experiencia en sectores como empresarial, petrolero, partidos políticos, y banca bursátil.
+                            Muchos de sus abogados también son profesores en prestigiosas universidades y escuelas de
+                            derecho del país. La firma busca ser "doctores legales de cabecera" a través de convenios
+                            comerciales con entidades gubernamentales y privadas, ofreciendo beneficios a colaboradores y
+                            socios. Su compromiso con obtener resultados favorables caracteriza su prestigio profesional.
                         </p>
-                       
+
                     </div>
                     <img class="rounded-lg shadow-md lg:order-2 order-1 my-4 lg:my-10" loading="lazy"
                         src="{{ asset('img/img-1.jpg') }}" alt="Vrabogados">
@@ -131,9 +136,9 @@
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                            <a href="{{route('area.civil')}}"
-                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                    Más</a>
+                        <a href="{{ route('area.civil') }}"
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</a>
                     </div>
                 </div>
                 <div
@@ -152,9 +157,9 @@
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                            <a href="{{route('area.penal')}}"
-                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                    Más</a>
+                        <a href="{{ route('area.penal') }}"
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</a>
                     </div>
                 </div>
                 <div
@@ -173,9 +178,9 @@
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                            <a href="{{route('area.laboral')}}"
-                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                    Más</a>
+                        <a href="{{ route('area.laboral') }}"
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</a>
                     </div>
                 </div>
                 <div
@@ -194,9 +199,9 @@
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                            <a href="{{route('area.administrativo')}}"
-                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                    Más</a>
+                        <a href="{{ route('area.administrativo') }}"
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                            Más</a>
                     </div>
                 </div>
             </div>
@@ -211,16 +216,21 @@
 
 
     <div
-    class="h-[90vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
-    <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
-        <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold font-raleway">Asesoría Legal de Confianza</h2>
-        <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300">Expertos en litigio y consultoría en los sectores empresarial, petrolero, partidos políticos, y banca bursátil.</p>
-        <div class="space-x-4">
-            <a href="#services" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Nuestros Servicios</a>
-            <a href="{{route('nosotros.index')}}" class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Sobre nosotros</a>
+        class="h-[90vh] mb-10 bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
+        <div class="h-full text-white flex flex-col justify-center items-center text-center space-y-8 bg-black/60">
+            <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold font-raleway">Asesoría Legal de Confianza</h2>
+            <p class="text-lg md:text-2xl xl:text-3xl font-raleway font-normal text-gray-300">Expertos en litigio y
+                consultoría en los sectores empresarial, petrolero, partidos políticos, y banca bursátil.</p>
+            <div class="space-x-4">
+                <a href="#services"
+                    class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Nuestros
+                    Servicios</a>
+                <a href="{{ route('nosotros.index') }}"
+                    class="bg-gray-700 text-white px-6 py-3 rounded-md shadow-lg hover:bg-gray-800 transition-colors duration-300 ease-in-out">Sobre
+                    nosotros</a>
+            </div>
         </div>
     </div>
-</div>
     <section class="container m-auto px-4 md:px-8">
         <h2 class="text-center subtitulos">Nuestras Publicaciones</h2>
         <div class="inline-flex items-center justify-center w-full">
@@ -317,9 +327,10 @@
                             <li class="max-w-sm shadow-lg rounded-lg overflow-hidden p-2 border shrink-0 snap-start bg-gray-50"
                                 role="option" x-bind="disableNextAndPreviousButtons">
                                 <div>
-                                <a href="{{route('post.show', ['id' => $post->id,'title' => $post->title])}}">
-                                    <img class="h-72 w-full object-cover" src="{{ asset('uploads/' . $post->image) }}"
-                                        alt="Imagen de {{ $post->title }}">
+                                    <a href="{{ route('post.show', ['id' => $post->id, 'title' => $post->title]) }}">
+                                        <img class="h-72 w-full object-cover"
+                                            src="{{ asset('uploads/' . $post->image) }}"
+                                            alt="Imagen de {{ $post->title }}">
                                     </a>
 
                                     <div class="border-t-8 border-blue-500 w-1/3 my-2 mx-auto"></div>
@@ -339,3 +350,27 @@
         </div>
     </section>
 @endsection
+
+@push('script')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            if (isSafari) {
+                const cards = document.querySelectorAll('.group');
+
+                cards.forEach(card => {
+                    card.addEventListener('touchstart', function() {
+                        card.classList.add('hover');
+                    });
+
+                    card.addEventListener('touchend', function() {
+                        setTimeout(() => {
+                            card.classList.remove('hover');
+                        }, 3000); // Mantener el efecto por 3 segundos
+                    });
+                });
+            }
+        });
+    </script>
+@endpush

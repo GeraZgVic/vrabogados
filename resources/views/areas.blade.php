@@ -195,3 +195,27 @@ Areas de práctica
 </div>
 
 @endsection
+
+@push('script')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+            if (isSafari) {
+                const cards = document.querySelectorAll('.group');
+
+                cards.forEach(card => {
+                    card.addEventListener('touchstart', function() {
+                        card.classList.add('hover');
+                    });
+
+                    card.addEventListener('touchend', function() {
+                        setTimeout(() => {
+                            card.classList.remove('hover');
+                        }, 3000); // Mantener el efecto por 3 segundos
+                    });
+                });
+            }
+        });
+    </script>
+@endpush
