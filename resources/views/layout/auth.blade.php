@@ -812,14 +812,14 @@
                                     d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                             </svg>
                         </span>
-                        <h2 id="settinsPanelLabel" class="text-xl font-medium text-gray-500 dark:text-light">Settings
+                        <h2 id="settinsPanelLabel" class="text-xl font-medium text-gray-500 dark:text-light">Ajustes
                         </h2>
                     </div>
                     <!-- Content -->
                     <div class="flex-1 overflow-hidden hover:overflow-y-auto">
                         <!-- Theme -->
                         <div class="p-4 space-y-4 md:p-8">
-                            <h6 class="text-lg font-medium text-gray-400 dark:text-light">Mode</h6>
+                            <h6 class="text-lg font-medium text-gray-400 dark:text-light">Modo</h6>
                             <div class="flex items-center space-x-8">
                                 <!-- Light button -->
                                 <button @click="setLightTheme"
@@ -833,7 +833,7 @@
                                                 d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                         </svg>
                                     </span>
-                                    <span>Light</span>
+                                    <span>Claro</span>
                                 </button>
 
                                 <!-- Dark button -->
@@ -848,14 +848,14 @@
                                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                         </svg>
                                     </span>
-                                    <span>Dark</span>
+                                    <span>Oscuro</span>
                                 </button>
                             </div>
                         </div>
 
                         <!-- Colors -->
                         <div class="p-4 space-y-4 md:p-8">
-                            <h6 class="text-lg font-medium text-gray-400 dark:text-light">Colors</h6>
+                            <h6 class="text-lg font-medium text-gray-400 dark:text-light">Colores</h6>
                             <div>
                                 <button @click="setColors('cyan')" class="w-10 h-10 rounded-full"
                                     style="background-color: var(--color-cyan)"></button>
