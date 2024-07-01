@@ -3,7 +3,6 @@
      <div class="flex flex-col h-full">
          <!-- Sidebar links -->
          <nav aria-label="Main" class="flex-1 px-2 py-4 space-y-2 overflow-y-hidden hover:overflow-y-auto">
-
              <a href="{{route('dashboard')}}"
                  class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary">
                  <span aria-hidden="true">
@@ -45,8 +44,10 @@
                          class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
                          Crear Post
                      </a>
+
                  </div>
              </div>
+             
              <div x-data="{ isActive: false, open: false }">
                 <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
                 <a href="#" @click="$event.preventDefault(); open = !open"
@@ -93,7 +94,7 @@
                              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                      </svg>
                  </span>
-                 <span>Customize</span>
+                 <span>Personalizar</span>
              </button>
          </div>
      </div>

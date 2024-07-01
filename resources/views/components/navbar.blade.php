@@ -27,16 +27,44 @@
     <!-- Toggle menu -->
     <div x-ref="tab" :style="handleToggle()"
         class="relative w-full overflow-hidden transition-all duration-700 lg:hidden max-h-0">
-        <div class="flex flex-col items-center my-3 space-y-2 text-lg hover:font-b text-gray-100">
-
-            <a href="#"
-                class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Inicio</span></a>
-            <a href="#" class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Áreas de
-                    práctica</span></a>
-            <a href="#"
-                class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Nosotros</span></a>
-            <a href="#"
-                class="hover:text-cyan-500 hover:bg-slate-600 px-2 py-1 rounded-md"><span>Contacto</span></a>
+        <div class="flex flex-col items-center my-3 space-y-2 text-lg hover:font-b text-gray-100 uppercase">
+            <x-link-navbar :text="__('site/navbar.link-inicio')" :route="'home.index'" />
+            <x-link-navbar :text="__('site/navbar.link-area')" :route="'area.index'" />
+            <x-link-navbar :text="'Blog'" :route="'blog.index'" />
+            <x-link-navbar :text="__('site/navbar.link-nosotros')" :route="'nosotros.index'" />
+            <x-link-navbar :text="__('site/navbar.link-contacto')" :route="'contacto.index'" />
+            <div class="tracking-[.15em] text-base">
+                <div x-data="{ open: false }" @mouseleave="open = false" class="relative inline-block"
+                    :class="{ 'hover:text-gray-400': open, 'text-gray-100': !open }">
+                    <!-- Dropdown Toggle Button -->
+                    <button @mouseover="open = true" class="flex items-center">
+                        <span class=" font-work-sans uppercase text-sm">{{ __('site/navbar.link-idioma') }}</span>
+                        <span :class="open = !open ? '' : '-rotate-180'"
+                            class="transition-transform duration-500 transform">
+                            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90"
+                        class="absolute top-0 left-16 text-gray-200 bg-black rounded-lg shadow-xl min-w-max">
+                        @foreach (Config::get('languages') as $lang => $language)
+                            @if ($lang != App::getLocale())
+                                <a href="{{ route('lang', $lang) }}" class="block px-4 text-sm hover:text-gray-900 hover:bg-gray-100">
+                                    {{ strtoupper($language) }}
+                                </a>
+                            @endif
+                        @endforeach
+                    </div>
+                    <!-- End Dropdown Menu -->
+                </div>
+            </div>
         </div>
 
     </div>

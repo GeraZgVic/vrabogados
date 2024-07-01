@@ -156,7 +156,7 @@
                 </button>
 
                 <!-- Notification button -->
-                <button @click="openNotificationsPanel(); $nextTick(() => { isMobileSubMenuOpen = false })"
+                {{-- <button @click="openNotificationsPanel(); $nextTick(() => { isMobileSubMenuOpen = false })"
                     class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
                     <span class="sr-only">Open notifications panel</span>
                     <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -164,10 +164,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                     </svg>
-                </button>
+                </button> --}}
 
                 <!-- Search button -->
-                <button
+                {{-- <button
                     @click="openSearchPanel(); $nextTick(() => { $refs.searchInput.focus(); setTimeout(() => {isMobileSubMenuOpen= false}, 100) })"
                     class="p-2 transition-colors duration-200 rounded-full text-primary-lighter bg-primary-50 hover:text-primary hover:bg-primary-100 dark:hover:text-light dark:hover:bg-primary-dark dark:bg-dark focus:outline-none focus:bg-primary-100 dark:focus:bg-primary-dark focus:ring-primary-darker">
                     <span class="sr-only">Open search panel</span>
@@ -176,7 +176,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                </button>
+                </button> --}}
 
                 <!-- Settings button -->
                 <button @click="openSettingsPanel(); $nextTick(() => { isMobileSubMenuOpen = false })"
@@ -210,17 +210,17 @@
                     x-transition:leave-end="translate-y-1/2 opacity-0" @click.away="open = false"
                     class="absolute right-0 w-48 py-1 origin-top-right bg-white rounded-md shadow-lg top-12 ring-1 ring-black ring-opacity-5 dark:bg-dark"
                     role="menu" aria-orientation="vertical" aria-label="User menu">
-                    <a href="#" role="menuitem"
+                    {{-- <a href="#" role="menuitem"
                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                         Your Profile
                     </a>
                     <a href="#" role="menuitem"
                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                        Settings
-                    </a>
-                    <a href="#" role="menuitem"
+                        Ajustes
+                    </a> --}}
+                    <a href="{{route('logout')}}" role="menuitem"
                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                        Logout
+                        Cerrar Sesión
                     </a>
                 </div>
             </div>
@@ -278,7 +278,38 @@
                         </a>
                     </div>
                 </div>
-
+            </div>
+            <div x-data="{ isActive: false, open: false }">
+                <!-- active & hover classes 'bg-primary-100 dark:bg-primary' -->
+                <a href="#" @click="$event.preventDefault(); open = !open"
+                    class="flex items-center p-2 text-gray-500 transition-colors rounded-md dark:text-light hover:bg-primary-100 dark:hover:bg-primary"
+                    :class="{ 'bg-primary-100 dark:bg-primary': isActive || open }" role="button" aria-haspopup="true"
+                    :aria-expanded="(open || isActive) ? 'true' : 'false'">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                      </svg>                      
+                    <span class="ml-2 text-sm">Articulos</span>
+                    <span class="ml-auto" aria-hidden="true">
+                        <!-- active class 'rotate-180' -->
+                        <svg class="w-4 h-4 transition-transform transform" :class="{ 'rotate-180': open }"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </a>
+                <div role="menu" x-show="open" class="mt-2 space-y-2 px-7" aria-label="Dashboards">
+                    <!-- active & hover classes 'text-gray-700 dark:text-light' -->
+                    <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
+                    <a href="{{route('articulos.index')}}" role="menuitem"
+                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
+                        Ver Articulos
+                    </a>
+                    <a href="{{route('articulos.create')}}" role="menuitem"
+                        class="block p-2 text-sm text-gray-400 transition-colors duration-200 rounded-md dark:hover:text-light hover:text-gray-700">
+                        Agregar Articulo
+                    </a>
+                </div>
             </div>
         </nav>
     </div>
