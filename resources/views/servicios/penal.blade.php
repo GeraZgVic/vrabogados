@@ -6,9 +6,9 @@
 
 <div>
 
-    <section class="w-full">
+    <section class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/fotos-premium/manos-criminal-esposas-sala-tribunal_1034910-14489.jpg?w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
         <div
-            class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/fotos-premium/manos-criminal-esposas-sala-tribunal_1034910-14489.jpg?w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+            class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
                     Derecho Penal</h1>
