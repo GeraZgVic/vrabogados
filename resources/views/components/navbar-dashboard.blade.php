@@ -218,10 +218,13 @@
                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                         Ajustes
                     </a> --}}
-                    <a href="{{route('logout')}}" role="menuitem"
-                        class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                        Cerrar Sesión
-                    </a>
+                    <form action="{{ route('logout') }}" method="POST" class="w-full">
+                        @csrf
+                        <button type="submit" role="menuitem"
+                            class="w-full block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
+                            Cerrar Sesión
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
