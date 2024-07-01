@@ -12,7 +12,7 @@
 <body>
     <section
         class="h-[100vh] bg-[url(https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-fixed">
-        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 bg-black/60">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 bg-black/60 w-full h-full">
             <a href="{{ route('home.index') }}" class="flex items-center mb-6 text-2xl font-semibold text-gray-200 ">
                 <img class="w-full h-24 mr-2" src="{{ asset('img/logo_blanco.png') }}" alt="logo">
             </a>
