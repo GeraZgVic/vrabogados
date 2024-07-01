@@ -7,7 +7,7 @@
     <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video class="min-w-full min-h-full absolute object-cover"
             src="{{asset('mp4/vhsa.mp4')}}"
-            type="video/mp4" autoplay muted loop></video>
+            type="video/mp4" autoplay muted loop playsinline loading="lazy"></video>
     </div>
     <div class="video-content z-10 container max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
         <h1 class="titulos">Contáctanos en Villahermosa</h1>
@@ -63,10 +63,11 @@
 </section>
 
 <style>
-    .video-docker video {
+   .video-docker video {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        object-position: center;
     }
 
     .video-docker::after {
