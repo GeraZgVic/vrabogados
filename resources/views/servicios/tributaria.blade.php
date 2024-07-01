@@ -8,7 +8,7 @@
 
     <section class="w-full">
         <div
-            class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/foto-gratis/mujer-trabajando-tarde-oficina_23-2148991378.jpg?t=st=1719604567~exp=1719608167~hmac=c374bcade480015bc07bf45da8cca1d2b269b65da04f966fee73c906bf045104&w=1380')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+            class="w-full h-[520px] animate-fade  bg-[url('https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
                     Derecho Fiscal</h1>
