@@ -6,9 +6,9 @@
 
 <div>
 
-    <section class="w-full">
+    <section class="w-full h-[520px] animate-fade  bg-[url('https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center">
         <div
-            class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/foto-gratis/mujer-trabajando-tarde-oficina_23-2148991378.jpg?t=st=1719604567~exp=1719608167~hmac=c374bcade480015bc07bf45da8cca1d2b269b65da04f966fee73c906bf045104&w=1380')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+            class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
                     Derecho Mercantil</h1>
@@ -25,7 +25,7 @@
     </section>
 
 
-    <section class="bg-gray-300">
+    <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="items-center md:flex md:space-x-6">
                 <div class="md:w-1/2 animate-fade-right animate-once animate-duration-[2500ms] animate-ease-in">
@@ -49,7 +49,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/trabajadores-cuello-blanco-trabajan-sitio-construccion_1398-5095.jpg?t=st=1719605631~exp=1719609231~hmac=4e7b7095160ee774a607771c19927d6283775a5cddb88186709d880560d9dbe6&w=740">
+                                src="https://images.unsplash.com/photo-1676181739500-e1291b113370?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/gente-tiro-completo-trabajando-juntos_23-2150290134.jpg?t=st=1719605760~exp=1719609360~hmac=9febeaed087089061813846083ddcaad8710b755fbb35c24f922d0330af29a02&w=740">
+                                src="https://images.unsplash.com/photo-1712331393873-f671bec94e21?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                 clientes, proveedores y empleados.</p>
 
             <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
-                src="https://img.freepik.com/foto-gratis/empresario-leyendo-contrato-closeup_1098-14742.jpg?t=st=1719608886~exp=1719612486~hmac=36d7798e3aead0a7453954738b1e067b9b690214a8b1d28f04ce9165349d21fd&w=1060">
+                src="https://images.unsplash.com/photo-1713461983836-de0a45009424?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         </div>
     </section>
 </div>

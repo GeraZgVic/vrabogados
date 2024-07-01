@@ -6,7 +6,7 @@ Areas de práctica
 @section('contenido')
 <div class="flex h-screen items-center justify-center">
     <div class="font-inter antialiased animate-fade relative h-full w-full bg-cover bg-center bg-fixed"
-        style="background-image: url('https://img.freepik.com/foto-gratis/hombre-vista-frontal-trabajando-como-abogado_23-2151152101.jpg?t=st=1719602061~exp=1719605661~hmac=5cf20514b6a7d8b0a93ba9f76772cc9ddb321d373b9f9045cd49e69cc1e7ff62&w=1060');">
+        style="background-image: url('https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-65 backdrop-blur-sm">
             <div class="p-6 text-white">
                 <h1 class="pb-4 t mb-2 md:m-0 text-white text-center animate-fade-up titulos">

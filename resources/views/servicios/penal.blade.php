@@ -50,7 +50,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/cerrar-mano-punos-carcel_23-2149098125.jpg?t=st=1719602535~exp=1719606135~hmac=fa0a194d3b7e5669066dcfed17c5fd15ffea2131993b99807fd47e5f67d2b457&w=740">
+                                src="https://images.unsplash.com/photo-1701531636956-6ae4a7993d4a?q=80&w=1850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/vista-lateral-hacker-masculino-laptop-protegida-cadena-metal_23-2148578164.jpg?t=st=1719602734~exp=1719606334~hmac=6c3f766bde43dd4ab50b48958350bcadcf2e6060ed5417448067db409aed5957&w=740">
+                                src="https://images.unsplash.com/photo-1674049404913-2005c02245fa?q=80&w=1662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
