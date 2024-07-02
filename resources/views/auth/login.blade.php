@@ -35,7 +35,7 @@
                             <input type="email" name="email" id="email"
                                 class="bg-gray-200 border text-gray-700 sm:text-sm 
                                 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 @error('email') border-red-400 @enderror"
-                                placeholder="name@correo.com">
+                                placeholder="name@correo.com" value="correo@correo.com">
                             @error('email')
                             <div class="m-2 mb-4 text-sm text-center bg-red-100 py-2 text-red-800 rounded-lg" role="alert">
                                 <span class="font-medium"></span> {{$message}}
@@ -45,6 +45,7 @@
                         <div>
                             <label for="password" class="block mb-2 text-sm font-medium text-gray-200 ">Password</label>
                             <input type="password" name="password" id="password" placeholder="••••••••"
+                                value="password123"
                                 class="bg-gray-200 border text-gray-700 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 @error('password') border-red-400 @enderror"">
                             @error('password')
                             <div class="m-2 mb-4 text-sm text-center bg-red-100 py-2 text-red-800 rounded-lg" role="alert">

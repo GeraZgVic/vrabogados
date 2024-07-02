@@ -64,6 +64,9 @@
                     </div>
                     <!-- End Dropdown Menu -->
             </div>
+            <div class="text-gray-100 font-raleway uppercase tracking-[.15em] text-base items-center ">
+                <x-link-navbar text="{{__('site/navbar.link-iniciarSesion')}}" :route="'login'" />
+            </div>
         </div>
 
     </div>
@@ -151,6 +154,9 @@
                 </div>
                 <!-- End Dropdown Menu -->
             </div>
+        </div>
+        <div class="text-gray-100  font-raleway uppercase tracking-[.15em] text-base items-center ">
+            <x-link-navbar text="{{__('site/navbar.link-iniciarSesion')}}" :route="'login'" />
         </div>
     </div>
 

@@ -135,7 +135,7 @@
                         <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                            Asesoría legal experta en contratos, propiedad, herencias y responsabilidad civil.</p>
                         <a href="{{ route('area.civil') }}"
                             class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                             Más</a>
@@ -156,7 +156,7 @@
                         <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                            Asesoramiento legal en casos criminales, defensa en juicios y gestión de litigios penales.</p>
                         <a href="{{ route('area.penal') }}"
                             class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                             Más</a>
@@ -177,7 +177,7 @@
                         <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                            Asesoría legal en relaciones laborales, contratos de trabajo, derechos de empleados y litigios laborales.</p>
                         <a href="{{ route('area.laboral') }}"
                             class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                             Más</a>
@@ -198,7 +198,7 @@
                         <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h2>
                         <p
                             class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                            Asesoría legal especializada en procedimientos administrativos, normativas gubernamentales y litigios ante entidades públicas.</p>
                         <a href="{{ route('area.administrativo') }}"
                             class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                             Más</a>
