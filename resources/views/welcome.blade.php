@@ -121,89 +121,93 @@
         <div class="flex items-center justify-center mb-10">
             <div class="mb-8 grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                 <div
-                    class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
-                    <div class="h-96 w-72">
-                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://img.freepik.com/foto-gratis/vista-superior-elementos-orientacion-profesional-jueces_23-2149443471.jpg?t=st=1718736535~exp=1718740135~hmac=831e13b79f44b14ecf5695531ba24b34330f34de79dba9e6b57a63f6d459f206&w=360"
-                            alt="" />
-                    </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h2>
-                        <p
-                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Asesoría legal experta en contratos, propiedad, herencias y responsabilidad civil.</p>
-                        <a href="{{ route('area.civil') }}"
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</a>
-                    </div>
+                class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://img.freepik.com/foto-gratis/vista-superior-elementos-orientacion-profesional-jueces_23-2149443471.jpg?t=st=1718736535~exp=1718740135~hmac=831e13b79f44b14ecf5695531ba24b34330f34de79dba9e6b57a63f6d459f206&w=360"
+                        alt="" />
                 </div>
                 <div
-                    class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
-                    <div class="h-96 w-72">
-                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://img.freepik.com/foto-gratis/corte-martillo-libros-juicio-concepto-ley_144627-30453.jpg?t=st=1718736475~exp=1718740075~hmac=83fc57a1463d3eccbea37d72769cf20ec580e6313dd9c6aaec5293650587ef01&w=360"
-                            alt="" />
-                    </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h2>
-                        <p
-                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Asesoramiento legal en casos criminales, defensa en juicios y gestión de litigios penales.</p>
-                        <a href="{{ route('area.penal') }}"
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</a>
-                    </div>
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 </div>
                 <div
-                    class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
-                    <div class="h-96 w-72">
-                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="" />
-                    </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h2>
-                        <p
-                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Asesoría legal en relaciones laborales, contratos de trabajo, derechos de empleados y litigios laborales.</p>
-                        <a href="{{ route('area.laboral') }}"
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</a>
-                    </div>
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">
+                        {{ __('site/areas.areas-derecho-civil') }}</h2>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {{ __('site/areas.derecho-civil-descripcion') }}</p>
+                    <a href="{{ route('area.civil') }}"
+                        class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                        Más</a>
+                </div>
+            </div>
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://img.freepik.com/foto-gratis/corte-martillo-libros-juicio-concepto-ley_144627-30453.jpg?t=st=1718736475~exp=1718740075~hmac=83fc57a1463d3eccbea37d72769cf20ec580e6313dd9c6aaec5293650587ef01&w=360"
+                        alt="" />
                 </div>
                 <div
-                    class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
-                    <div class="h-96 w-72">
-                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://img.freepik.com/foto-gratis/abogado-maduro-serio-que-lee-libro-ley-tribunal_23-2147898517.jpg?t=st=1718738180~exp=1718741780~hmac=475595a60a34fecca1c0243be4147213a5cf02d0323dbb674917e9173d252f80&w=360"
-                            alt="" />
-                    </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-                    <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                        <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h2>
-                        <p
-                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            Asesoría legal especializada en procedimientos administrativos, normativas gubernamentales y litigios ante entidades públicas.</p>
-                        <a href="{{ route('area.administrativo') }}"
-                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
-                            Más</a>
-                    </div>
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">
+                        {{ __('site/areas.areas-derecho-penal') }}</h2>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {{ __('site/areas.derecho-penal-descripcion') }}</p>
+                    <a href="{{ route('area.penal') }}"
+                        class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                        Más</a>
+                </div>
+            </div>
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="{{ __('site/areas.areas-derecho-laboral') }}" />
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">
+                        {{ __('site/areas.areas-derecho-laboral') }}</h2>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {{ __('site/areas.derecho-laboral-descripcion') }}</p>
+                    <a href="{{ route('area.laboral') }}"
+                        class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                        Más</a>
+                </div>
+            </div>
+            <div
+                class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
+                <div class="h-96 w-72">
+                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                        src="https://img.freepik.com/foto-gratis/abogado-maduro-serio-que-lee-libro-ley-tribunal_23-2147898517.jpg?t=st=1718738180~exp=1718741780~hmac=475595a60a34fecca1c0243be4147213a5cf02d0323dbb674917e9173d252f80&w=360"
+                        alt="" />
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">
+                        {{ __('site/areas.areas-derecho-administrativo') }}</h2>
+                    <p
+                        class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        {{ __('site/areas.derecho-administrativo-descripcion') }}</p>
+                    <a href="{{ route('area.administrativo') }}"
+                        class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
+                        Más</a>
+                </div>
+            </div>
             </div>
         </div>
 
