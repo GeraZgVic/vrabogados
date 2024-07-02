@@ -166,7 +166,7 @@
                     class="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-black/30">
                     <div class="h-96 w-72">
                         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://img.freepik.com/foto-gratis/jefe-trabajo_1098-14125.jpg?t=st=1719601376~exp=1719604976~hmac=3d88585f722eb048740eb1f9ea0038fcb52a076af0c5d47e41f14b03ba1c314b&w=740"
+                            src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="" />
                     </div>
                     <div

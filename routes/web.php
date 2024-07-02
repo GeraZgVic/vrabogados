@@ -38,6 +38,8 @@ Route::get('areas-practica/derecho-laboral', [AreaController::class, 'laboral'])
 Route::get('areas-practica/derecho-administrativo', [AreaController::class, 'administrativo'])->name('area.administrativo');
 Route::get('areas-practica/derecho-mercantil', [AreaController::class, 'mercantil'])->name('area.mercantil');
 Route::get('areas-practica/derecho-tributaria', [AreaController::class, 'tributaria'])->name('area.tributaria');
+Route::get('areas-practica/derecho-amparo', [AreaController::class, 'amparo'])->name('area.amparo');
+Route::get('areas-practica/derecho-contitucional', [AreaController::class, 'contitucional'])->name('area.contitucional');
 
 // Autenticación para usuario
 Route::get('/login', [LoginController::class, 'index'])->name('login');

@@ -1,21 +1,20 @@
 @extends('layout.app')
 
-@section('titulo', 'Derecho Laboral')
+@section('titulo', 'Derecho Amparo')
 
 @section('contenido')
 
 <div>
 
-    <section class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center">
+    <section class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1505488387362-48bc38155987?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
         <div
             class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
-                    Derecho Laboral</h1>
+                    Derecho Amparo</h1>
                 <p
                     class="parrafo-cuerpo text-white animate-fade-up animate-once animate-duration-[2500ms] animate-ease-in">
-                    El Derecho Laboral o Derecho del Trabajo en México tiene su origen en acontecimientos históricos,
-                    políticos y económicos.</p>
+                    Cuando las acciones de una autoridad afectan tus derechos o garantías individuales, tienes oportunidad de defenderte a través de Juicio de Amparo.</p>
                 <div class="flex justify-center mt-8">
                     <a href="{{ route('contacto.index') }}"
                         class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
@@ -25,23 +24,20 @@
         </div>
     </section>
 
+
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="items-center md:flex md:space-x-6">
                 <div class="md:w-1/2 animate-fade-right animate-once animate-duration-[2500ms] animate-ease-in">
-                    <h2 class="subtitulos text-gray-800">Relación Laboral</h2>
-                    <p class="parrafo-cuerpo text-gray-800">Para hablar de relación laboral, empecemos por definir
-                        quiénes son los sujetos de la relación laboral y qué se entiende por trabajo de conformidad con
-                        la Ley Federal del Trabajo.
+                    <h2 class="subtitulos text-gray-800">OPORTUNIDAD PARA LA PRESENTACIÓN DE LA DEMANDA.</h2>
+                    <p class="parrafo-cuerpo text-gray-800">El artículo 21 de la Ley de Amparo, establece que el término para la presentación de la demanda de garantías será de quince días, contándose el mismo desde el siguiente al en que haya surtido efectos, conforme a la ley del acto, la notificación al quejoso de la resolución o acuerdo que se reclame; al en que haya tenido conocimiento de ellos o de su ejecución, o al en que se hubiese ostentado sabedor de los mismos.
 
-                        Los sujetos de la relación laboral son el trabajador y el patrón. El trabajador es la persona
-                        física que presta a otra persona física o moral, un trabajo personal subordinado. El patrón es
-                        la persona física o moral que utiliza los servicios de uno o varios trabajadores.</p>
-                    <p class="parrafo-cuerpo text-gray-600"> El patrón y el trabajador, en virtud de la relación laboral
-                        tienen obligaciones recíprocas, la ley contempla como obligaciones del patrón: cumplir con las
-                        disposiciones legales; pagar al trabajador salarios e indemnizaciones; proporcionar materiales
-                        necesarios para la ejecución del trabajo; proporcionar a las mujeres embarazadas la protección
-                        que establezcan los reglamentos; entre otros.</p>
+                        Algunas de estas leyes mercantiles son: Ley de Comercio Exterior; Ley de Concursos Mercantiles;
+                        Ley de Instituciones de Crédito; Ley General de Sociedades Mercantiles; Ley General de Títulos y
+                        Operaciones de Crédito; Ley Sobre el Contrato de Seguro, entre otras.</p>
+                    <p class="parrafo-cuerpo text-gray-600"> El Código Fiscal de la Federación establece que las
+                        personas físicas y morales están obligadas a contribuir para los gastos públicos conforme a las
+                        leyes fiscales respectivas. </p>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
@@ -49,7 +45,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                src="https://images.unsplash.com/photo-1524633712235-22da046738b4?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -65,23 +61,27 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://images.unsplash.com/photo-1524758870432-af57e54afa26?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                src="https://images.unsplash.com/photo-1603644448048-28a7e5122f0a?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
-                    <h2 class="subtitulos text-gray-800">Trabajo de Mujeres</h2>
-                    <p class="parrafo-cuerpo text-gray-600">Las mujeres disfrutan de los mismos derechos y tienen las
-                        mismas obligaciones que los hombres.
+                    <h2 class="subtitulos text-gray-800">PROCEDIMIENTO DEL JUICIO DE AMPARO INDIRECTO.</h2>
+                    <p class="parrafo-cuerpo text-gray-600">Las contribuciones se clasifican en impuestos, aportaciones
+                        de seguridad social, contribuciones de mejoras y derechos.
 
-                        La ley, tratándose de las mujeres establece ciertas disposiciones específicas con el propósito
-                        de proteger la maternidad; por ejemplo, no podrán desempeñar labores insalubres o peligrosas,
-                        trabajo nocturno o industrial después de las 10 de la noche o en horas extraordinarias, cuando
-                        se ponga en peligro su salud o la del producto.</p>
-                    <p class="parrafo-cuerpo text-gray-600">Además las madres trabajadoras gozarán de periodos de
-                        descanso, lactancia, servicios de guardería, entre otros, bajo ciertas condiciones que establece
-                        la propia ley.</p>
+                        Los impuestos son las contribuciones establecidas por la ley y que deben pagar las personas
+                        físicas y morales que se encuentran en la situación jurídica o de hecho prevista por la ley y
+                        que no sean aportaciones de seguridad social, contribuciones de mejoras y derechos. Por ejemplo,
+                        el Impuesto al Valor Agregado, Impuestos al Comercio Exterior y el Impuesto Sobre la Renta.
+                    </p>
+                    <p class="parrafo-cuerpo text-gray-600">Esto es, los comerciantes son aquellas personas físicas o
+                        morales que hacen del comercio su profesión habitual. No obstante ello, se puede dar el supuesto
+                        de que cualquier persona física o moral con o sin establecimiento físico, eventual o
+                        accidentalmente, realice alguna operación de comercio y aunque no sea considerada en derecho
+                        como comerciante, por el hecho de realizar esa operación de comercio, quedaría sujeta a las
+                        leyes mercantiles.</p>
                 </div>
             </div>
         </div>
@@ -89,10 +89,14 @@
 
     <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
-            <h2 class="subtitulos text-gray-800">Contratos Laborales
+            <h2 class="subtitulos text-gray-800">Derecho de Petición y Negativa Ficta
             </h2>
-            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">La ley establece la presunción de la existencia de un
-                contrato y de la relación de trabajo entre el que presta un trabajo y el que lo recibe. <br>
+            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Los actos de comercio son aquellos actos jurídicos
+                celebrados por personas físicas o morales, comerciantes o no, que produzcan efectos jurídicos regulados
+                por el derecho mercantil.
+
+                El Código de Comercio enuncia cuáles son los actos de comercio contemplados por la ley. Los reproducimos
+                a continuación:<br>
 
                 Los contratos de trabajo pueden ser individuales o colectivos. <br>
 
@@ -108,7 +112,7 @@
                     </svg>
 
                     <div>
-                        <h4 class="text-xl subtitulos font-medium text-gray-800">Reglamento Interior del Trabajo</h4>
+                        <h4 class="text-xl subtitulos font-medium text-gray-800">Registro Público de Comercio</h4>
                         <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">El Reglamento Interior del Trabajo, es un
                             conjunto de disposiciones obligatorias tanto para los trabajadores como para los patrones,
                             algunas de estas disposiciones son las relativas a las horas de entrada y salida de los
@@ -208,7 +212,7 @@
 
     <div>
         <div class="max-w-4xl mx-auto p-8">
-            <h1 class="text-4xl font-bold mb-8">Despido</h1>
+            <h2 class="text-4xl font-bold mb-8">Contratos Mercantiles</h2>
             <div class="flex items-center mb-6">
                 <div class="h-8 w-8 rounded-full bg-gray-400 mr-4"></div>
                 <div>
@@ -217,14 +221,14 @@
                 </div>
             </div>
             <p class="text-lg leading-8 mb-20">
-                El despido del trabajador puede ser justificado o injustificado. Será justificado cuando se configuren
-                en la realidad las causas de rescisión previstas por el artículo 47 de la Ley Federal del Trabajo.
+                Los contratos mercantiles son los convenios que producen o transfieren obligaciones y derechos de
+                naturaleza mercantil.
             </p>
             <p class="text-lg leading-8 mb-20">
-                El patrón que despida a un trabajador deberá darle aviso escrito en el que señale claramente la conducta
-                o conductas que motivan la rescisión y la fecha o fechas en que se cometieron. El aviso deberá
-                entregarse personalmente al trabajador en el momento del despido o bien, comunicarlo al Tribunal
-                competente para que lo notifique en forma personal al trabajador.
+                Entre los contratos mercantiles regulados por las disposiciones de naturaleza mercantil encontramos:
+                agencia, cesión de créditos comerciales, comisión mercantil, concesión mercantil, consignación
+                mercantil, compraventa mercantil, permuta mercantil, diversos contratos de seguro, diversos contratos de
+                transporte, depósito mercantil, fianza, fideicomiso, garantía, suministro, tiempo compartido y otros.
             </p>
             <p class="text-lg leading-8 mb-20">
                 El despido del trabajador será injustificado cuando el patrón no haya dado aviso al trabajador
@@ -241,23 +245,20 @@
 
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto text-center">
-            <h2 class="subtitulos text-gray-800">Derecho Procesal del Trabajo</h2>
-            <p class="parrafo-cuerpo mt-4 text-gray-600">La Ley Federal del Trabajo se refiere en su Título Catorce al
-                Proceso del Derecho de Trabajo, el cual será público, gratuito, inmediato, predominantemente oral y
-                conciliatorio.
+            <h2 class="subtitulos text-gray-800">Concurso Mercantil</h2>
+            <p class="parrafo-cuerpo mt-4 text-gray-600">Mediante el procedimiento de concurso mercantil, se declara en
+                concurso al comerciante que ha incumplido con sus obligaciones de pago a dos o más acreedores distintos
+                y bajo las condiciones previstas en la Ley de Concursos Mercantiles.
 
-                El Centro Federal de Conciliación y Registro Laboral y sus sedes en las entidades federativas serán
-                competentes para llevar a cabo la conciliación en conflictos individuales y colectivos de trabajo.
+                El procedimiento de concurso mercantil puede ser solicitado por: el propio comerciante, el acreedor o el
+                Ministerio Público.
 
-                Las autoridades laborales federales conocerán de los conflictos de trabajo de las ramas industriales,
-                empresas o materias a que se refiere el artículo 527 de la Ley Federal del Trabajo entre las cuales se
-                encuentran las ramas industriales textil, eléctrica, cinematográfica, hulera, azucarera, minera,
-                metalúrgica, de hidrocarburos, petroquímica, cementera y otras; y de las empresas que sean administradas
-                en forma directa o descentralizada por el Gobierno Federal o que ejecuten trabajos en zonas federales,
-                entre otras.</p>
+                Mediante este procedimiento se busca evitar que el incumplimiento de las obligaciones de pago del
+                comerciante ponga en riesgo la existencia de la empresa, y que además se lesione a los acreedores, a sus
+                clientes, proveedores y empleados.</p>
 
             <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                src="https://images.unsplash.com/photo-1437751068958-82e6fccc9360?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         </div>
     </section>
 </div>
