@@ -1,12 +1,12 @@
 @extends('layout.app')
 
-@section('titulo', 'Derecho Civil')
+@section('titulo', 'Derecho Mercantil')
 
 @section('contenido')
 
 <div>
 
-    <section class="w-full h-[520px] animate-fade  bg-[url('https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center">
+    <section class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center">
         <div
             class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
@@ -23,7 +23,6 @@
 
         </div>
     </section>
-
 
     <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">

@@ -6,7 +6,7 @@
 
 <div>
 
-    <section class="w-full h-[520px] animate-fade  bg-[url('https://img.freepik.com/fotos-premium/manos-criminal-esposas-sala-tribunal_1034910-14489.jpg?w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+    <section class="w-full h-screen animate-fade  bg-[url('https://img.freepik.com/fotos-premium/manos-criminal-esposas-sala-tribunal_1034910-14489.jpg?w=1060')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
         <div
             class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
@@ -24,7 +24,6 @@
 
         </div>
     </section>
-
 
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto">

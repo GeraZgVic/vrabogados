@@ -1,14 +1,14 @@
 @extends('layout.app')
 
-@section('titulo', 'Derecho Civil')
+@section('titulo', 'Derecho Tributario')
 
 @section('contenido')
 
 <div>
 
-    <section class="w-full h-[520px] animate-fade  bg-[url('https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
-        <div
-            class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
+    <section
+        class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+        <div class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
                     Derecho Fiscal</h1>
@@ -23,7 +23,6 @@
 
         </div>
     </section>
-
 
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto">
@@ -43,12 +42,7 @@
                         Ley de Instituciones de Crédito; Ley General de Sociedades Mercantiles; Ley General de Títulos y
                         Operaciones de Crédito; Ley Sobre el Contrato de Seguro, entre otras.</p>
                     <p class="parrafo-cuerpo text-gray-600"> El Código Fiscal de la Federación establece que las
-                        personas físicas y morales están obligadas a contribuir para los gastos públicos conforme a las
-                        leyes fiscales respectivas. La Federación también está obligada a pagar contribuciones pero
-                        únicamente cuando las leyes lo señalen expresamente, los Estados Extranjeros en casos de
-                        reciprocidad no están obligados a pagar impuestos. Además el Código establece la posibilidad de
-                        que ciertas personas no estén obligadas a pagar contribuciones y únicamente tendrán las otras
-                        obligaciones que expresamente establezcan las leyes.</p>
+                        personas físicas y morales están obligadas</p>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
@@ -56,7 +50,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/trabajadores-cuello-blanco-trabajan-sitio-construccion_1398-5095.jpg?t=st=1719605631~exp=1719609231~hmac=4e7b7095160ee774a607771c19927d6283775a5cddb88186709d880560d9dbe6&w=740">
+                                src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -72,7 +66,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://img.freepik.com/foto-gratis/gente-tiro-completo-trabajando-juntos_23-2150290134.jpg?t=st=1719605760~exp=1719609360~hmac=9febeaed087089061813846083ddcaad8710b755fbb35c24f922d0330af29a02&w=740">
+                                src="https://images.unsplash.com/photo-1640197618317-dc379a226fbe?q=80&w=1637&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -100,7 +94,7 @@
 
     <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
-            <h2 class="subtitulos text-gray-800">Derecho de Petición y Negativa Ficta
+            <h2 class="subtitulos text-gray-800">El Acto Administrativo en Materia Fiscal
             </h2>
             <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Los actos de comercio son aquellos actos jurídicos
                 celebrados por personas físicas o morales, comerciantes o no, que produzcan efectos jurídicos regulados
@@ -123,7 +117,7 @@
                     </svg>
 
                     <div>
-                        <h4 class="text-xl subtitulos font-medium text-gray-800">Registro Público de Comercio</h4>
+                        <h4 class="text-xl subtitulos font-medium text-gray-800">Las Infracciones</h4>
                         <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">El Reglamento Interior del Trabajo, es un
                             conjunto de disposiciones obligatorias tanto para los trabajadores como para los patrones,
                             algunas de estas disposiciones son las relativas a las horas de entrada y salida de los
@@ -142,7 +136,7 @@
                     </svg>
 
                     <div>
-                        <h2 class="text-xl subtitulos font-medium text-gray-800">Condiciones de Trabajo</h2>
+                        <h2 class="text-xl subtitulos font-medium text-gray-800">Delitos Fiscales</h2>
                         <p class="parrafo-cuerpo max-w-lg mt-4 text-gray-600">Las condiciones de trabajo deberán hacerse
                             constar por escrito, sin embargo la falta del escrito no priva al trabajador de los derechos
                             que deriven de la ley y de los servicios prestados. <br> Se
@@ -183,7 +177,7 @@
     <section class="bg-white">
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="md:flex md:justify-between">
-                <h2 class="subtitulos text-gray-800">Coaliciones</h2>
+                <h2 class="subtitulos text-gray-800">Notificaciones en Materia Fiscal</h2>
             </div>
 
             <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
@@ -223,7 +217,7 @@
 
     <div>
         <div class="max-w-4xl mx-auto p-8">
-            <h2 class="text-4xl font-bold mb-8">Contratos Mercantiles</h2>
+            <h2 class="text-4xl font-bold mb-8">El Procedimiento Administrativo de Ejecución</h2>
             <div class="flex items-center mb-6">
                 <div class="h-8 w-8 rounded-full bg-gray-400 mr-4"></div>
                 <div>
@@ -232,44 +226,40 @@
                 </div>
             </div>
             <p class="text-lg leading-8 mb-20">
-                Los contratos mercantiles son los convenios que producen o transfieren obligaciones y derechos de
-                naturaleza mercantil.
+                Es el procedimiento a través del cual las autoridades fiscales exigirán el pago de los créditos fiscales
+                que no hubieren sido pagados por los contribuyentes.
             </p>
             <p class="text-lg leading-8 mb-20">
-                Entre los contratos mercantiles regulados por las disposiciones de naturaleza mercantil encontramos:
-                agencia, cesión de créditos comerciales, comisión mercantil, concesión mercantil, consignación
-                mercantil, compraventa mercantil, permuta mercantil, diversos contratos de seguro, diversos contratos de
-                transporte, depósito mercantil, fianza, fideicomiso, garantía, suministro, tiempo compartido y otros.
+                Las disposiciones fiscales aplicables establecen los requisitos de fondo y forma para que la autoridad
+                lleve a cabo el procedimiento administrativo de ejecución.
             </p>
             <p class="text-lg leading-8 mb-20">
-                El despido del trabajador será injustificado cuando el patrón no haya dado aviso al trabajador
-                personalmente o por conducto del Tribunal, de la terminación de la relación de trabajo. La separación no
-                justificada produce la nulidad del despido.
+                En este procedimiento, la autoridad requiere el pago del crédito fiscal al contribuyente, en caso de que
+                el contribuyente no pruebe haber efectuado el pago, la autoridad fiscal podrá practicar el embargo sobre
+                bienes o la negociación del contribuyente que sean suficientes para cubrir el crédito fiscal. La
+                autoridad fiscal podrá embargar bienes inmuebles, bienes muebles como acciones, bonos, cupones, derechos
+                de autor, marcas, obras artísticas, entre otros.
             </p>
             <p class="text-lg leading-8 mb-20">
-                En el caso de despido no justificado (despido injustificado), el trabajador podrá solicitar a su
-                elección que se le reinstale en el trabajo que desempeñaba o que se le indemnice con el importe de tres
-                meses de salario.
+                Si el procedimiento administrativo de ejecución no se realiza de conformidad a las disposiciones
+                legales, los contribuyentes, los responsables solidarios o los terceros con ellos relacionados podrán
+                impugnarlo a través de los medios de defensa fiscal que las propias leyes establecen para tal efecto.
             </p>
         </div>
     </div>
 
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto text-center">
-            <h2 class="subtitulos text-gray-800">Concurso Mercantil</h2>
-            <p class="parrafo-cuerpo mt-4 text-gray-600">Mediante el procedimiento de concurso mercantil, se declara en
-                concurso al comerciante que ha incumplido con sus obligaciones de pago a dos o más acreedores distintos
-                y bajo las condiciones previstas en la Ley de Concursos Mercantiles.
+            <h2 class="subtitulos text-gray-800">Medios de Defensa Fiscal</h2>
+            <p class="parrafo-cuerpo mt-4 text-gray-600">Son medios de defensa en materia fiscal el recurso de
+                revocación, el juicio contencioso administrativo y el amparo.
 
-                El procedimiento de concurso mercantil puede ser solicitado por: el propio comerciante, el acreedor o el
-                Ministerio Público.
-
-                Mediante este procedimiento se busca evitar que el incumplimiento de las obligaciones de pago del
-                comerciante ponga en riesgo la existencia de la empresa, y que además se lesione a los acreedores, a sus
-                clientes, proveedores y empleados.</p>
+                El recurso de revocación se interpone contra actos administrativos en materia fiscal y ante la propia
+                autoridad competente en materia fiscal. El Código Fiscal establece los requisitos de procedencia del
+                recurso de revocación así como las disposiciones aplicables para su trámite y resolución.</p>
 
             <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
-                src="https://img.freepik.com/foto-gratis/empresario-leyendo-contrato-closeup_1098-14742.jpg?t=st=1719608886~exp=1719612486~hmac=36d7798e3aead0a7453954738b1e067b9b690214a8b1d28f04ce9165349d21fd&w=1060">
+                src="https://images.unsplash.com/photo-1554224155-a1487473ffd9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         </div>
     </section>
 </div>

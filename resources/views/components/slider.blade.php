@@ -3,7 +3,7 @@
     <div class="relative  overflow-hidden h-[70vh] md:h-[90vh]">
         <!-- Item 1 -->
         <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
-            <img src="{{ asset('img/img-1.jpg') }}"
+            <img src="https://images.unsplash.com/photo-1505547828843-176834e42154?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
@@ -21,7 +21,7 @@
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1517495210937-3b251857964c?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img src="https://images.unsplash.com/photo-1601923112035-3e4819c82317?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
@@ -46,7 +46,7 @@
         </div>
         {{-- Item 3 --}}
         <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img src="https://images.unsplash.com/photo-1537222961176-50d25fff78ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="absolute block w-full h-full object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="...">
             <div class="absolute bottom-0 top-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">

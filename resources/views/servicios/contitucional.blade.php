@@ -1,21 +1,21 @@
 @extends('layout.app')
 
-@section('titulo', 'Derecho Laboral')
+@section('titulo', 'Derecho Contitucional')
 
 @section('contenido')
 
 <div>
 
-    <section class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center">
-        <div
-            class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
+    <section
+        class="w-full h-screen animate-fade  bg-[url('https://images.unsplash.com/photo-1576414160011-98dfab3aa889?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+        <div class="flex flex-col justify-center items-center bg-black/65 w-full h-full">
             <div class="container text-center max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8 space-y-6">
                 <h1 class="titulos text-gray-300 animate-fade animate-once animate-duration-[2000ms] animate-ease-in">
-                    Derecho Laboral</h1>
+                    Derecho Constitucional</h1>
                 <p
                     class="parrafo-cuerpo text-white animate-fade-up animate-once animate-duration-[2500ms] animate-ease-in">
-                    El Derecho Laboral o Derecho del Trabajo en México tiene su origen en acontecimientos históricos,
-                    políticos y económicos.</p>
+                    El Derecho Constitucional es de gran relevancia en México. El Derecho Constitucional goza de enorme
+                    contenido histórico, formalidad y respeto.</p>
                 <div class="flex justify-center mt-8">
                     <a href="{{ route('contacto.index') }}"
                         class="capitalize mt-8 px-6 py-4 bg-gray-500 transition duration-300 ease-in-out hover:bg-gray-600 text-white hover:ring-2 ring-gray-300/80 rounded-md">{{ __('site/navbar.link-contactanos') }}</a>
@@ -25,23 +25,25 @@
         </div>
     </section>
 
+
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto">
             <div class="items-center md:flex md:space-x-6">
                 <div class="md:w-1/2 animate-fade-right animate-once animate-duration-[2500ms] animate-ease-in">
-                    <h2 class="subtitulos text-gray-800">Relación Laboral</h2>
-                    <p class="parrafo-cuerpo text-gray-800">Para hablar de relación laboral, empecemos por definir
-                        quiénes son los sujetos de la relación laboral y qué se entiende por trabajo de conformidad con
-                        la Ley Federal del Trabajo.
+                    <h2 class="subtitulos text-gray-800">La Constitución Política de los Estados Unidos Mexicanos de
+                        1917</h2>
+                    <p class="parrafo-cuerpo text-gray-800">La Constitución es la ley fundamental del Estado Mexicano.
+                        Es la máxima ley de México.
 
-                        Los sujetos de la relación laboral son el trabajador y el patrón. El trabajador es la persona
-                        física que presta a otra persona física o moral, un trabajo personal subordinado. El patrón es
-                        la persona física o moral que utiliza los servicios de uno o varios trabajadores.</p>
-                    <p class="parrafo-cuerpo text-gray-600"> El patrón y el trabajador, en virtud de la relación laboral
-                        tienen obligaciones recíprocas, la ley contempla como obligaciones del patrón: cumplir con las
-                        disposiciones legales; pagar al trabajador salarios e indemnizaciones; proporcionar materiales
-                        necesarios para la ejecución del trabajo; proporcionar a las mujeres embarazadas la protección
-                        que establezcan los reglamentos; entre otros.</p>
+                        En la Constitución mexicana se establecen tanto los derechos fundamentales de los gobernados
+                        como la regulación del ejercicio del poder político.
+
+                    </p>
+                    <p class="parrafo-cuerpo text-gray-600"> El Decreto publicado en el Diario Oficial de la Federación
+                        (DOF) el 5 de febrero de 1917, establece como nombre oficial el de “Constitución Política de los
+                        Estados Unidos Mexicanos, que reforma la del 5 de Febrero de 1857”. Sin embargo, es común que la
+                        Constitución sea llamada o conocida como “Constitución Política de los Estados Unidos
+                        Mexicanos”, "Constitución", "Constitución Méxicana” y “Carta Magna”.</p>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
@@ -49,7 +51,7 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                src="https://images.unsplash.com/photo-1698864467809-f3c3a4299d8a?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                         </div>
                     </div>
                 </div>
@@ -65,23 +67,21 @@
                         <div class="max-w-md">
                             <img class="object-cover object-center w-full rounded-md shadow animate-fade-right animate-once animate-duration-[5000ms] animate-delay-[1000ms] animate-ease-in"
                                 style="height: 500px;"
-                                src="https://images.unsplash.com/photo-1524758870432-af57e54afa26?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                src="https://expopantalla.com/wp-content/uploads/2020/08/SCJ1.jpg">
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-8 md:mt-0 md:w-1/2">
-                    <h2 class="subtitulos text-gray-800">Trabajo de Mujeres</h2>
-                    <p class="parrafo-cuerpo text-gray-600">Las mujeres disfrutan de los mismos derechos y tienen las
-                        mismas obligaciones que los hombres.
-
-                        La ley, tratándose de las mujeres establece ciertas disposiciones específicas con el propósito
-                        de proteger la maternidad; por ejemplo, no podrán desempeñar labores insalubres o peligrosas,
-                        trabajo nocturno o industrial después de las 10 de la noche o en horas extraordinarias, cuando
-                        se ponga en peligro su salud o la del producto.</p>
-                    <p class="parrafo-cuerpo text-gray-600">Además las madres trabajadoras gozarán de periodos de
-                        descanso, lactancia, servicios de guardería, entre otros, bajo ciertas condiciones que establece
-                        la propia ley.</p>
+                    <h2 class="subtitulos text-gray-800">La Suprema Corte de Justicia de la Nación (SCJN)</h2>
+                    <p class="parrafo-cuerpo text-gray-600">La Suprema Corte de Justicia de la Nación, conocida como
+                        “Suprema Corte” o “Corte” es el Tribunal Constitucional de México. A través de los medios de
+                        control de constitucionalidad que son: el juicio de amparo, las controversias constitucionales,
+                        las acciones de inconstitucionalidad y las determinaciones de constitucionalidad sobre la
+                        materia de consultas populares, tiene por objetivo vigilar que los actos de autoridad y las
+                        leyes se apeguen a lo establecido en la Constitución.
+                    </p>
+                    <p class="parrafo-cuerpo text-gray-600">La Suprema Corte está integrada por once ministros y funciona en Pleno y en Salas.</p>
                 </div>
             </div>
         </div>
@@ -89,10 +89,14 @@
 
     <section>
         <div class="max-w-5xl px-6 py-16 mx-auto">
-            <h2 class="subtitulos text-gray-800">Contratos Laborales
+            <h2 class="subtitulos text-gray-800">Derecho de Petición y Negativa Ficta
             </h2>
-            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">La ley establece la presunción de la existencia de un
-                contrato y de la relación de trabajo entre el que presta un trabajo y el que lo recibe. <br>
+            <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">Los actos de comercio son aquellos actos jurídicos
+                celebrados por personas físicas o morales, comerciantes o no, que produzcan efectos jurídicos regulados
+                por el derecho mercantil.
+
+                El Código de Comercio enuncia cuáles son los actos de comercio contemplados por la ley. Los reproducimos
+                a continuación:<br>
 
                 Los contratos de trabajo pueden ser individuales o colectivos. <br>
 
@@ -108,7 +112,7 @@
                     </svg>
 
                     <div>
-                        <h4 class="text-xl subtitulos font-medium text-gray-800">Reglamento Interior del Trabajo</h4>
+                        <h4 class="text-xl subtitulos font-medium text-gray-800">Registro Público de Comercio</h4>
                         <p class="max-w-lg parrafo-cuerpo mt-4 text-gray-600">El Reglamento Interior del Trabajo, es un
                             conjunto de disposiciones obligatorias tanto para los trabajadores como para los patrones,
                             algunas de estas disposiciones son las relativas a las horas de entrada y salida de los
@@ -208,7 +212,7 @@
 
     <div>
         <div class="max-w-4xl mx-auto p-8">
-            <h1 class="text-4xl font-bold mb-8">Despido</h1>
+            <h2 class="text-4xl font-bold mb-8">Contratos Mercantiles</h2>
             <div class="flex items-center mb-6">
                 <div class="h-8 w-8 rounded-full bg-gray-400 mr-4"></div>
                 <div>
@@ -217,14 +221,14 @@
                 </div>
             </div>
             <p class="text-lg leading-8 mb-20">
-                El despido del trabajador puede ser justificado o injustificado. Será justificado cuando se configuren
-                en la realidad las causas de rescisión previstas por el artículo 47 de la Ley Federal del Trabajo.
+                Los contratos mercantiles son los convenios que producen o transfieren obligaciones y derechos de
+                naturaleza mercantil.
             </p>
             <p class="text-lg leading-8 mb-20">
-                El patrón que despida a un trabajador deberá darle aviso escrito en el que señale claramente la conducta
-                o conductas que motivan la rescisión y la fecha o fechas en que se cometieron. El aviso deberá
-                entregarse personalmente al trabajador en el momento del despido o bien, comunicarlo al Tribunal
-                competente para que lo notifique en forma personal al trabajador.
+                Entre los contratos mercantiles regulados por las disposiciones de naturaleza mercantil encontramos:
+                agencia, cesión de créditos comerciales, comisión mercantil, concesión mercantil, consignación
+                mercantil, compraventa mercantil, permuta mercantil, diversos contratos de seguro, diversos contratos de
+                transporte, depósito mercantil, fianza, fideicomiso, garantía, suministro, tiempo compartido y otros.
             </p>
             <p class="text-lg leading-8 mb-20">
                 El despido del trabajador será injustificado cuando el patrón no haya dado aviso al trabajador
@@ -241,23 +245,20 @@
 
     <section class="bg-gray-300">
         <div class="max-w-5xl px-6 py-16 mx-auto text-center">
-            <h2 class="subtitulos text-gray-800">Derecho Procesal del Trabajo</h2>
-            <p class="parrafo-cuerpo mt-4 text-gray-600">La Ley Federal del Trabajo se refiere en su Título Catorce al
-                Proceso del Derecho de Trabajo, el cual será público, gratuito, inmediato, predominantemente oral y
-                conciliatorio.
+            <h2 class="subtitulos text-gray-800">Concurso Mercantil</h2>
+            <p class="parrafo-cuerpo mt-4 text-gray-600">Mediante el procedimiento de concurso mercantil, se declara en
+                concurso al comerciante que ha incumplido con sus obligaciones de pago a dos o más acreedores distintos
+                y bajo las condiciones previstas en la Ley de Concursos Mercantiles.
 
-                El Centro Federal de Conciliación y Registro Laboral y sus sedes en las entidades federativas serán
-                competentes para llevar a cabo la conciliación en conflictos individuales y colectivos de trabajo.
+                El procedimiento de concurso mercantil puede ser solicitado por: el propio comerciante, el acreedor o el
+                Ministerio Público.
 
-                Las autoridades laborales federales conocerán de los conflictos de trabajo de las ramas industriales,
-                empresas o materias a que se refiere el artículo 527 de la Ley Federal del Trabajo entre las cuales se
-                encuentran las ramas industriales textil, eléctrica, cinematográfica, hulera, azucarera, minera,
-                metalúrgica, de hidrocarburos, petroquímica, cementera y otras; y de las empresas que sean administradas
-                en forma directa o descentralizada por el Gobierno Federal o que ejecuten trabajos en zonas federales,
-                entre otras.</p>
+                Mediante este procedimiento se busca evitar que el incumplimiento de las obligaciones de pago del
+                comerciante ponga en riesgo la existencia de la empresa, y que además se lesione a los acreedores, a sus
+                clientes, proveedores y empleados.</p>
 
             <img class="object-cover object-center w-full mt-16 rounded-md shadow h-80"
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                src="https://images.unsplash.com/photo-1619771766980-368d32e44b82?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         </div>
     </section>
 </div>
