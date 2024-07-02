@@ -8,5 +8,6 @@ return [
     'link-despacho' => 'Despachos',
     'link-contacto' => 'Contacto',
     'link-contactanos' => 'Contáctanos ahora',
-    'link-idioma' => 'Idioma'
+    'link-idioma' => 'Idioma',
+    'link-iniciarSesion' => 'Iniciar Sesión'
 ];
