@@ -44,7 +44,7 @@ class AreaController extends Controller
         return view('servicios.amparo');
     }
 
-    public function contitucional() {
+    public function constitucional() {
 
         return view('servicios.contitucional');
     }
