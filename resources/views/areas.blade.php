@@ -34,10 +34,10 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho civil</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-civil')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Asesoría legal experta en contratos, propiedad, herencias y responsabilidad civil.</p>
+                        {{__('site/areas.derecho-civil-descripcion')}}</p>
                     <a href="{{ route('area.civil') }}"
                         class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                         Más</a>
@@ -55,7 +55,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho penal</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-penal')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoramiento legal en casos criminales, defensa en juicios y gestión de litigios penales.</p>
@@ -76,7 +76,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho laboral</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-laboral')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal en relaciones laborales, contratos de trabajo, derechos de empleados y litigios
@@ -98,7 +98,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho administrativo</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-administrativo')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal especializada en procedimientos administrativos, normativas gubernamentales y
@@ -120,7 +120,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho mercantil</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-mercantil')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal en temas comerciales, contratos mercantiles, derecho societario y litigios empresariales.</p>
@@ -141,7 +141,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho tributario</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-tributario')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal en normativas fiscales, planificación tributaria, defensa ante auditorías y litigios fiscales.</p>
@@ -164,7 +164,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho Amparo</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-amparo')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal en la protección de derechos constitucionales, recursos de amparo y defensa ante violaciones a derechos fundamentales.</p>
@@ -185,7 +185,7 @@
                 </div>
                 <div
                     class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho Constitucional</h2>
+                    <h2 class="font-dmserif text-3xl font-bold text-white capitalize">{{__('site/areas.areas-derecho-constitucional')}}</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         Asesoría legal en derechos fundamentales, interpretación constitucional y defensa ante violaciones constitucionales.</p>
