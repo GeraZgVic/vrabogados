@@ -123,7 +123,7 @@
                     <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho mercantil</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                        Asesoría legal en temas comerciales, contratos mercantiles, derecho societario y litigios empresariales.</p>
                     <a href="{{ route('area.mercantil') }}"
                         class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                         Más</a>
@@ -144,7 +144,7 @@
                     <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho tributario</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                        Asesoría legal en normativas fiscales, planificación tributaria, defensa ante auditorías y litigios fiscales.</p>
                     <a href="{{ route('area.tributaria') }}"
                         class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                         Más</a>
@@ -167,7 +167,7 @@
                     <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho Amparo</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                        Asesoría legal en la protección de derechos constitucionales, recursos de amparo y defensa ante violaciones a derechos fundamentales.</p>
                     <a href="{{ route('area.tributaria') }}"
                         class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                         Más</a>
@@ -188,7 +188,7 @@
                     <h2 class="font-dmserif text-3xl font-bold text-white capitalize">Derecho Constitucional</h2>
                     <p
                         class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                        Asesoría legal en derechos fundamentales, interpretación constitucional y defensa ante violaciones constitucionales.</p>
                     <a href="{{ route('area.tributaria') }}"
                         class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Ver
                         Más</a>
