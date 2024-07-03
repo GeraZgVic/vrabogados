@@ -39,7 +39,7 @@ class ArticleController extends Controller
         ]);
 
         // Redireccionar
-        return redirect()->route('articulos.index');
+        return redirect()->route('articulos.index')->with('success', 'Creado Correctamente');
     }
 
     public function edit(Article $article)
@@ -68,7 +68,7 @@ class ArticleController extends Controller
         ]);
 
         // Redirigir a vista index
-        return redirect()->route('articulos.index')->with('alerta', 'Actualizado Correctamente');
+        return redirect()->route('articulos.index')->with('success', 'Actualizado Correctamente');
     }
 
     public function destroy(Article $article) {

@@ -38,7 +38,7 @@ class PostController extends Controller
             'image' => $request->image
         ]);
 
-        return redirect()->route('post.create')->with('success', 'Post Creado Correctamente');
+        return redirect()->route('post.index')->with('success', 'Post Creado Correctamente');
     }
 
     public function storeImage(Request $request)
@@ -143,7 +143,7 @@ class PostController extends Controller
         }
 
         // Retornar la vista index
-        return redirect()->route('post.index')->with('alerta', 'Actualizado Correctamente');
+        return redirect()->route('post.index')->with('success', 'Actualizado Correctamente');
     }
 
     public function destroy(Post $post)
